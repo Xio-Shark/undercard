@@ -1,0 +1,17 @@
+# Production on the self-hosted server. Secrets come from ./.env.production (never committed).
+services:
+  undercard:
+    image: undercard:${UNDERCARD_TAG:-latest}
+    container_name: undercard
+    restart: unless-stopped
+    env_file: .env.production
+    ports:
+      - "${UNDERCARD_PORT:-8090}:3000"
+    volumes:
+      - qloo-home:/data/qloo-home
+    mem_limit: 768m
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+volumes:
+  qloo-home:

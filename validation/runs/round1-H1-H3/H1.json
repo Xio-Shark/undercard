@@ -1,0 +1,1155 @@
+{
+  "case": "H1",
+  "model": "deepseek-flash",
+  "runsPerVersion": 2,
+  "qloo": {
+    "initial": {
+      "notRankable": [],
+      "table": [
+        {
+          "name": "beabadoobee",
+          "headlinerRank": 2,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "Japanese Breakfast",
+          "headlinerRank": 1,
+          "targetRank": 2,
+          "tied": true
+        },
+        {
+          "name": "Snail Mail",
+          "headlinerRank": 3,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Weyes Blood",
+          "headlinerRank": 4,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Arlo Parks",
+          "headlinerRank": 6,
+          "targetRank": 5,
+          "tied": false
+        },
+        {
+          "name": "Faye Webster",
+          "headlinerRank": 5,
+          "targetRank": 6,
+          "tied": true
+        }
+      ],
+      "priority": "beabadoobee"
+    },
+    "afterVeto": {
+      "vetoed": "beabadoobee",
+      "table": [
+        {
+          "name": "Japanese Breakfast",
+          "headlinerRank": 1,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Snail Mail",
+          "headlinerRank": 3,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Weyes Blood",
+          "headlinerRank": 4,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Arlo Parks",
+          "headlinerRank": 6,
+          "targetRank": 5,
+          "tied": false
+        },
+        {
+          "name": "Faye Webster",
+          "headlinerRank": 5,
+          "targetRank": 6,
+          "tied": true
+        }
+      ],
+      "priority": "Japanese Breakfast",
+      "explanationRefetched": true
+    },
+    "editedReferences": {
+      "references": [
+        "Lorde",
+        "Lana Del Rey"
+      ],
+      "notRankable": [],
+      "table": [
+        {
+          "name": "Japanese Breakfast",
+          "headlinerRank": 1,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "Snail Mail",
+          "headlinerRank": 2,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Weyes Blood",
+          "headlinerRank": 3,
+          "targetRank": 2,
+          "tied": true
+        },
+        {
+          "name": "Arlo Parks",
+          "headlinerRank": 5,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Faye Webster",
+          "headlinerRank": 4,
+          "targetRank": 5,
+          "tied": true
+        }
+      ],
+      "priority": "Japanese Breakfast",
+      "change": {
+        "kind": "new_query",
+        "trigger": "Target references: Lorde → Lorde, Lana Del Rey",
+        "priorityBefore": "Japanese Breakfast",
+        "priorityAfter": "Japanese Breakfast",
+        "at": "2026-10-03T08:17:15.702Z"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "case": "H1",
+      "step": "initial",
+      "version": "qloo",
+      "inPlay": [
+        "Japanese Breakfast",
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "beabadoobee",
+        "Arlo Parks"
+      ],
+      "vetoed": [],
+      "rulePriority": "beabadoobee",
+      "run": 1,
+      "brief": {
+        "priority": "beabadoobee",
+        "backups": [
+          "Japanese Breakfast",
+          "Snail Mail"
+        ],
+        "headlinerSide": "On the Mitski (headliner) side of this six-act pool, beabadoobee sits at rank 2. Japanese Breakfast ranks 1 and is the act that outranks it there, so beabadoobee is not the pool leader on this side. Its headliner-side case rests on shared qloo tags with Mitski (Indie, Emotional, Melodic, 4/4 Time, Love; audience tags Passionate, Loyal), which are similarity hints only, not causes.",
+        "targetSide": "On the Lorde (target) side, beabadoobee ranks 1 of 6 — no other shortlisted act ranks higher on this side of the pool. Shared qloo tags with Lorde include Electronic, Indie, Experimental, Diverse, Guitar, Vocals, Intimate, plus audience tags Passionate and Loyal. Again these are similarity hints, not causes, and affinity here is not ticket demand.",
+        "answer": "beabadoobee is the priority: it is the top-ranked act on the Lorde/target side (rank 1 of 6) and rank 2 of 6 on the Mitski side, so its worst side rank is 2. Japanese Breakfast reaches the same worst side rank of 2 from the opposite pattern (rank 1 on the Mitski side, rank 2 on the Lorde side) and is the pool's leader on the Mitski side, so it is the first backup and, given the tie, an equally defensible first call. Snail Mail (rank 3 on both sides) is the next backup. This is a balance of taste affinity across the two sides, not a claim of the strongest fit on either side, and not evidence of ticket demand or new audience growth.",
+        "evidence": [
+          {
+            "claim": "Within this pool of six, beabadoobee ranks 2 on the Mitski (headliner) side and 1 on the Lorde (target) side, giving it a worst side rank of 2.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Japanese Breakfast ranks 1 on the headliner side and 2 on the target side, also with a worst side rank of 2, tied with beabadoobee.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The priority was chosen by the product rule (worst side rank, then rank sum), and the product rule marked the priority as tied with the next candidate.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "beabadoobee and Mitski share qloo tags including Indie, Emotional, Melodic, 4/4 Time, Love, and audience tags Passionate and Loyal.",
+            "source": "qloo"
+          },
+          {
+            "claim": "beabadoobee and Lorde share qloo tags including Electronic, Indie, Experimental, Diverse, Guitar, Vocals, Intimate, and audience tags Passionate and Loyal.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Shared tags are similarity hints, not causes of audience overlap.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Ranks are positions within this pool of six only; they are not absolute affinity scores and carry no numeric distance between positions.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Snail Mail ranks 3 on both sides, the highest-ranked act after the two acts tied at worst side rank 2.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Mitski and Japanese Breakfast are commonly discussed in the same US indie/singer-songwriter press context, and beabadoobee is commonly described in indie/bedroom-pop terms.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "Booking fees, availability, dates and actual willingness were not checked by this tool and are not claimed here.",
+          "Whether any of this affinity translates into ticket demand or new audience growth is unknown.",
+          "The size of the gap between adjacent ranks in the pool is unknown; only positions are given, with no numeric distances.",
+          "The priority label rests on a full tie in the product rule's criteria: beabadoobee and Japanese Breakfast share both the worst side rank (2) and the rank sum (3, derived from the qloo ranks), so which of the two should be called first is not separable from the given evidence.",
+          "beabadoobee is not the pool leader on the headliner side (rank 2, behind Japanese Breakfast at rank 1); any headliner-side claim beyond 'second in this pool' is unsupported.",
+          "Whether qloo audience tags such as Passionate and Loyal map onto actual Mitski or Lorde listeners is not established by this table.",
+          "The shortlist was pre-screened by the team; acts outside it were not evaluated."
+        ]
+      },
+      "ms": 21746,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "initial",
+      "version": "qloo",
+      "inPlay": [
+        "Japanese Breakfast",
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "beabadoobee",
+        "Arlo Parks"
+      ],
+      "vetoed": [],
+      "rulePriority": "beabadoobee",
+      "run": 2,
+      "brief": {
+        "priority": "beabadoobee",
+        "backups": [
+          "Japanese Breakfast",
+          "Snail Mail"
+        ],
+        "headlinerSide": "beabadoobee is rank 2 of 6 on the Mitski/headliner side in the Qloo pool. It is not the top Mitski-side candidate; Japanese Breakfast ranks 1 there. beabadoobee shares Qloo tags with Mitski including Indie, Emotional, Melodic, Folk, Love, Passionate, Loyal, Straightforward, United States, and 4/4 Time, so it has a defensible headliner-side fit but a lower rank than Japanese Breakfast.",
+        "targetSide": "beabadoobee is rank 1 of 6 on the Lorde/target side in the Qloo pool, above Japanese Breakfast at rank 2 and Snail Mail at rank 3. It shares Qloo tags with Lorde including Electronic, Indie, Experimental, Diverse, Guitar, Vocals, Intimate, Passionate, Loyal, and United States. On the target side, it is the top-ranked candidate in this pool.",
+        "answer": "Evaluate beabadoobee first. Under the provided product-rule output, it is the priority for balancing the two sides: rank 1 on the Lorde side and rank 2 on the Mitski side. Japanese Breakfast is the act that outranks it on the Mitski side, at rank 1 there, and is tied with beabadoobee on worst rank; it is the first backup. Snail Mail is the second backup at rank 3 on both sides. This is a taste-affinity ranking only; it does not establish booking fees, dates, willingness, ticket demand, or new audience growth.",
+        "evidence": [
+          {
+            "claim": "Qloo table: beabadoobee has headlinerRank 2, targetRank 1, and worstRank 2 in this six-act pool.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table: Japanese Breakfast has headlinerRank 1, targetRank 2, and worstRank 2; it is marked tiedWithPrevious with beabadoobee.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table: Snail Mail has headlinerRank 3 and targetRank 3.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table: Weyes Blood has headlinerRank 4 and targetRank 4; Arlo Parks has headlinerRank 6 and targetRank 5; Faye Webster has headlinerRank 5 and targetRank 6.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags for Mitski vs beabadoobee include Straightforward, United States, Indie, Emotional, Melodic, Folk, 4/4 Time, Love, Passionate, and Loyal.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags for Lorde vs beabadoobee include Electronic, United States, Diverse, Experimental, Indie, Passionate, Loyal, Guitar, Vocals, and Intimate.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Product rule output: priority is beabadoobee; backups are Japanese Breakfast and Snail Mail; these selections must not be changed.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Product rule: the priority is a balance between sides; if another act ranks higher on a side, name that act rather than calling the priority best on that side.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Booking fees, dates, and willingness are outside this tool and are not claimed.",
+          "Taste affinity is not ticket demand and does not prove new audience growth.",
+          "Qloo ranks are positions within this shortlist pool only, not against all artists or all listeners.",
+          "Shared tags are similarity hints, not causes.",
+          "The target side uses Lorde as a reference artist; there is no direct Qloo evidence from Lorde listeners in this brief.",
+          "beabadoobee and Japanese Breakfast are tied on worst rank, so the product-rule tie outcome is decisive and could be sensitive to rule changes.",
+          "No provided evidence measures actual dual acceptance or audience overlap between Mitski core listeners and Lorde listeners."
+        ]
+      },
+      "ms": 28139,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "initial",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Japanese Breakfast",
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "beabadoobee",
+        "Arlo Parks"
+      ],
+      "vetoed": [],
+      "brief": {
+        "priority": "Japanese Breakfast",
+        "backups": [
+          "Weyes Blood",
+          "beabadoobee"
+        ],
+        "headlinerSide": "general_knowledge: Japanese Breakfast fits Mitski's current audience through indie pop/rock with confessional, melancholic, and dream-pop textures. On this side, Snail Mail may rank higher for raw guitar-driven indie rock, so Japanese Breakfast is not the top Mitski-side rank. It remains a credible Mitski-side fit.",
+        "targetSide": "general_knowledge: Japanese Breakfast is a moderate fit for Lorde's audience through indie-pop and synth/alt-pop elements. On this side, Weyes Blood may rank higher for baroque/art-pop, and beabadoobee may rank higher for contemporary alt-pop. Japanese Breakfast is not the top Lorde-side rank, but it is a plausible cross-audience bridge.",
+        "answer": "Japanese Breakfast is the priority for a balanced first look across both audiences. It is a credible Mitski-side fit and a moderate Lorde-side fit. Weyes Blood and beabadoobee are backups: Weyes Blood leans more Lorde/art-pop, beabadoobee leans more alt-pop/indie. product_rule: taste affinity is not ticket demand and does not prove new audience growth. product_rule: no Qloo data is available here; this brief uses general knowledge and product rules only.",
+        "evidence": [
+          {
+            "claim": "No Qloo evidence is available in this version.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Selection must come only from the pre-screened shortlist.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Japanese Breakfast works in indie pop/rock with dream-pop and confessional textures, aligning with Mitski's core audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "On the Mitski side, Snail Mail may rank higher for raw guitar-driven confessional indie rock.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lorde's audience tends toward art pop/alt pop with introspective lyrics and electronic or soft-psych production.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "On the Lorde side, Weyes Blood may rank higher for baroque/art-pop, and beabadoobee may rank higher for contemporary alt-pop.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Japanese Breakfast has indie-pop and synth/alt-pop elements that can bridge to Lorde listeners, though not as directly as Weyes Blood or beabadoobee.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Weyes Blood is a Lorde-leaning backup with baroque pop/art-pop appeal.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "beabadoobee is a middle backup with indie/alt-pop and bedroom-pop appeal.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked by the team outside this tool and are not claimed here.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo affinity data is available.",
+          "No ticket demand, sales, or audience-growth data is provided.",
+          "No booking fee, date, or willingness data is provided.",
+          "Actual overlap between Mitski core listeners and Lorde listeners is not measured here."
+        ]
+      },
+      "ms": 43566,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "initial",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Japanese Breakfast",
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "beabadoobee",
+        "Arlo Parks"
+      ],
+      "vetoed": [],
+      "brief": {
+        "priority": "Japanese Breakfast",
+        "backups": [
+          "Weyes Blood",
+          "Arlo Parks"
+        ],
+        "headlinerSide": "Japanese Breakfast fits Mitski's current audience well: both operate in indie/art-pop with introspective songwriting, dream-pop/synth textures, and a similar indie/festival circuit. On the Mitski side of this shortlist, I would rank Japanese Breakfast behind Snail Mail for the raw guitar-indie strand, but ahead of Weyes Blood and Faye Webster for the art-pop/indie-pop strand. So it is a credible but not the most literal Mitski-side match.",
+        "targetSide": "Japanese Breakfast is a plausible Lorde-side crossover because its synth/indie-pop and melodic dream-pop can sit near Lorde's alt-pop/art-pop audience. On the Lorde side, I would rank Japanese Breakfast behind Weyes Blood for baroque/art-pop adjacency and behind Arlo Parks for introspective pop/R&B adjacency, but ahead of Snail Mail and Faye Webster for alt-pop crossover. It is a balance pick, not the closest Lorde-side act.",
+        "answer": "Evaluate Japanese Breakfast first. No Qloo data is available in this version, so this is a general-knowledge taste-affinity call, not a measured audience-overlap claim. Japanese Breakfast is a balanced shortlist candidate between Mitski's indie/art-pop core and Lorde's alt-pop/art-pop audience: it is credible on both sides, while Snail Mail is more Mitski-side guitar-indie and Weyes Blood is more Lorde-side art-pop. Backups: Weyes Blood for the Lorde-side art-pop axis and Arlo Parks for the introspective indie-pop/R&B axis. Booking fees, dates, and willingness are outside this tool and are not claimed. Taste affinity does not prove ticket demand or new audience growth.",
+        "evidence": [
+          {
+            "claim": "No Qloo evidence is available in this version.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Mitski's core audience is generally associated with indie rock/art pop, introspective songwriting, and experimental/dream-pop textures.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lorde's audience is generally associated with alt-pop/art-pop, moody electronic production, and Gen Z/millennial pop crossover.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Japanese Breakfast blends indie pop/rock, dream pop, and synth textures with introspective songwriting, giving it plausible overlap with both Mitski's indie/art-pop core and Lorde's alt-pop audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "On the Mitski side, Snail Mail is the more literal guitar-driven indie-rock adjacency than Japanese Breakfast.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "On the Lorde side, Weyes Blood is the more literal baroque-pop/art-pop adjacency than Japanese Breakfast.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Arlo Parks offers introspective indie-pop/R&B that can appeal to Lorde-adjacent listeners, though it is less guitar/indie-rock aligned with Mitski's core.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked by the team outside this tool and are not claimed here.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The priority is a balance between the two sides and is not called best/closest/strongest on a side where another act ranks higher; higher acts are named instead.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo affinity data for Mitski, Lorde, or the shortlist.",
+          "No direct audience-overlap survey between Mitski core listeners and Lorde listeners.",
+          "No local market ticket-demand, venue, or sales data.",
+          "No booking fee, date, or willingness information; these are outside this tool.",
+          "No evidence that any shortlist act would grow new audience.",
+          "Exact shortlist rank order is a general-knowledge judgment, not a measured ranking."
+        ]
+      },
+      "ms": 53666,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "after_veto",
+      "version": "qloo",
+      "inPlay": [
+        "Japanese Breakfast",
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "Arlo Parks"
+      ],
+      "vetoed": [
+        "beabadoobee"
+      ],
+      "rulePriority": "Japanese Breakfast",
+      "run": 1,
+      "brief": {
+        "priority": "Japanese Breakfast",
+        "backups": [
+          "Snail Mail",
+          "Weyes Blood"
+        ],
+        "headlinerSide": "Japanese Breakfast sits at headlinerRank 1 on the Mitski side of the Qloo table for the remaining shortlist, the highest position held by any remaining candidate, so nothing here ranks above it on that side. Qloo lists shared tags with Mitski including region United States, genres Folk and Indie, characteristics Straightforward, Emotional, Melodic and 4/4 Time, theme Love, audience tag Passionate, and instrument Guitar. Those tags are similarity hints, not causes. The comparison also lists tags that appear only on the Mitski side (Heartbreak, Atmospheric, Singer & Songwriter, Devoted, Dynamic, Loneliness, Piano) and tags that appear only on the Japanese Breakfast side (Supportive, Dreamy, Grief, Experimental, Engaging, Synthesizer, Lo-fi), so the overlap is partial rather than complete, and no claim is made here that this affinity converts into attendance at a Mitski show.",
+        "targetSide": "Japanese Breakfast sits at targetRank 2 on the Lorde side of the Qloo table for the remaining shortlist; no remaining candidate ranks higher there (Snail Mail 3rd, Weyes Blood 4th, Arlo Parks 5th, Faye Webster 6th). That rank is a position inside the original pool of six and was not renumbered after the veto, so it is not a fresh first place among the five still in play. Qloo lists shared tags with Lorde including genres Electronic and Indie, region United States, characteristics Diverse and Experimental, audience tag Passionate, instruments Guitar and Vocals, style Intimate, and theme Identity. These are similarity hints, not causes, and they describe audience taste overlap rather than proven new audience growth for a Mitski headline date.",
+        "answer": "First candidate to evaluate: Japanese Breakfast. In the Qloo table it holds headlinerRank 1 (Mitski side) and targetRank 2 (Lorde side) among the shortlist still in play, with worstRank 2 — no remaining candidate ranks higher on either side. Backups in order: Snail Mail (3rd on both sides), then Weyes Blood (4th on both sides). This is a taste-affinity ordering only: it is not ticket demand, it does not prove new audience growth, and booking fees, dates and willingness are checked outside this tool. Read the ranks as positions in the original pool of six that were not renumbered after the veto, so one position on each side is simply absent from the table rather than reallocated to a remaining act.",
+        "evidence": [
+          {
+            "claim": "In the Qloo table for the remaining shortlist, Japanese Breakfast holds headlinerRank 1 and targetRank 2 (worstRank 2).",
+            "source": "qloo"
+          },
+          {
+            "claim": "The priority and backups were chosen by the product rule (worst side rank, then rank sum) and must not be changed.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo lists these shared tags between Mitski and Japanese Breakfast: region United States; genres Folk and Indie; characteristics Straightforward, Emotional, Melodic, 4/4 Time; theme Love; audience tag Passionate; instrument Guitar.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo lists these shared tags between Lorde and Japanese Breakfast: genres Electronic and Indie; region United States; characteristics Diverse and Experimental; audience tag Passionate; instruments Guitar and Vocals; style Intimate; theme Identity.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The Mitski-versus-Japanese Breakfast comparison also lists tags exclusive to each side (Mitski only: Heartbreak, Atmospheric, Singer & Songwriter, Devoted, Dynamic, Loneliness, Piano; candidate only: Supportive, Dreamy, Grief, Experimental, Engaging, Synthesizer, Lo-fi).",
+            "source": "qloo"
+          },
+          {
+            "claim": "Shared tags are similarity hints, not causes.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Snail Mail holds worstRank 3 (headlinerRank 3, targetRank 3) and Weyes Blood holds worstRank 4 (headlinerRank 4, targetRank 4).",
+            "source": "qloo"
+          },
+          {
+            "claim": "Arlo Parks holds worstRank 6 (headlinerRank 6, targetRank 5) and Faye Webster holds worstRank 6 (headlinerRank 5, targetRank 6), tied with the previous candidate.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Ranks are positions in the original pool of 6; vetoed acts were removed without re-ranking or renumbering.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Mitski and Japanese Breakfast are both US-associated indie singer-songwriter projects, while Lorde is a New Zealand alt-pop artist — offered as general background, not as evidence of audience overlap.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "The beabadoobee veto is taken as given; its fit is not assessed or discussed in this brief.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Ranks are positions within the original pool of six and were not renumbered after the veto; the headliner side shows no rank 2 and the target side shows no rank 1, so the displayed ranks are not a fresh ranking of the five acts still in play.",
+          "Whether Qloo tag affinity corresponds to actual live-audience crossover, repeat attendance, or new audience growth for a Mitski headline show is not established by the provided evidence.",
+          "Booking fees, dates, availability, routing and willingness are outside this tool and are not asserted here.",
+          "The tag lists contain internal inconsistencies — for example, 'Emotional' appears in both the shared and the Mitski-only lists for the headliner comparison, and 'DedicateD' is cased oddly — so tag-based reasoning should be treated as approximate.",
+          "Lorde is used as a target-audience reference artist; whether that reference audience transfers to a Mitski headline date is untested in this evidence.",
+          "The vetoed act's former rank position is absent from the table; no inference about its fit is made or should be drawn here."
+        ]
+      },
+      "ms": 27161,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "after_veto",
+      "version": "qloo",
+      "inPlay": [
+        "Japanese Breakfast",
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "Arlo Parks"
+      ],
+      "vetoed": [
+        "beabadoobee"
+      ],
+      "rulePriority": "Japanese Breakfast",
+      "run": 2,
+      "brief": {
+        "priority": "Japanese Breakfast",
+        "backups": [
+          "Snail Mail",
+          "Weyes Blood"
+        ],
+        "headlinerSide": "On the headliner side, Japanese Breakfast is rank 1 in this pool (qloo). It shares Qloo tags with Mitski including United States, Folk, Indie, Straightforward, Emotional, Melodic, 4/4 Time, Love, Passionate, and Guitar (qloo). These shared tags are similarity hints, not causes (product_rule). Because it is rank 1 on this side, no other eligible shortlist act ranks higher here (qloo).",
+        "targetSide": "On the target side, Japanese Breakfast is rank 2 in this pool (qloo). It is not rank 1 on this side; a vetoed act held the higher target rank and is out of scope for this brief (qloo). It shares Qloo tags with the Lorde target reference including Electronic, United States, Diverse, Experimental, Indie, Passionate, Guitar, Vocals, Intimate, and Identity (qloo). These shared tags are similarity hints, not causes (product_rule).",
+        "answer": "Start evaluation with Japanese Breakfast. Back up with Snail Mail, then Weyes Blood. Japanese Breakfast is rank 1 on the Mitski headliner side and rank 2 on the Lorde target side in the provided Qloo pool (qloo); the product rule selected it by worst side rank, then rank sum (product_rule). This is a taste-affinity shortlist only; it is not ticket-demand proof and does not prove new audience growth (product_rule).",
+        "evidence": [
+          {
+            "claim": "Japanese Breakfast has headlinerRank 1 and targetRank 2 in this pool.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Japanese Breakfast shares with the Mitski headliner side Qloo tags: United States, Folk, Indie, Straightforward, Emotional, Melodic, 4/4 Time, Love, Passionate, Guitar.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Japanese Breakfast shares with the Lorde target side Qloo tags: Electronic, United States, Diverse, Experimental, Indie, Passionate, Guitar, Vocals, Intimate, Identity.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Snail Mail has headlinerRank 3 and targetRank 3; Weyes Blood has headlinerRank 4 and targetRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The product rule chose the priority by worst side rank, then rank sum, and selected Japanese Breakfast, with Snail Mail and Weyes Blood as backups.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Ranks are positions in the original pool of 6; vetoed acts were removed without re-ranking or renumbering.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Shared tags are similarity hints, not causes.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness were not checked in this tool.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Booking fees, dates, and willingness are outside this tool and must be checked by the team.",
+          "Taste affinity does not prove ticket demand or new audience growth.",
+          "The targetRank 1 position is held by a vetoed act that is not evaluated here, so Japanese Breakfast is rank 2 on the target side in the original pool.",
+          "Shared tags are similarity hints, not causes.",
+          "No live-performance, venue, marketing, or regional audience data is included.",
+          "The shortlist is pre-screened; other eligible acts may exist outside it."
+        ]
+      },
+      "ms": 33332,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "after_veto",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "beabadoobee",
+        "Arlo Parks"
+      ],
+      "vetoed": [
+        "Japanese Breakfast"
+      ],
+      "brief": {
+        "priority": "beabadoobee",
+        "backups": [
+          "Weyes Blood",
+          "Snail Mail"
+        ],
+        "headlinerSide": "For Mitski's core listeners, Snail Mail is the strongest literal match on the shortlist because of her guitar-driven indie-rock/emo profile. beabadoobee is not the strongest Mitski-core match; she ranks behind Snail Mail on that side. Her fit is a balance: she shares Mitski's indie/alternative and bedroom-pop lanes, but her sound leans more pop/dream-pop than Mitski's core rock/emo side.",
+        "targetSide": "For Lorde's audience, Weyes Blood is the strongest literal art-pop/baroque-pop match on the shortlist. beabadoobee is not the strongest Lorde-side match; she ranks behind Weyes Blood on that side. Her fit is a balance: her bedroom-pop, dream-pop, and pop-adjacent indie sound can bridge to Lorde's alt-pop listeners without being a pure art-pop act.",
+        "answer": "Evaluate beabadoobee first. She is the most defensible balance between the two sides: not the strongest Mitski-core match (Snail Mail is), and not the strongest Lorde-audience match (Weyes Blood is), but she occupies the indie/alt-guitar and bedroom/dream-pop overlap that can plausibly reach both. Backups: Weyes Blood if the target side needs a more literal art-pop bridge; Snail Mail if the headliner side needs a more literal indie-rock/emo bridge. This is a taste-affinity recommendation only; it does not prove ticket demand or new audience growth.",
+        "evidence": [
+          {
+            "claim": "Mitski's core audience is generally associated with indie rock, art pop, bedroom pop, and emotionally direct singer-songwriter music.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lorde's audience is generally associated with alternative pop, art pop, electropop, and moody, lyrical pop.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Snail Mail is the strongest literal Mitski-core match on this shortlist because of her guitar-driven indie-rock/emo profile.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Weyes Blood is the strongest literal Lorde-audience match on this shortlist because of her baroque-pop/art-pop and cinematic singer-songwriter profile.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "beabadoobee sits between the two lanes via bedroom pop, indie rock, dream pop, and pop-adjacent alt sounds, making her the most balanced priority.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Faye Webster leans indie folk/pop, soft rock, and R&B-tinged singer-songwriter music, which is credible for Mitski-core listeners but less directly pop-facing for Lorde listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Arlo Parks leans indie pop, R&B/neo-soul, and spoken-word-influenced songwriting, which can appeal to Lorde listeners but is less directly in Mitski's rock/emo lane.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "No Qloo data was provided, so no claim in this brief can be sourced to qloo.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked by the team outside this tool and are not claimed here.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo evidence is available to test actual listener overlap or affinity.",
+          "The size and composition of Mitski's core listeners and Lorde's listeners in the relevant market are unknown.",
+          "Ticket demand, sell-through, and new audience growth cannot be inferred from taste affinity.",
+          "Booking fees, availability, dates, and willingness are unknown and must be confirmed by the team.",
+          "Whether a support act from a more pop-leaning or more rock-leaning lane would be accepted in practice is untested without venue/audience data."
+        ]
+      },
+      "ms": 42831,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "after_veto",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "beabadoobee",
+        "Arlo Parks"
+      ],
+      "vetoed": [
+        "Japanese Breakfast"
+      ],
+      "brief": {
+        "priority": "beabadoobee",
+        "backups": [
+          "Weyes Blood",
+          "Arlo Parks"
+        ],
+        "headlinerSide": "On the Mitski-core side, beabadoobee is not the top shortlist rank for guitar-indie credibility; Snail Mail ranks higher there (general_knowledge). beabadoobee still plausibly fits because Mitski's audience is centered on introspective indie/art-pop and Gen Z/Millennial listeners, and beabadoobee works in adjacent bedroom-pop/indie-rock (general_knowledge). This is taste affinity only; it does not prove ticket demand or new audience growth (product_rule).",
+        "targetSide": "On the Lorde-side, beabadoobee is not the top shortlist rank for art-pop/electronic minimalism; Weyes Blood ranks higher on the art-pop axis (general_knowledge). beabadoobee's alt-pop melodies and Gen Z indie-pop profile make it plausible for Lorde listeners (general_knowledge). This is affinity, not ticket demand (product_rule).",
+        "answer": "Priority: beabadoobee. It is the balance-first candidate to evaluate for simultaneous Mitski-core and Lorde-listener acceptance (product_rule). I am not calling it strongest on either side: Snail Mail ranks higher on the Mitski-side guitar-indie axis, and Weyes Blood ranks higher on the Lorde-side art-pop axis (general_knowledge). Backups: Weyes Blood, Arlo Parks (product_rule). This does not prove ticket demand or new audience growth (product_rule).",
+        "evidence": [
+          {
+            "claim": "No Qloo data was provided, so no qloo-sourced claims are made.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The shortlist is limited to Weyes Blood, Faye Webster, Snail Mail, beabadoobee, and Arlo Parks.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Mitski is generally described as indie/art-pop with confessional, introspective songwriting and a strong Gen Z/Millennial internet audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lorde is generally described as alt-pop/art-pop with minimalist electronic production and introspective, moody songwriting.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "beabadoobee is generally described as bedroom pop/indie rock with alt-pop melodies, making it a plausible bridge between Mitski's indie-rock audience and Lorde's alt-pop audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Snail Mail is more literally guitar-driven, confessional indie rock, so it ranks higher than beabadoobee on the Mitski-core guitar-indie axis.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Weyes Blood is more literally baroque/art pop, so it ranks higher than beabadoobee on the Lorde-side art-pop axis.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Arlo Parks is introspective indie pop/R&B, plausible for both sides but less guitar-indie for Mitski core and less electronic alt-pop for Lorde.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Faye Webster is indie folk/soft rock/R&B, plausible for Mitski core but less aligned with Lorde's electronic alt-pop.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity does not prove ticket demand or new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are outside this tool and are not claimed here.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The priority is selected as a balance between sides, not as the top rank on either side.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Actual Qloo affinity scores are unavailable in this version.",
+          "Actual ticket demand, conversion, and new audience growth are unknown.",
+          "Whether Lorde listeners would accept a guitar-based indie act at scale is unknown.",
+          "Whether Mitski core listeners would accept a more pop/R&B-leaning act is unknown.",
+          "Booking fees, availability, dates, and willingness are not verified here.",
+          "No streaming or sales rank data is available to confirm relative rank beyond general knowledge."
+        ]
+      },
+      "ms": 51324,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "edited_references",
+      "version": "qloo",
+      "inPlay": [
+        "Japanese Breakfast",
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "Arlo Parks"
+      ],
+      "vetoed": [
+        "beabadoobee"
+      ],
+      "rulePriority": "Japanese Breakfast",
+      "run": 1,
+      "brief": {
+        "priority": "Japanese Breakfast",
+        "backups": [
+          "Snail Mail",
+          "Weyes Blood"
+        ],
+        "headlinerSide": "Qloo: on the headliner side, Japanese Breakfast is rank 1 in this pool. No other shortlisted act ranks higher on this side: Snail Mail is rank 2, Weyes Blood rank 3, Faye Webster rank 4, and Arlo Parks rank 5. Qloo shared-tag hints between the headliner side and Japanese Breakfast include United States, Folk, Indie, Straightforward, Emotional, Melodic, 4/4 Time, Love, Passionate, and Guitar. Product rule: these shared tags are similarity hints, not causes, and are not a ticket-demand measure.",
+        "targetSide": "Qloo: on the target side, Japanese Breakfast is rank 1 in this pool. No other shortlisted act ranks higher on this side: Weyes Blood is rank 2, Snail Mail rank 3, Arlo Parks rank 4, and Faye Webster rank 5. Qloo shared-tag hints between the target side and Japanese Breakfast include Electronic, Alternative Rock, Indie, Passionate, Guitar, Vocals, Intimate, Identity, Expressive, and Introspective. Product rule: these shared tags are similarity hints, not causes, and are not a ticket-demand measure.",
+        "answer": "Japanese Breakfast is the candidate to evaluate first. In the provided Qloo pool, it is rank 1 on both the Mitski/headliner side and the Lorde/Lana Del Rey target side, so it is the only shortlisted act with rank 1 on both sides in this pool. The product-rule backups are Snail Mail and Weyes Blood. Qloo: Snail Mail is rank 2 on the headliner side and rank 3 on the target side. Qloo: Weyes Blood is rank 3 on the headliner side and rank 2 on the target side, with a worst-rank tie against Snail Mail. Product rule: this is a taste-affinity ranking only; it does not establish ticket demand, audience growth, fees, dates, or willingness.",
+        "evidence": [
+          {
+            "claim": "Japanese Breakfast has headlinerRank 1, targetRank 1, and worstRank 1 in this five-act Qloo pool.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Snail Mail has headlinerRank 2 and targetRank 3; Weyes Blood has headlinerRank 3 and targetRank 2, with worstRank 3 and tiedWithPrevious true.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Faye Webster has headlinerRank 4 and targetRank 5; Arlo Parks has headlinerRank 5 and targetRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Headliner-vs-priority shared tags include United States, Folk, Indie, Straightforward, Emotional, Melodic, 4/4 Time, Love, Passionate, and Guitar.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Target-vs-priority shared tags include Electronic, Alternative Rock, Indie, Passionate, Guitar, Vocals, Intimate, Identity, Expressive, and Introspective.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo ranks are positions within this shortlist pool only.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Shared tags are similarity hints, not causes.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The product rule selected Japanese Breakfast as priority and Snail Mail and Weyes Blood as backups using worst side rank, then rank sum; this selection is fixed for this brief.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked outside this tool and are not claimed here.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Actual ticket demand and whether this booking would grow a new audience are not established by the Qloo taste-affinity ranks.",
+          "Booking fees, dates, and willingness are not checked in this tool.",
+          "Whether Lorde and Lana Del Rey target audiences should be weighted equally is not specified.",
+          "Whether shared tags translate into live draw, venue fit, or repeat attendance is unknown.",
+          "Qloo ranks only compare acts within this shortlist pool and do not compare them with acts outside it.",
+          "No routing, availability, or production information is provided."
+        ]
+      },
+      "ms": 32388,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "edited_references",
+      "version": "qloo",
+      "inPlay": [
+        "Japanese Breakfast",
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "Arlo Parks"
+      ],
+      "vetoed": [
+        "beabadoobee"
+      ],
+      "rulePriority": "Japanese Breakfast",
+      "run": 2,
+      "brief": {
+        "priority": "Japanese Breakfast",
+        "backups": [
+          "Snail Mail",
+          "Weyes Blood"
+        ],
+        "headlinerSide": "In the provided Qloo table (qloo), Japanese Breakfast is rank 1 on the headliner side within this shortlist: Snail Mail is rank 2, Weyes Blood rank 3, Faye Webster rank 4, and Arlo Parks rank 5. Japanese Breakfast also shares Qloo tags with the Mitski/headliner side, including United States, Folk, Indie, Straightforward, Emotional, Melodic, 4/4 Time, Love, Passionate, and Guitar (qloo); these shared tags are similarity hints, not causes (product_rule). This is a taste-affinity fit, not ticket demand or proof of new audience growth (product_rule).",
+        "targetSide": "In the provided Qloo table (qloo), Japanese Breakfast is rank 1 on the target side within this shortlist: Weyes Blood is rank 2, Snail Mail rank 3, Arlo Parks rank 4, and Faye Webster rank 5. Japanese Breakfast shares Qloo tags with the target reference audience (Lorde/Lana Del Rey side), including Electronic, Alternative Rock, Indie, Passionate, Guitar, Vocals, Intimate, Identity, Expressive, and Introspective (qloo); these shared tags are similarity hints, not causes (product_rule). This is a taste-affinity fit, not ticket demand or proof of new audience growth (product_rule).",
+        "answer": "The priority candidate to evaluate first is Japanese Breakfast. In the provided Qloo evidence, it is rank 1 on both the Mitski/headliner side and the target side within this shortlist, and the product rule selected it as priority (qloo; product_rule). The backups are Snail Mail and Weyes Blood (product_rule). This answers only the provided affinity-ranking question: it does not verify booking willingness, fees, dates, ticket demand, or new audience growth (product_rule).",
+        "evidence": [
+          {
+            "claim": "Japanese Breakfast is rank 1 on the headliner side and rank 1 on the target side in the provided Qloo pool.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Snail Mail is rank 2 on the headliner side and rank 3 on the target side in the provided Qloo pool.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Weyes Blood is rank 3 on the headliner side and rank 2 on the target side in the provided Qloo pool, tied with the previous candidate on worst rank.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Japanese Breakfast shares Qloo tags with the Mitski/headliner side, including United States, Folk, Indie, Straightforward, Emotional, Melodic, 4/4 Time, Love, Passionate, and Guitar.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Japanese Breakfast shares Qloo tags with the target reference audience, including Electronic, Alternative Rock, Indie, Passionate, Guitar, Vocals, Intimate, Identity, Expressive, and Introspective.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The product rule selected Japanese Breakfast as priority based on worst side rank, then rank sum, and selected Snail Mail and Weyes Blood as backups.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo affinity and shared tags are similarity hints, not causes, and do not prove ticket demand or new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Ranks are positions within this shortlist pool of 5 only, not broader market ranks.",
+            "source": "qloo"
+          }
+        ],
+        "unknowns": [
+          "Booking willingness, fees, dates, and availability were checked outside this tool and are not verified here.",
+          "The target-side Qloo rank may aggregate Lorde and Lana Del Rey reference listeners; it is unknown whether each reference audience would react the same way.",
+          "The Qloo affinity ranks do not establish ticket demand, revenue, or new audience growth.",
+          "The vetoed act beabadoobee is excluded by the team and is not assessed.",
+          "The exact weighting or methodology behind the Qloo rank order is not provided."
+        ]
+      },
+      "ms": 29232,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "edited_references",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "beabadoobee",
+        "Arlo Parks"
+      ],
+      "vetoed": [
+        "Japanese Breakfast"
+      ],
+      "brief": {
+        "priority": "Faye Webster",
+        "backups": [
+          "Weyes Blood",
+          "Snail Mail"
+        ],
+        "headlinerSide": "On the Mitski-core side, Faye Webster is a rank-2 fit, behind Snail Mail at rank 1. Snail Mail is the clearer Mitski-core act because of guitar-driven indie-rock adjacency. Faye Webster still fits because her indie folk/soft-rock and bedroom-pop songwriting sits in the same introspective indie lane that Mitski's audience follows. She is not the strongest or closest Mitski-core match; Snail Mail is.",
+        "targetSide": "On the Lorde/Lana target side, Faye Webster is a rank-2 fit, behind Weyes Blood at rank 1. Weyes Blood is the clearer target-side act because of art-pop/baroque-pop and cinematic singer-songwriter adjacency to Lorde and Lana Del Rey. Faye Webster still fits because her dreamy, melancholic songwriting can travel to Lorde's introspective pop audience and Lana's softer atmospheric side. She is not the strongest or closest target-side match; Weyes Blood is.",
+        "answer": "Among the shortlist, Faye Webster is the most defensible balance pick for simultaneous acceptance by Mitski's core listeners and Lorde's listeners. She is not the leader on either side: Snail Mail ranks higher for Mitski's core, and Weyes Blood ranks higher for the Lorde/Lana target side. Faye Webster is useful because she is high on both sides rather than dominant on one. If the team wants a target-side-led first alternative, Weyes Blood is the first backup. If it wants a headliner-side-led first alternative, Snail Mail is the first backup. No Qloo data is available in this version, so this brief relies on general_knowledge. Taste affinity is not ticket demand and does not prove new audience growth.",
+        "evidence": [
+          {
+            "claim": "No Qloo evidence is available in this version.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Mitski's core audience is generally associated with indie rock, art pop, and introspective singer-songwriter music.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lorde's audience is generally associated with alt-pop/art-pop and introspective electronic pop; Lana Del Rey's audience is associated with baroque pop, dream pop, and cinematic singer-songwriter music.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "On the shortlist, Snail Mail is the strongest Mitski-core fit because of guitar-driven indie-rock adjacency.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "On the shortlist, Weyes Blood is the strongest Lorde/Lana-side fit because of art-pop/baroque-pop and cinematic singer-songwriter adjacency.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Faye Webster sits between those poles: indie folk/soft rock and bedroom-pop songwriting adjacent to Mitski, with a dreamy, melancholic tone that can travel to Lorde/Lana listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The priority is a balance between sides and must not be called best, closest, or strongest on a side where another act ranks higher; that higher-ranked act must be named instead.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo data is available, so all affinity claims are general_knowledge only.",
+          "Actual ticket demand, booking fees, dates, and willingness are outside this tool and unverified.",
+          "The specific market-level overlap between Mitski's core listeners and Lorde's listeners is unknown.",
+          "Whether Faye Webster's recorded affinity translates into live-ticket conversion for this headliner is unknown.",
+          "Past support slots or collaborations are not used as evidence here."
+        ]
+      },
+      "ms": 57047,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H1",
+      "step": "edited_references",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "beabadoobee",
+        "Arlo Parks"
+      ],
+      "vetoed": [
+        "Japanese Breakfast"
+      ],
+      "brief": {
+        "priority": "Arlo Parks",
+        "backups": [
+          "Weyes Blood",
+          "beabadoobee"
+        ],
+        "headlinerSide": "On the Mitski-core side, Snail Mail ranks above Arlo Parks as a direct guitar/indie-rock fit; Faye Webster also ranks above Arlo Parks as a direct indie singer-songwriter fit. Arlo Parks ranks below those two on this side, but remains adjacent through introspective indie-pop/R&B and confessional songwriting, and general knowledge says she has past support exposure to Mitski.",
+        "targetSide": "On the target side, Arlo Parks is a plausible Lorde-listener fit: general knowledge says she has past support exposure to Lorde, and both sit in introspective alt-pop/indie-pop space. Without Qloo data I cannot rank her as the strongest Lorde-side act; beabadoobee is another plausible Lorde-side indie-pop option. For Lana Del Rey listeners, Weyes Blood ranks above Arlo Parks as a more direct baroque/dream-pop fit, so Arlo Parks is a Lorde-leaning bridge rather than the top Lana-side option.",
+        "answer": "Evaluate Arlo Parks first as the most defensible balance for the Mitski-core + Lorde-listener question, using general knowledge only because no Qloo data is available. She is not the strongest Mitski-core fit on this shortlist—Snail Mail is more direct—and she is not the strongest Lana Del Rey-side fit—Weyes Blood is more direct—but her introspective indie-pop/R&B profile, plus general-knowledge past support exposure to both Mitski and Lorde, makes her the most plausible shortlist bridge between Mitski's core audience and Lorde's audience. Backups to evaluate next: Weyes Blood for the Lana-side target and beabadoobee as another Lorde-side indie-pop option. Confirm actual audience overlap, ticket demand, fees, dates, and willingness outside this tool.",
+        "evidence": [
+          {
+            "claim": "No Qloo evidence was supplied in this version, so no qloo-sourced affinity claims are made.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Mitski's core audience is generally associated with confessional indie singer-songwriter, guitar/art-pop, and intense live performance.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lorde's audience is generally associated with alt-pop/electropop and introspective, literary songwriting.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lana Del Rey's audience is generally associated with cinematic, baroque/dream-pop and melancholic retro-Americana.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Snail Mail is a more direct Mitski-core guitar/indie-rock fit than Arlo Parks on this shortlist.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Faye Webster is a more direct indie singer-songwriter fit for the Mitski-core side than Arlo Parks on this shortlist.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Weyes Blood is a more direct Lana Del Rey-side baroque/dream-pop fit than Arlo Parks on this shortlist.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Arlo Parks works in introspective indie-pop/R&B, a profile that can sit between Mitski's singer-songwriter audience and Lorde's alt-pop audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Arlo Parks has been used as support by both Mitski and Lorde in past tour cycles, per general knowledge; this is an exposure/affinity signal, not proof of current willingness, ticket demand, or new audience growth.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "beabadoobee works in indie-pop/rock with bedroom-pop and alternative-rock touchpoints, making her another plausible Lorde-side indie-pop option.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "Actual cross-audience overlap between Mitski, Lorde, and Lana Del Rey listeners is not measured here without Qloo data.",
+          "Ticket demand and new audience growth cannot be inferred from taste affinity.",
+          "Booking fees, dates, and willingness are checked outside this tool and are not known here.",
+          "Local market audience composition for Mitski and Lorde is unknown.",
+          "Current availability and routing for each shortlist act are unknown."
+        ]
+      },
+      "ms": 105874,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    }
+  ],
+  "qlooToolCalls": {
+    "qloo_describe": 17,
+    "qloo_rank": 4,
+    "qloo_compare_audiences": 6
+  },
+  "ms": 248558
+}

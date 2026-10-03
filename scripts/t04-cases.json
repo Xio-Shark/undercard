@@ -1,0 +1,55 @@
+{
+  "_note": "Mirror of D1/D2 in Task/evidence/T04-cases.md (frozen 2026-10-03 before the first API call). Hypothetical scenarios with public artists. H1-H3 are held out and intentionally absent. v2 (2026-10-03): D2 'Altın Gün' returned needs_input; confirmed as Qloo entity 'Altin Gün' (31DA05F2…), see T04-cases.md.",
+  "cases": [
+    {
+      "id": "D1",
+      "headliner": "Phoebe Bridgers",
+      "references": [
+        "Olivia Rodrigo"
+      ],
+      "shortlist": [
+        "Lucy Dacus",
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo",
+        "Gracie Abrams"
+      ],
+      "veto": "dates",
+      "modifiedReferences": [
+        "Olivia Rodrigo",
+        "Billie Eilish"
+      ],
+      "question": "团队想在巡演里接触更偏流行的年轻听众。这 5 人里，谁在不明显牺牲头牌现有粉丝的前提下最靠近 Olivia Rodrigo 的受众？两侧的依据分别是什么？"
+    },
+    {
+      "id": "D2",
+      "headliner": "Khruangbin",
+      "references": [
+        "Tame Impala",
+        "Mac DeMarco",
+        "Unknown Mortal Orchestra"
+      ],
+      "shortlist": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altın Gün",
+        "L'Impératrice",
+        "Crumb",
+        "Babe Rainbow"
+      ],
+      "veto": "fee",
+      "modifiedReferences": [
+        "Tame Impala",
+        "Unknown Mortal Orchestra"
+      ],
+      "confirmed": {
+        "Altın Gün": "31DA05F2-0096-4209-94FA-3AE331190494"
+      },
+      "question": "团队想把 Khruangbin 的器乐 groove 听众和更偏迷幻摇滚/卧室流行的听众连起来。10 人里谁两侧都不吃亏？三参考组能否给出可解释的受众差异？"
+    }
+  ]
+}

@@ -1,0 +1,1413 @@
+{
+  "case": "D2",
+  "model": "deepseek-flash",
+  "runsPerVersion": 2,
+  "qloo": {
+    "initial": {
+      "notRankable": [
+        "L'Impératrice"
+      ],
+      "table": [
+        {
+          "name": "Crumb",
+          "headlinerRank": 4,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Babe Rainbow",
+          "headlinerRank": 5,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "Thee Sacred Souls",
+          "headlinerRank": 2,
+          "targetRank": 5,
+          "tied": false
+        },
+        {
+          "name": "Glass Beams",
+          "headlinerRank": 1,
+          "targetRank": 7,
+          "tied": false
+        },
+        {
+          "name": "Parcels",
+          "headlinerRank": 7,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Men I Trust",
+          "headlinerRank": 8,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Altin Gün",
+          "headlinerRank": 6,
+          "targetRank": 8,
+          "tied": false
+        },
+        {
+          "name": "Hermanos Gutiérrez",
+          "headlinerRank": 3,
+          "targetRank": 9,
+          "tied": false
+        },
+        {
+          "name": "Bahamas",
+          "headlinerRank": 9,
+          "targetRank": 6,
+          "tied": false
+        }
+      ],
+      "priority": "Crumb"
+    },
+    "afterVeto": {
+      "vetoed": "Crumb",
+      "table": [
+        {
+          "name": "Babe Rainbow",
+          "headlinerRank": 5,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "Thee Sacred Souls",
+          "headlinerRank": 2,
+          "targetRank": 5,
+          "tied": false
+        },
+        {
+          "name": "Glass Beams",
+          "headlinerRank": 1,
+          "targetRank": 7,
+          "tied": false
+        },
+        {
+          "name": "Parcels",
+          "headlinerRank": 7,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Men I Trust",
+          "headlinerRank": 8,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Altin Gün",
+          "headlinerRank": 6,
+          "targetRank": 8,
+          "tied": false
+        },
+        {
+          "name": "Hermanos Gutiérrez",
+          "headlinerRank": 3,
+          "targetRank": 9,
+          "tied": false
+        },
+        {
+          "name": "Bahamas",
+          "headlinerRank": 9,
+          "targetRank": 6,
+          "tied": false
+        }
+      ],
+      "priority": "Babe Rainbow",
+      "explanationRefetched": true
+    },
+    "editedReferences": {
+      "references": [
+        "Tame Impala",
+        "Unknown Mortal Orchestra"
+      ],
+      "notRankable": [],
+      "table": [
+        {
+          "name": "Babe Rainbow",
+          "headlinerRank": 4,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "Thee Sacred Souls",
+          "headlinerRank": 2,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Glass Beams",
+          "headlinerRank": 1,
+          "targetRank": 6,
+          "tied": false
+        },
+        {
+          "name": "Parcels",
+          "headlinerRank": 6,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Men I Trust",
+          "headlinerRank": 7,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Altin Gün",
+          "headlinerRank": 5,
+          "targetRank": 7,
+          "tied": false
+        },
+        {
+          "name": "Hermanos Gutiérrez",
+          "headlinerRank": 3,
+          "targetRank": 8,
+          "tied": false
+        },
+        {
+          "name": "Bahamas",
+          "headlinerRank": 8,
+          "targetRank": 5,
+          "tied": false
+        }
+      ],
+      "priority": "Babe Rainbow",
+      "change": {
+        "kind": "new_query",
+        "trigger": "Target references: Tame Impala, Mac DeMarco, Unknown Mortal Orchestra → Tame Impala, Unknown Mortal Orchestra",
+        "priorityBefore": "Babe Rainbow",
+        "priorityAfter": "Babe Rainbow",
+        "at": "2026-10-03T08:10:31.509Z"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "case": "D2",
+      "step": "initial",
+      "version": "qloo",
+      "inPlay": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Crumb",
+        "Babe Rainbow"
+      ],
+      "vetoed": [],
+      "rulePriority": "Crumb",
+      "run": 1,
+      "brief": {
+        "priority": "Crumb",
+        "backups": [
+          "Babe Rainbow",
+          "Thee Sacred Souls"
+        ],
+        "headlinerSide": "On the headliner side Crumb is a mid-pack fit, not the leader: it ranks 4th of 9 in this pool, and Glass Beams (1st), Thee Sacred Souls (2nd) and Hermanos Gutiérrez (3rd) all rank above it on that side. What it does carry toward Khruangbin's audience is rhythmic and textural — shared tags with the headliner include Drums, United States and Folk (0.98) and United Kingdom (0.9), plus 0.73-level overlaps in Funk, Bass Guitar, Experimental and Sitar. The headliner-side-only tags (Funk, Groovy, Instrumental, Psychedelic Rock, Bass Guitar, Funky, Adventurous, Usa) describe the instrumental-groove surface Crumb does not lead on, while Crumb's own side-only tags versus the headliner (Dreamy, Ethereal, Saxophone, Youthful, Relationships, Dreams, Existentialism, Guitar) point to a softer, more vocal-and-dreamy register. So on this side it reads as adjacent rather than matching.",
+        "targetSide": "On the target side Crumb ranks 2nd of 9 — a high position but not the top one; Babe Rainbow ranks 1st there, so Crumb is not the strongest target-side act. Within this pool, Crumb shares Indie, Alternative Rock, Post Punk, Electronic, Guitar, Drums, Folk and Funk with the pooled target set (0.73 each), and it brings target-side-only tags Dreamy, Ethereal, Saxophone, Dreams, Laid-back, Youthful, Bass and Psychedelic Pop — the dreamy/psych-pop register the three reference artists are generally associated with. It is therefore a plausible bridge to that audience, but not the leading one.",
+        "answer": "Take Crumb first. It is the balance pick, not the leader on either side: it ranks 2nd of 9 on the target side and 4th of 9 on the headliner side, a worst-side rank of 4, which is the lowest worst-side rank in this pool; the product rule (lowest worst-side rank, then rank sum) fixed it as priority. Concretely, Babe Rainbow outranks it on the target side (1st) and Glass Beams outranks it on the headliner side (1st), so neither side is where Crumb wins — it is where the two sides come closest to meeting without either ranking collapsing. Backups were likewise fixed by the rule: Babe Rainbow (target 1st, headliner 5th) and Thee Sacred Souls (headliner 2nd, target 5th); each has a worst-side rank of 5, looser than Crumb's 4, and they are lopsided in opposite directions. On the second question: the Qloo evidence supplied here compares the priority against the three reference artists as one pooled target set and gives no per-artist breakdown, so it cannot explain what separates Tame Impala listeners from Mac DeMarco listeners from Unknown Mortal Orchestra listeners. That difference is not answerable from this evidence and would need separate runs against each reference artist. Treat all of the above as taste affinity only — it is not ticket demand and does not show new audience growth, and booking fees, dates and willingness were checked outside this tool and are not claimed here.",
+        "evidence": [
+          {
+            "claim": "In this pool of 9, Crumb ranks 4th on the headliner side and 2nd on the target side, giving a worst-side rank of 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The priority and backups were fixed by the product rule: lowest worst-side rank first, then rank sum, and must not be changed.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Glass Beams ranks 1st of 9 on the headliner side and 7th on the target side, so it outranks Crumb on the headliner side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Thee Sacred Souls ranks 2nd of 9 on the headliner side and 5th on the target side; Hermanos Gutiérrez ranks 3rd on the headliner side and 9th on the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Babe Rainbow ranks 1st of 9 on the target side and 5th on the headliner side, so it outranks Crumb on the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Crumb and the headliner share tags Drums, United States and Folk at 0.98 and United Kingdom at 0.9, plus Funk, Bass Guitar, Experimental and Sitar at 0.73.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Headliner-only tags relative to Crumb are Funk, Adventurous, Psychedelic Rock, Bass Guitar, Funky, Groovy, Instrumental and Usa; Crumb-only tags relative to the headliner are Dreamy, Relationships, Ethereal, Saxophone, Dreams, Existentialism, Guitar and Youthful.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Crumb and the pooled target set share Post Punk, Alternative Rock, Indie, United States, Electronic, United Kingdom, Drums, Folk, Guitar and Funk at 0.73 each.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Target-only tags relative to Crumb are Love, Melodic, Drums, Engaging, Keyboards, Bass Guitar, Synthesizers and Creative; Crumb-only tags relative to the target set are Dreamy, Ethereal, Saxophone, Dreams, Laid-back, Youthful, Bass and Psychedelic Pop.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The Qloo comparison pits the priority against the three reference artists as a single pooled target set and reports no per-artist breakdown for Tame Impala, Mac DeMarco or Unknown Mortal Orchestra.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Ranks are positions within this 9-act pool only, so they carry no information about absolute audience size or ticket demand.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Shared tags are similarity hints, not causes of audience overlap.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth; booking fees, dates and willingness are checked outside this tool.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Khruangbin is generally described as a Houston-based trio playing largely instrumental groove music that draws on funk, soul, dub and Thai/Middle Eastern guitar, while Tame Impala, Mac DeMarco and Unknown Mortal Orchestra are generally placed in psych rock, psych pop and bedroom-pop-adjacent indie.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Crumb is generally described as a US band in a dreamy, mildly psychedelic indie/psych-pop register, which lines up with the Qloo Crumb-only tags Dreamy, Ethereal, Laid-back and Psychedelic Pop.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "The team's question refers to 10 candidates, but the shortlist supplied here names 9 acts and the Qloo pool contains 9; it is unclear whether one candidate is missing from this view.",
+          "The three reference artists are pooled into one target set in the supplied evidence, so no per-artist audience differences can be derived; separate runs against Tame Impala, Mac DeMarco and Unknown Mortal Orchestra individually would be needed.",
+          "The evidence does not say how much of each shared tag is driven by region, instrument or genre, and shared tags are similarity hints rather than causes.",
+          "Whether Crumb (or any candidate) actually converts Khruangbin's groove listeners toward the psych-rock/bedroom-pop references, and whether that adds new audience, cannot be inferred from taste affinity alone.",
+          "Booking fees, availability, dates, routing, willingness and ticket demand were not checked in this tool and are not claimed here.",
+          "Ranks are relative positions inside this 9-act pool only; they do not indicate absolute affinity levels or audience sizes.",
+          "Backups Babe Rainbow and Thee Sacred Souls tie on worst-side rank 5 but are lopsided in opposite directions, so the ordering between them rests on the rank-sum tiebreak alone."
+        ]
+      },
+      "ms": 31300,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "initial",
+      "version": "qloo",
+      "inPlay": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Crumb",
+        "Babe Rainbow"
+      ],
+      "vetoed": [],
+      "rulePriority": "Crumb",
+      "run": 2,
+      "brief": {
+        "priority": "Crumb",
+        "backups": [
+          "Babe Rainbow",
+          "Thee Sacred Souls"
+        ],
+        "headlinerSide": "Crumb is rank 4 on the headliner side (qloo). It is not the top of this side: Glass Beams ranks 1, Thee Sacred Souls 2, and Hermanos Gutiérrez 3, all ahead of Crumb (qloo). Qloo headliner-vs-Crumb shared tags include Drums, United States, Folk, United Kingdom, Energetic, Funk, Varied, Bass Guitar, Experimental, and Sitar (qloo). Headliner-only tags relative to Crumb include Funk, Adventurous, Psychedelic Rock, Bass Guitar, Funky, Groovy, Instrumental, and Usa, while Crumb-only tags relative to the headliner include Dreamy, Relationships, Ethereal, Saxophone, Dreams, Existentialism, Guitar, and Youthful (qloo). These tags are similarity hints, not causes (product_rule).",
+        "targetSide": "Crumb is rank 2 on the target side (qloo). It is not the top of this side: Babe Rainbow ranks 1, ahead of Crumb; Crumb is ahead of Men I Trust 3, Parcels 4, and Thee Sacred Souls 5 (qloo). Qloo target-vs-Crumb shared tags include Post Punk, Alternative Rock, Indie, United States, Electronic, United Kingdom, Drums, Folk, Guitar, and Funk (qloo). Target-only tags relative to Crumb include Love, Melodic, Drums, Engaging, Keyboards, Bass Guitar, Synthesizers, and Creative; Crumb-only tags relative to the target include Dreamy, Ethereal, Saxophone, Dreams, Laid-back, Youthful, Bass, and Psychedelic Pop (qloo). These tags are similarity hints, not causes (product_rule).",
+        "answer": "Use Crumb as the first candidate to evaluate; backups are Babe Rainbow and Thee Sacred Souls (product_rule). This is a product-rule ordering, not a claim about booking fees, dates, willingness, ticket demand, or new audience growth (product_rule). Crumb is rank 4 on the headliner side and rank 2 on the target side, with worst rank 4, lower than the backups' worst rank 5 (qloo). Crumb is not top on either side: Glass Beams is headliner-side rank 1, and Babe Rainbow is target-side rank 1 (qloo). The three target reference artists are aggregated in the provided Qloo evidence, so Qloo does not give separate audience differences for Tame Impala, Mac DeMarco, and Unknown Mortal Orchestra (qloo); general knowledge can describe broad genre differences, but that is not Qloo evidence and does not prove new audience growth (general_knowledge/product_rule). The provided shortlist has nine acts, while the question says 10 people (qloo: rankNote says ranks are in this pool of 9).",
+        "evidence": [
+          {
+            "claim": "Qloo ranks within this pool: Crumb headlinerRank 4, targetRank 2, worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Product rule selected Crumb as priority and Babe Rainbow and Thee Sacred Souls as backups; priority is not tied with next.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "On the headliner side, Glass Beams ranks 1, Thee Sacred Souls 2, Hermanos Gutiérrez 3, and Crumb 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "On the target side, Babe Rainbow ranks 1, Crumb 2, Men I Trust 3, Parcels 4, and Thee Sacred Souls 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Babe Rainbow has headlinerRank 5 and targetRank 1, worstRank 5; Thee Sacred Souls has headlinerRank 2 and targetRank 5, worstRank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Crumb's worst side rank 4 is lower than Babe Rainbow's and Thee Sacred Souls's worst side rank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo headliner-vs-Crumb shared tags include Drums, United States, Folk, United Kingdom, Energetic, Funk, Varied, Bass Guitar, Experimental, and Sitar.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo headliner-only tags relative to Crumb include Funk, Adventurous, Psychedelic Rock, Bass Guitar, Funky, Groovy, Instrumental, and Usa; Crumb-only tags relative to the headliner include Dreamy, Relationships, Ethereal, Saxophone, Dreams, Existentialism, Guitar, and Youthful.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo target-vs-Crumb shared tags include Post Punk, Alternative Rock, Indie, United States, Electronic, United Kingdom, Drums, Folk, Guitar, and Funk.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo target-only tags relative to Crumb include Love, Melodic, Drums, Engaging, Keyboards, Bass Guitar, Synthesizers, and Creative; Crumb-only tags relative to the target include Dreamy, Ethereal, Saxophone, Dreams, Laid-back, Youthful, Bass, and Psychedelic Pop.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The provided Qloo evidence does not give separate ranks or tags for Tame Impala, Mac DeMarco, and Unknown Mortal Orchestra; it aggregates the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "General knowledge: Tame Impala is commonly associated with psychedelic rock/pop; Mac DeMarco with slacker/bedroom pop and jangle; Unknown Mortal Orchestra with psychedelic rock/indie funk.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are outside this tool and not assessed.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Shared tags are similarity hints, not causes.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo rankNote says ranks are positions in this pool of 9.",
+            "source": "qloo"
+          }
+        ],
+        "unknowns": [
+          "The shortlist in play has nine acts, not ten; the team question says 10 people (qloo: rankNote says pool of 9).",
+          "No per-reference-artist Qloo split is available for Tame Impala, Mac DeMarco, or Unknown Mortal Orchestra; the target side is aggregated (qloo).",
+          "Qloo target-vs-Crumb tag lists appear to include Drums in both sharedTags and onlyGroup; treat as a possible tagging inconsistency (qloo).",
+          "Booking fees, dates, willingness, venue, and ticket demand are not provided or assessed (product_rule).",
+          "Taste affinity does not prove new audience growth (product_rule).",
+          "The product rule prioritizes worst side rank, then rank sum; it does not measure actual audience overlap or conversion (product_rule).",
+          "The three reference artists are a reference set, not a measured target audience segment in the provided evidence (qloo)."
+        ]
+      },
+      "ms": 55940,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "initial",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Crumb",
+        "Babe Rainbow"
+      ],
+      "vetoed": [],
+      "brief": {
+        "priority": "Crumb",
+        "backups": [
+          "Men I Trust",
+          "Glass Beams"
+        ],
+        "headlinerSide": "Crumb fits Khruangbin's current audience through psychedelic and jazzy guitar textures, groove-oriented rhythm, and a hazy indie-psych mood. Literally by rank on this side, it is not the closest shortlist match: Glass Beams and Hermanos Gutiérrez rank above Crumb for instrumental groove and Khruangbin-adjacent global/psych texture. Crumb is therefore a bridge candidate, not the top headliner-side booking.",
+        "targetSide": "Crumb fits the target audience through overlap with Unknown Mortal Orchestra and Tame Impala-style psych-pop and with bedroom-pop/indie textures. Literally by rank on this side, it is not the top bedroom-pop/Mac DeMarco-adjacent shortlist act: Men I Trust ranks above Crumb for dream-pop/bedroom-pop softness. Crumb sits closer to the psych-rock/UMO axis than to the Mac DeMarco slacker-pop axis.",
+        "answer": "The defensible priority is Crumb, with Men I Trust and Glass Beams as backups. It is a balance pick, not a top pick on either side: Glass Beams and Hermanos Gutiérrez are more literal Khruangbin-side instrumental-groove acts, while Men I Trust is more directly Mac DeMarco/bedroom-pop. The three reference artists do give an explainable audience split: Tame Impala, Mac DeMarco, and Unknown Mortal Orchestra point to psych-rock/pop, slacker/bedroom pop, and psych-funk/bedroom-pop respectively. So the shortlist should be read as a segmentation problem, not one target bloc. Verify fees, dates, and willingness outside this tool.",
+        "evidence": [
+          {
+            "claim": "Khruangbin's headliner side is defined by instrumental groove, psych-soul, funk, dub, and global-music textures; this makes instrumental-groove acts the most literal headliner-side shortlist matches.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Glass Beams and Hermanos Gutiérrez rank above Crumb for literal Khruangbin-side instrumental groove: Glass Beams for instrumental psych-funk/global groove, Hermanos Gutiérrez for atmospheric instrumental guitar.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Crumb blends psychedelic pop, indie rock, dream-pop, and jazzy groove, which gives it a two-sided bridge profile.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Men I Trust ranks above Crumb on the Mac DeMarco-adjacent bedroom-pop/dream-pop dimension.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Tame Impala, Mac DeMarco, and Unknown Mortal Orchestra are not one audience bloc: Tame Impala leans psych-rock/pop and festival synths; Mac DeMarco leans slacker/bedroom pop and lo-fi guitar; Unknown Mortal Orchestra leans psych-funk/groove with bedroom-pop songwriting.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "No Qloo evidence is available in this version, so no claim is sourced to qloo.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Only shortlist acts are considered, and no booking fees, dates, or willingness are claimed.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity with these reference artists does not prove ticket demand or new audience growth.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Actual live draw of Crumb, Men I Trust, and Glass Beams in Khruangbin's target markets.",
+          "Whether the local target audience skews more Tame Impala, Mac DeMarco, or Unknown Mortal Orchestra.",
+          "Booking fees, availability, routing, and willingness for every shortlist act.",
+          "Venue capacity, curfew, and production fit for a support slot.",
+          "Whether the goal is new-audience growth or existing-headliner satisfaction.",
+          "Qloo affinity data, which is absent in this version.",
+          "Conversion of support-act fans into Khruangbin ticket buyers."
+        ]
+      },
+      "ms": 49335,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "initial",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Crumb",
+        "Babe Rainbow"
+      ],
+      "vetoed": [],
+      "brief": {
+        "priority": "Men I Trust",
+        "backups": [
+          "Crumb",
+          "Parcels"
+        ],
+        "headlinerSide": "On the Khruangbin side Men I Trust is a mid-pack, not a top, match. Its bass-forward, unhurried grooves and sparse arrangements sit nearer Khruangbin's instrumental groove space than most vocal-led acts on the shortlist, but on that side Glass Beams ranks closer to Khruangbin itself (instrumental, groove-led, texture-driven, no vocal centre), and Hermanos Gutiérrez also ranks closer (instrumental guitar duo in the same desert/Latin instrumental register). Thee Sacred Souls and Parcels rank at or above Men I Trust on pure groove. So the headliner-side case for Men I Trust is 'compatible', not 'strongest' — the strongest headliner-side names are Glass Beams and Hermanos Gutiérrez.",
+        "targetSide": "On the target side Men I Trust is the closest match to the bedroom-pop half of the reference set: hazy guitars, soft close-mic vocals and lo-fi-adjacent production that reads directly into Mac DeMarco's register and partly into Unknown Mortal Orchestra's psych-pop. It is not the closest to the psych-rock half: Crumb and Altin Gün rank closer to Tame Impala's guitar-and-synth psychedelia, and Tame Impala's big-room psych-pop scale is not something Men I Trust matches. The three reference artists are also not one audience — Tame Impala and UMO sit at a psych-rock/psych-pop pole while Mac DeMarco sits at a bedroom-pop pole, so any single support act will only touch part of the reference set.",
+        "answer": "Defensible pick: Men I Trust as priority, with Crumb and Parcels as backups. It is the one name on the shortlist that is closer to the bedroom-pop pole (Mac DeMarco, and partly UMO) while still carrying the bass-led, unhurried groove that Khruangbin's audience listens for — but be explicit that it loses on the headliner side to Glass Beams and Hermanos Gutiérrez, and loses on the psych-rock pole to Crumb and Altin Gün. If the team weights the Khruangbin instrumental-groove side more heavily, Glass Beams or Hermanos Gutiérrez is the honest headliner-side answer, at the cost of the bedroom-pop bridge; if it weights Tame Impala-style psych rock, Crumb or Altin Gün is the better lever. On the second question: yes, the three references can be explained, but as two poles rather than one audience — Tame Impala and Unknown Mortal Orchestra (psych rock / psych pop) versus Mac DeMarco (bedroom pop / lo-fi). That split is a taste and positioning reading, not a demand forecast, and no Qloo evidence is available in this version to quantify it.",
+        "evidence": [
+          {
+            "claim": "Khruangbin's audience is built around instrumental groove, dub/Thai-funk/soul texture and low-vocal, texture-led listening.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Tame Impala is psych rock/pop with synth-led production and a large festival-scale audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Mac DeMarco is bedroom pop / lo-fi jangle, small-scale and vocal-and-guitar centred.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Unknown Mortal Orchestra is psych pop with falsetto vocals and funk/soul undertones, sitting between a psych pole and a groove pole.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "The three reference artists do not form one audience bloc: Tame Impala and UMO occupy a psych-rock/psych-pop pole, Mac DeMarco occupies a bedroom-pop pole.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Men I Trust is dream pop / bedroom pop with bass-forward, hazy production and soft vocals, with audience overlap toward Mac DeMarco-style bedroom pop and partly toward UMO.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Glass Beams is instrumental, groove-led and psychedelic, making it the closest shortlist act to Khruangbin on the headliner side, but it offers no vocal or bedroom-pop bridge.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Hermanos Gutiérrez is an instrumental guitar duo in a desert/Latin instrumental register — strong headliner-side texture, no bedroom-pop link.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Altin Gün is Turkish psych / Anatolian rock, ranking closer to the Tame Impala psych-rock pole than Men I Trust does.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Crumb is a psych-rock / dream-pop hybrid with jazz and synth elements, ranking closer to the psych-rock pole than Men I Trust while retaining dream-pop appeal.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Parcels is disco/funk groove with pop songwriting — strong on the groove side, weaker on the bedroom-pop side.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Bahamas (indie folk / soft rock) and Babe Rainbow (psych surf pop) sit outside the core of both poles on the shortlist as described.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new-audience growth; no demand claim should be derived from the affinity reasoning above.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates and willingness are verified by the team outside this tool and are never asserted here.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "No Qloo evidence is available in this version, so no Qloo affinity or audience-overlap score is cited.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo evidence in this version, so cross-audience affinity between Khruangbin, the three reference artists and each shortlist act is unquantified.",
+          "Actual ticket demand, conversion of support-slot exposure into new audience, and local market-by-market pull for each candidate are unverified.",
+          "Booking fees, availability and willingness for the 10 shortlisted acts are checked outside this tool and are not known here.",
+          "The relative weight the team puts on the instrumental-groove side versus the psych-rock/bedroom-pop side is unspecified.",
+          "Whether the team prefers a vocal-led act (to bridge toward bedroom pop) or an instrumental act (to hold the Khruangbin audience) is unspecified.",
+          "Whether the reference set should be treated as two poles or one blended audience is an interpretation, not a measured fact."
+        ]
+      },
+      "ms": 27897,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "after_veto",
+      "version": "qloo",
+      "inPlay": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Babe Rainbow"
+      ],
+      "vetoed": [
+        "Crumb"
+      ],
+      "rulePriority": "Babe Rainbow",
+      "run": 1,
+      "brief": {
+        "priority": "Babe Rainbow",
+        "backups": [
+          "Thee Sacred Souls",
+          "Glass Beams"
+        ],
+        "headlinerSide": "Qloo ranks: Babe Rainbow is headlinerRank 5, targetRank 1, worstRank 5. On the headliner side, it is not the leader: Glass Beams is headlinerRank 1, Thee Sacred Souls is headlinerRank 2, and Hermanos Gutiérrez is headlinerRank 3, all ahead of Babe Rainbow's headlinerRank 5. Qloo shared tags between Khruangbin and Babe Rainbow include United States, Jazz, Innovative, United Kingdom, Blues, Ragtime, Drums, Soul, Spirituals, and Folk. Khruangbin-only tags include Funk, Adventurous, Psychedelic Rock, Bass Guitar, Funky, Eclectic, Groovy, and Instrumental; Babe Rainbow-only tags include Dreamy, Retro-Inspired, Vibrant, Engaging, Guitar, Escapism, Youthful, and Experimental. These are similarity hints, not causes.",
+        "targetSide": "Qloo ranks: Babe Rainbow is targetRank 1. Next on the target side are Men I Trust at targetRank 3, Parcels at targetRank 4, and Thee Sacred Souls at targetRank 5. Qloo shared tags between the target audience reference artists and Babe Rainbow include Experimental, Rock, Futurism, Jazz, Unconventional, Avant Garde, Classical, Electronic, United Kingdom, and Modernism. Target-only tags include Love, Melodic, DedicateD, Drums, Indie, Relationships, Existentialism, and Bass Guitar; Babe Rainbow-only tags include Dreamy, Retro-Inspired, Laid-back, Vibrant, Escapism, Youthful, Experimental, and Bass. This supports target-side fit as taste affinity, not ticket demand.",
+        "answer": "Product rule: within the remaining shortlist, evaluate Babe Rainbow first; backups are Thee Sacred Souls and Glass Beams. Qloo ranks: Babe Rainbow has targetRank 1 and headlinerRank 5, so its worst side rank is 5, tied with Thee Sacred Souls; product rule then uses rank sum, where Babe Rainbow is 6, Thee Sacred Souls is 7, and Glass Beams is 8. On the headliner side, Babe Rainbow is not the leader; Glass Beams is headlinerRank 1, Thee Sacred Souls is headlinerRank 2, and Hermanos Gutiérrez is headlinerRank 3. On the target side, Babe Rainbow is targetRank 1. On the three reference groups: Qloo provides one aggregate targetRank against Tame Impala, Mac DeMarco, and Unknown Mortal Orchestra, not separate per-artist ranks, so this evidence can explain aggregate shared tags but cannot defensibly separate the three reference audiences. General knowledge can describe Tame Impala as psych/electronic rock, Mac DeMarco as bedroom-pop/indie, and Unknown Mortal Orchestra as psych/art rock, but that is qualitative and not a Qloo per-artist ranking. Booking fees, dates, and willingness are outside this tool and are not claimed here.",
+        "evidence": [
+          {
+            "claim": "Product rule selected Babe Rainbow as priority, with backups Thee Sacred Souls and Glass Beams.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo ranks: Babe Rainbow has headlinerRank 5, targetRank 1, worstRank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo ranks: Thee Sacred Souls has headlinerRank 2, targetRank 5, worstRank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo ranks: Glass Beams has headlinerRank 1, targetRank 7, worstRank 7.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo ranks: on the headliner side, Glass Beams is rank 1, Thee Sacred Souls rank 2, Hermanos Gutiérrez rank 3, and Babe Rainbow rank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo ranks: on the target side, Babe Rainbow is rank 1, Men I Trust rank 3, Parcels rank 4, and Thee Sacred Souls rank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags for Khruangbin vs Babe Rainbow include United States, Jazz, Innovative, United Kingdom, Blues, Ragtime, Drums, Soul, Spirituals, and Folk.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags for target audience vs Babe Rainbow include Experimental, Rock, Futurism, Jazz, Unconventional, Avant Garde, Classical, Electronic, United Kingdom, and Modernism.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo evidence provides a single targetRank aggregate against the three target reference artists, not separate per-artist ranks.",
+            "source": "qloo"
+          },
+          {
+            "claim": "General knowledge frames Tame Impala as psych/electronic rock, Mac DeMarco as bedroom-pop/indie, and Unknown Mortal Orchestra as psych/art rock; this is qualitative and not a Qloo per-artist ranking.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity does not prove ticket demand or new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked outside this tool and are not claimed here.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "The prompt mentions 10 people, while the Qloo table lists 8 remaining candidates and notes an original pool of 9; the discrepancy is unresolved.",
+          "Booking fees, dates, and willingness are not checked in this tool.",
+          "Qloo does not provide separate per-reference-artist audience breakdowns for Tame Impala, Mac DeMarco, and Unknown Mortal Orchestra.",
+          "Shared tags are similarity hints, not causes, and do not establish new audience growth.",
+          "Taste affinity is not ticket demand."
+        ]
+      },
+      "ms": 35661,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "after_veto",
+      "version": "qloo",
+      "inPlay": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Babe Rainbow"
+      ],
+      "vetoed": [
+        "Crumb"
+      ],
+      "rulePriority": "Babe Rainbow",
+      "run": 2,
+      "brief": {
+        "priority": "Babe Rainbow",
+        "backups": [
+          "Thee Sacred Souls",
+          "Glass Beams"
+        ],
+        "headlinerSide": "Headliner side (qloo): Babe Rainbow is headlinerRank 5 in this pool, so it is not top-ranked on this side. Glass Beams is rank 1, Thee Sacred Souls rank 2, and Hermanos Gutiérrez rank 3 on the headliner side (qloo). Qloo similarity hints with Khruangbin include shared Jazz, Blues, Soul, Folk, Drums, and regions, while Khruangbin-only tags include Funk, Groovy, Instrumental, Bass Guitar, and Psychedelic Rock (qloo). General knowledge places Babe Rainbow in psychedelic/retro rock and dreamy surf/psych pop (general_knowledge). As a headliner-audience bridge it is mid-pool, not the top headliner-side option; the top headliner-side act is Glass Beams, then Thee Sacred Souls, then Hermanos Gutiérrez (qloo).",
+        "targetSide": "Target side (qloo): Babe Rainbow is targetRank 1 in this pool, the highest target-side rank among the remaining shortlist. Qloo similarity hints with the target side include shared Experimental, Rock, Jazz, Avant Garde, Electronic, Classical, Futurism, and Modernism tags; target-only tags include Indie, Melodic, Relationships, Existentialism, Drums, and Bass Guitar; Babe Rainbow-only tags include Dreamy, Retro-Inspired, Laid-back, Vibrant, Escapism, and Youthful (qloo). General knowledge places Babe Rainbow in dreamy psychedelic/retro pop, adjacent to Tame Impala and Unknown Mortal Orchestra and also compatible with Mac DeMarco's bedroom/slacker pop lane (general_knowledge).",
+        "answer": "Priority: Babe Rainbow (product_rule). It is targetRank 1, so on the target side it does not concede to any remaining shortlist act (qloo); on the headliner side it is rank 5, so it concedes to Glass Beams (rank 1), Thee Sacred Souls (rank 2), and Hermanos Gutiérrez (rank 3) (qloo). The product rule keeps it first because its worst side rank is 5, tied with Thee Sacred Souls, and then its rank sum is 6 versus 7; backups are Thee Sacred Souls (2/5) and Glass Beams (1/7) (product_rule). If the team wants the least bad two-sided balance by this rule, Babe Rainbow is the product-rule priority, but it is not without headliner-side concession. Thee Sacred Souls is more headliner-side strong (rank 2) but weaker on the target side (rank 5); Glass Beams is headliner-side rank 1 but target-side rank 7 (qloo). The three reference artists can give explainable audience differences only partly: the supplied Qloo evidence gives an aggregated target-side comparison and does not separate Tame Impala, Mac DeMarco, and Unknown Mortal Orchestra; that per-reference separation is unknown here (unknown). General knowledge can describe Tame Impala as psychedelic rock/neo-psych, Mac DeMarco as bedroom/slacker pop and indie rock, and Unknown Mortal Orchestra as psychedelic pop/experimental rock (general_knowledge). Qloo affinity is not ticket demand and does not prove new audience growth (product_rule).",
+        "evidence": [
+          {
+            "claim": "Qloo table ranks within this pool: Babe Rainbow headlinerRank 5, targetRank 1; Thee Sacred Souls 2/5; Glass Beams 1/7; Parcels 7/4; Men I Trust 8/3; Altin Gün 6/8; Hermanos Gutiérrez 3/9; Bahamas 9/6.",
+            "source": "qloo"
+          },
+          {
+            "claim": "On the headliner side, Glass Beams is rank 1, Thee Sacred Souls rank 2, and Hermanos Gutiérrez rank 3; Babe Rainbow is rank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "On the target side, Babe Rainbow is rank 1; no remaining shortlist act ranks higher on that side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Product rule selected Babe Rainbow first by worst side rank (5, tied with Thee Sacred Souls) and then by rank sum (6 vs 7); backups are Thee Sacred Souls then Glass Beams.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo headliner-vs-priority shared tags include Jazz, Blues, Soul, Folk, Drums, United States, and United Kingdom; headliner-only tags include Funk, Groovy, Instrumental, Bass Guitar, and Psychedelic Rock; candidate-only tags include Dreamy, Retro-Inspired, Vibrant, Escapism, Youthful, and Experimental.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo target-vs-priority shared tags include Experimental, Rock, Jazz, Avant Garde, Electronic, Classical, Futurism, and Modernism; target-only tags include Indie, Melodic, Relationships, Existentialism, Drums, and Bass Guitar; candidate-only tags include Dreamy, Retro-Inspired, Laid-back, Vibrant, Escapism, Youthful, Experimental, and Bass.",
+            "source": "qloo"
+          },
+          {
+            "claim": "General knowledge: Tame Impala is broadly psychedelic rock/neo-psych; Mac DeMarco is broadly slacker/bedroom pop and indie rock; Unknown Mortal Orchestra is broadly psychedelic pop/experimental rock.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "General knowledge: Khruangbin is broadly instrumental groove, global funk/soul/psych, dub, and minimal vocals.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "General knowledge: Babe Rainbow is broadly psychedelic/retro rock and dreamy surf/psych pop; Thee Sacred Souls is broadly retro soul; Glass Beams is broadly instrumental psychedelic/world fusion.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked by the team outside this tool and are not claimed here.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "The supplied Qloo evidence does not break out the target side by Tame Impala, Mac DeMarco, and Unknown Mortal Orchestra, so per-reference audience differences cannot be verified from Qloo here.",
+          "Qloo ranks are positions within the original pool of 9; one vetoed act was removed without re-ranking, so rank numbers are not contiguous.",
+          "Whether Babe Rainbow's targetRank 1 is driven by Tame Impala, Mac DeMarco, or Unknown Mortal Orchestra individually is unknown from the provided Qloo evidence.",
+          "No Qloo evidence is provided on live draw, venue, market, or conversion.",
+          "Booking fees, dates, and willingness remain outside this tool and are not assessed.",
+          "Qloo affinity and shared tags are similarity hints, not causes of audience behavior or new audience growth."
+        ]
+      },
+      "ms": 47313,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "after_veto",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Babe Rainbow"
+      ],
+      "vetoed": [
+        "Crumb"
+      ],
+      "brief": {
+        "priority": "Parcels",
+        "backups": [
+          "Men I Trust",
+          "Glass Beams"
+        ],
+        "headlinerSide": "Against Khruangbin's current instrumental-groove audience, Parcels is not the most literal fit: Glass Beams and Hermanos Gutiérrez are more directly instrumental/global-psych, and Altin Gün is more directly Turkish-psych/global groove (general_knowledge). Parcels still fits this side through groove-forward bass/drums, funk/disco rhythm, and psych-pop texture rather than vocals alone (general_knowledge). Product rule: taste affinity is not ticket demand and does not prove new audience growth (product_rule).",
+        "targetSide": "Against the Tame Impala / Mac DeMarco / Unknown Mortal Orchestra target, Parcels is not the most literal fit: Men I Trust is closer to bedroom/dream-pop and Mac DeMarco adjacency, and Babe Rainbow is closer to psych-pop/surf and Tame Impala/UMO adjacency (general_knowledge). Parcels still fits this side through psych-pop/indie-dance songwriting, melodic hooks, and festival-friendly indie appeal (general_knowledge). Product rule: the three reference artists are not one audience; they are separate lanes (product_rule).",
+        "answer": "Of the selectable shortlist, Parcels is the priority for a two-sided bridge: it is not the strongest on the Khruangbin side (Glass Beams, Hermanos Gutiérrez, and Altin Gün are more literal there) and not the strongest on the target side (Men I Trust and Babe Rainbow are more literal there), but its groove/funk/disco foundation plus psych-pop/indie songwriting makes it less likely to lose either side (general_knowledge). Backups: Men I Trust for the bedroom/dream-pop side, Glass Beams for the instrumental/global-psych side. The three reference groups do give explainable audience differences: Tame Impala leans psych-pop/synth-rock; Mac DeMarco leans slacker/bedroom/lo-fi; Unknown Mortal Orchestra leans psych-rock/soul/pop (general_knowledge). These differences are qualitative only; no Qloo overlap data is available, and taste affinity does not prove ticket demand or new audience growth (product_rule). The vetoed act is excluded; the shortlist provides 8 selectable acts, not a fully specified 10-candidate set (product_rule).",
+        "evidence": [
+          {
+            "claim": "Khruangbin's current core audience is associated with instrumental groove, psych soul/funk, dub, and global psych.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Tame Impala is associated with psych-pop and synth-rock.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Mac DeMarco is associated with slacker, bedroom-pop, and lo-fi indie.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Unknown Mortal Orchestra is associated with psych-rock, soul, and pop.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Parcels mixes funk/disco groove with psych-pop and indie songwriting.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Glass Beams are instrumental psych-funk/world-groove and rank ahead of Parcels for literal Khruangbin-side fit.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Hermanos Gutiérrez are instrumental guitar/desert/Latin psych and rank ahead of Parcels for literal Khruangbin-side fit.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Altin Gün are Turkish psych/global groove and rank ahead of Parcels for literal Khruangbin-side fit.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Men I Trust are dream-pop/bedroom-pop and rank ahead of Parcels for literal Mac DeMarco-side fit.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Babe Rainbow are psych-pop/surf and rank ahead of Parcels for literal Tame Impala/UMO-side fit.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Thee Sacred Souls are retro soul and Bahamas is indie folk; both are less balanced for connecting Khruangbin groove with psych-rock/bedroom-pop references.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Only shortlist acts may be chosen, and the vetoed act is excluded from fit discussion.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The three reference artists should be treated as separate qualitative audience lanes, not as one undifferentiated target.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo affinity or overlap evidence was provided in this version.",
+          "No ticket sales, demand, or new-audience-growth data were provided.",
+          "No fee, date, routing, or willingness data are to be claimed; the team checks them outside this tool.",
+          "The team's '10 people' count is not fully specified; only 8 selectable shortlist acts were provided.",
+          "Local market, venue-size, and regional audience differences are unknown.",
+          "Whether the target psych-rock/bedroom-pop audiences actually attend Khruangbin shows is unknown."
+        ]
+      },
+      "ms": 48188,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "after_veto",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Crumb",
+        "Babe Rainbow"
+      ],
+      "vetoed": [
+        "Men I Trust"
+      ],
+      "brief": {
+        "priority": "Crumb",
+        "backups": [
+          "Babe Rainbow",
+          "Glass Beams"
+        ],
+        "headlinerSide": "Headliner side: Crumb is a partial fit, not the literal Khruangbin-side match. general_knowledge: Khruangbin is associated with instrumental groove, psychedelic soul/funk, dub, and global/Turkish/Middle Eastern/Thai adjacency. general_knowledge: Crumb is associated with indie psych/dream-pop and jazz-influenced rhythm/bass groove, so it can sit with groove/psych listeners. product_rule: priority is a balance between sides, not a claim of being best, closest, or strongest on a side where another act ranks higher. Rank note: on the headliner side, Glass Beams and Hermanos Gutiérrez rank higher than Crumb as instrumental/global-groove adjacent acts, and Altin Gün ranks higher as Anatolian/global psych rock. Crumb is lower on that literal Khruangbin axis but still defensible as a bridge.",
+        "targetSide": "Target side: Crumb is a partial fit, not the top Tame Impala/psych-pop match. general_knowledge: Tame Impala suggests psych-rock/pop and synth-heavy indie; Mac DeMarco suggests slacker/bedroom/jangle pop; Unknown Mortal Orchestra suggests psych rock/psychedelic soul and experimental indie. general_knowledge: Crumb's dreamy psych-pop/indie sound is adjacent to Unknown Mortal Orchestra and some Mac DeMarco/Tame Impala listeners. product_rule: priority is a balance between sides, not a claim of being best, closest, or strongest on a side where another act ranks higher. Rank note: on the target side, Babe Rainbow ranks higher than Crumb as a laid-back Tame Impala/psych-pop/surf-psych fit, and Parcels ranks higher as dance-groove/indie-pop. Crumb is not the strongest target-side act but is the more two-sided choice.",
+        "answer": "Direct answer: Among the eight non-vetoed candidates listed, no act can be defended as losing nothing on both sides without local audience data. Crumb is the priority to evaluate first because it is the balance choice: general_knowledge places it between Khruangbin's groove/psych side and the Tame Impala/Unknown Mortal Orchestra/Mac DeMarco indie-psych target side. It is not the top Khruangbin-side literal fit; Glass Beams and Hermanos Gutiérrez rank higher there. It is not the top Tame Impala/psych-pop fit; Babe Rainbow ranks higher there. Backups: Babe Rainbow for the target side, Glass Beams for the headliner side. The three reference artists do give explainable audience differences: Tame Impala points to psych-rock/pop and larger indie-festival listeners; Mac DeMarco points to bedroom/slacker/jangle-pop listeners; Unknown Mortal Orchestra points to psych-rock/psychedelic-soul and more experimental indie listeners. So the shortlist should not be treated as one psych audience; a support act needs some vocal/indie-psych accessibility as well as groove. Unknown: only eight non-vetoed acts are listed, so the original 10 is not fully populated in the prompt.",
+        "evidence": [
+          {
+            "claim": "Khruangbin is associated with instrumental groove, psychedelic soul/funk, dub, and global/Turkish/Middle Eastern/Thai music adjacency.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Tame Impala is associated with psychedelic rock/pop and synth-heavy indie.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Mac DeMarco is associated with slacker/bedroom/jangle pop.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Unknown Mortal Orchestra is associated with psych rock/psychedelic soul and experimental indie.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Crumb is associated with indie psych/dream-pop and jazz-influenced groove.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "On the Khruangbin side, Glass Beams and Hermanos Gutiérrez are more literal instrumental/global-groove adjacent acts than Crumb.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "On the Khruangbin side, Altin Gün is more literal Anatolian/Turkish psych-rock/global-psych adjacent than Crumb.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "On the Tame Impala/psych-pop side, Babe Rainbow is more literal laid-back psych/surf-pop adjacent than Crumb.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Parcels is more dance/funk/groove-pop adjacent than Crumb.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Thee Sacred Souls is more retro soul/groove adjacent than Crumb.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Bahamas is more indie folk/Americana adjacent than Crumb.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Selection must come only from the shortlist; fees, dates, and willingness are checked outside this tool and are not evidence here.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The priority is a balance between sides, not a claim of being best, closest, or strongest on a side where another act ranks higher.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "No Qloo data is available in this version; artist-fit claims here are general_knowledge.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Men I Trust is vetoed and excluded from fit discussion.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo evidence is available, so no qloo-sourced affinity or audience-overlap claim can be made.",
+          "Only eight non-vetoed shortlist acts are listed; the remaining slots from the original 10 are unknown.",
+          "Local market ticket demand, venue size, and audience demographics are unknown and not checked here.",
+          "Fees, dates, and willingness are checked outside this tool; they are not validated in this brief.",
+          "Whether the specific Khruangbin audience in the target market prefers instrumental or vocal support acts is unknown.",
+          "The magnitude of overlap between Tame Impala, Mac DeMarco, and Unknown Mortal Orchestra audiences is unknown without data.",
+          "Any causal effect on new audience growth cannot be established from taste affinity alone."
+        ]
+      },
+      "ms": 65092,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "edited_references",
+      "version": "qloo",
+      "inPlay": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Babe Rainbow"
+      ],
+      "vetoed": [
+        "Crumb"
+      ],
+      "rulePriority": "Babe Rainbow",
+      "run": 1,
+      "brief": {
+        "priority": "Babe Rainbow",
+        "backups": [
+          "Thee Sacred Souls",
+          "Glass Beams"
+        ],
+        "headlinerSide": "Literal rank: Babe Rainbow is 4th on the headliner side in this 8-candidate Qloo pool. It is not the top headliner-side fit: Glass Beams is 1st, Thee Sacred Souls is 2nd, and Hermanos Gutiérrez is 3rd. Qloo similarity hints with Khruangbin include shared tags such as Jazz, Innovative, Drums, Soul, and Folk, while Khruangbin-only tags include Funk, Psychedelic Rock, Bass Guitar, Groovy, and Instrumental; these are similarity hints, not causes. So Babe Rainbow is a balanced product-rule choice rather than a headliner-side-leading choice.",
+        "targetSide": "Literal rank: Babe Rainbow is 1st on the target side in this 8-candidate Qloo pool, ahead of Men I Trust (2nd) and Parcels (3rd). Qloo similarity hints with the target audience include shared tags such as Electronic, Rock, Jazz, and Synthesizer, while Babe Rainbow-only tags include Dreamy, Retro-Inspired, Laid-back, Escapism, and Youthful. This is taste affinity only, not ticket demand or proof of new audience growth.",
+        "answer": "Use Babe Rainbow as the priority to evaluate first. In the product rule, it is the balance candidate: worst side rank 4, rank sum 5. Thee Sacred Souls also has worst side rank 4, but rank sum 6; Glass Beams has worst side rank 6. Babe Rainbow is 1st on the target side but only 4th on the headliner side; Glass Beams is 1st on the headliner side, so Babe Rainbow is not the strongest headliner-side fit. Backups are Thee Sacred Souls and Glass Beams as selected by the product rule. On the three-reference-group question: this Qloo evidence does not provide separate, per-reference-artist comparisons for Tame Impala and Unknown Mortal Orchestra, or a separate third reference group; it only gives aggregate headliner-vs-priority and target-vs-priority comparisons. Therefore, separate explainable audience differences among three reference groups are not defensible from this evidence. The team must validate fees, dates, willingness, ticket demand, and actual new-audience growth outside this tool.",
+        "evidence": [
+          {
+            "claim": "Qloo ranks are positions within this 8-candidate pool only, not across all artists.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Babe Rainbow has headlinerRank 4, targetRank 1, worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Thee Sacred Souls has headlinerRank 2, targetRank 4, worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Glass Beams has headlinerRank 1, targetRank 6, worstRank 6.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The product rule selected Babe Rainbow as priority and Thee Sacred Souls and Glass Beams as backups by worst side rank, then rank sum; the selection must not be changed.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Babe Rainbow is 1st on the target side; Men I Trust is 2nd and Parcels is 3rd.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Babe Rainbow is 4th on the headliner side; Glass Beams is 1st, Thee Sacred Souls is 2nd, and Hermanos Gutiérrez is 3rd.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Headliner-vs-priority shared tags include United States, Jazz, Innovative, United Kingdom, Blues, Ragtime, Drums, Soul, Spirituals, and Folk; candidate-only tags include Dreamy, Retro-Inspired, Vibrant, Engaging, Guitar, Escapism, Youthful, and Experimental.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Target-vs-priority shared tags include United States, Electronic, Rock, United Kingdom, Jazz, Innovative, Synthesizer, Diverse, Rockabilly, and Blues; candidate-only tags include Dreamy, Retro-Inspired, Laid-back, Vibrant, Escapism, Youthful, Bass, and Synthesizer.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Shared tags are similarity hints, not causes.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked by the team outside this tool.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "The team question says 10 people, but the provided shortlist still in play has 8 candidates; the count mismatch is unresolved.",
+          "No separate Qloo breakdown is provided for Tame Impala, Unknown Mortal Orchestra, or any third reference group, so per-reference-group audience differences cannot be tested from this evidence.",
+          "No Qloo evidence here covers booking fees, dates, willingness, ticket demand, or actual new-audience growth.",
+          "The Qloo shared tags are similarity hints, not causal explanations; it is unknown whether they explain audience movement.",
+          "Vetoed candidates are excluded from this brief and were not evaluated for fit."
+        ]
+      },
+      "ms": 35250,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "edited_references",
+      "version": "qloo",
+      "inPlay": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Babe Rainbow"
+      ],
+      "vetoed": [
+        "Crumb"
+      ],
+      "rulePriority": "Babe Rainbow",
+      "run": 2,
+      "brief": {
+        "priority": "Babe Rainbow",
+        "backups": [
+          "Thee Sacred Souls",
+          "Glass Beams"
+        ],
+        "headlinerSide": "On the headliner side, Babe Rainbow is rank 4 of 8 in the Qloo table. It is not the top headliner-side act: Glass Beams is rank 1, Thee Sacred Souls rank 2, and Hermanos Gutiérrez rank 3 all rank higher. Qloo shared tags between Khruangbin and Babe Rainbow include United States, Jazz, Innovative, United Kingdom, Blues, Ragtime, Drums, Soul, Spirituals, and Folk. Khruangbin-only Qloo tags include Funk, Adventurous, Psychedelic Rock, Bass Guitar, Funky, Eclectic, Groovy, and Instrumental, while Babe Rainbow-only Qloo tags include Dreamy, Retro-Inspired, Vibrant, Engaging, Guitar, Escapism, Youthful, and Experimental. This is a partial broad-tag overlap, not a headliner-side top fit.",
+        "targetSide": "On the target side, Babe Rainbow is rank 1 of 8 in the Qloo table, ahead of Men I Trust (2), Parcels (3), and Thee Sacred Souls (4). Qloo shared tags between the target side and Babe Rainbow include United States, Electronic, Rock, United Kingdom, Jazz, Innovative, Synthesizer, Diverse, Rockabilly, and Blues. Target-only Qloo tags include Melodic, Existentialism, DedicateD, Synthesizers, Drums, Energetic, Innovative, and Eclectic; Babe Rainbow-only Qloo tags include Dreamy, Retro-Inspired, Laid-back, Vibrant, Escapism, Youthful, Bass, and Synthesizer. The evidence shows target-side affinity for the priority, but the target side is aggregated and Qloo does not split Tame Impala from Unknown Mortal Orchestra.",
+        "answer": "Among the 8 shortlisted acts still in play, the product-rule priority is Babe Rainbow. It is the balance pick under the rule: target-side rank 1 of 8 and headliner-side rank 4 of 8. It is not the top headliner-side act: Glass Beams ranks 1 there, and Thee Sacred Souls and Hermanos Gutiérrez also rank higher than Babe Rainbow on that side. Backups are Thee Sacred Souls (headliner rank 2, target rank 4) and Glass Beams (headliner rank 1, target rank 6). For the team's question about connecting Khruangbin's instrumental groove listeners with psychedelic rock/bedroom-pop listeners, Babe Rainbow is defensible as the first act to evaluate because it leads the target side while remaining mid-pack on the headliner side. The three reference groups do not give a fully separate Qloo explanation: the supplied Qloo evidence compares Khruangbin vs the priority and the combined target side vs the priority, but it does not split Tame Impala vs Unknown Mortal Orchestra. General knowledge can describe Tame Impala and Unknown Mortal Orchestra as different psych/bedroom-pop flavors, but that is not Qloo affinity or ticket demand. Unknowns remain around demand, fees, dates, willingness, and the missing acts if the team is still considering 10 rather than the 8 in the provided shortlist.",
+        "evidence": [
+          {
+            "claim": "Qloo table within this pool: Babe Rainbow headlinerRank 4, targetRank 1, worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table within this pool: Thee Sacred Souls headlinerRank 2, targetRank 4, worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table within this pool: Glass Beams headlinerRank 1, targetRank 6, worstRank 6.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table within this pool: Men I Trust targetRank 2, Parcels targetRank 3, Thee Sacred Souls targetRank 4 behind Babe Rainbow targetRank 1.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table within this pool: headliner side ranks Glass Beams 1, Thee Sacred Souls 2, Hermanos Gutiérrez 3, Babe Rainbow 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between Khruangbin and Babe Rainbow include United States, Jazz, Innovative, United Kingdom, Blues, Ragtime, Drums, Soul, Spirituals, and Folk.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo headliner-only tags for Khruangbin vs Babe Rainbow include Funk, Adventurous, Psychedelic Rock, Bass Guitar, Funky, Eclectic, Groovy, and Instrumental.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo Babe Rainbow-only tags vs Khruangbin include Dreamy, Retro-Inspired, Vibrant, Engaging, Guitar, Escapism, Youthful, and Experimental.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between the target side and Babe Rainbow include United States, Electronic, Rock, United Kingdom, Jazz, Innovative, Synthesizer, Diverse, Rockabilly, and Blues.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo target-only tags vs Babe Rainbow include Melodic, Existentialism, DedicateD, Synthesizers, Drums, Energetic, Innovative, and Eclectic.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo Babe Rainbow-only tags vs target side include Dreamy, Retro-Inspired, Laid-back, Vibrant, Escapism, Youthful, Bass, and Synthesizer.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Product rule selected Babe Rainbow as priority by worst side rank then rank sum, with backups Thee Sacred Souls and Glass Beams.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Shared tags in the Qloo evidence are similarity hints, not causes.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "General knowledge: Tame Impala is commonly described as psychedelic rock/psych pop; Unknown Mortal Orchestra as psych rock/bedroom-pop-leaning.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "The provided Qloo evidence contains headliner-vs-priority and target-vs-priority comparisons but no separate Tame Impala vs Unknown Mortal Orchestra comparison.",
+            "source": "qloo"
+          }
+        ],
+        "unknowns": [
+          "The team question mentions 10 acts, but the provided shortlist still in play contains 8 acts; the unspecified other acts are not in the Qloo evidence.",
+          "Qloo does not split the target side into Tame Impala vs Unknown Mortal Orchestra, so the three reference groups cannot be fully differentiated from Qloo alone.",
+          "No ticket demand, new-audience growth, fee, date, or willingness data are provided.",
+          "Qloo affinity and shared tags are not causal and do not prove conversion or audience growth.",
+          "Babe Rainbow is not the top headliner-side act; Glass Beams ranks higher there.",
+          "The target-side rank 1 for Babe Rainbow may be affected by how the target reference artists were aggregated."
+        ]
+      },
+      "ms": 46843,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "edited_references",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Men I Trust",
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Babe Rainbow"
+      ],
+      "vetoed": [
+        "Crumb"
+      ],
+      "brief": {
+        "priority": "Parcels",
+        "backups": [
+          "Altin Gün",
+          "Babe Rainbow"
+        ],
+        "headlinerSide": "Parcels is a groove/funk/disco and psych-pop fit for Khruangbin's instrumental-groove audience, but it is not the top headliner-side fit here. Glass Beams ranks higher as an instrumental global/psych-groove match, and Altin Gün ranks higher as a global-psych groove match. Parcels sits behind those two on this side; its headliner-side case is that it keeps rhythm, bass and groove central and is less of a mismatch than the bedroom-pop/folk options.",
+        "targetSide": "Parcels is a psych-pop/funk/disco adjacency for Tame Impala and Unknown Mortal Orchestra listeners, with dance grooves and harmonies that can speak to the references' psych-pop side. It is not the top target-side fit: Men I Trust ranks higher for bedroom/dream pop, and Babe Rainbow ranks higher for psych pop/rock. Parcels sits behind those two on this side; its target-side case is that it is more Khruangbin-compatible than those target-leading acts.",
+        "answer": "Among the eight shortlisted acts provided, Parcels is the priority to evaluate first for a two-sided support slot. It does not top either side: Glass Beams and Altin Gün rank higher on the Khruangbin side; Men I Trust and Babe Rainbow rank higher on the target side. The three reference groups can give explainable audience differences, but only as positioning hypotheses: Khruangbin = instrumental groove/global psych/soul; Tame Impala = psych rock/pop/synth/festival; Unknown Mortal Orchestra = psych rock/pop with lo-fi/funk/jazz and bedroom-pop adjacency. No Qloo data is available in this version; these are general-knowledge observations. Taste affinity is not ticket demand and does not prove new audience growth. The prompt says '10 人' but lists eight shortlist names, so I cannot evaluate the missing two.",
+        "evidence": [
+          {
+            "claim": "Khruangbin's audience is built around instrumental groove, psychedelic soul, dub/funk and global rhythm.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Tame Impala's audience is centered on psych rock/pop, synths, groove and festival-scale indie.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Unknown Mortal Orchestra's audience is centered on psych rock/pop with lo-fi, funk/jazz chords and bedroom-pop adjacency.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Parcels are an electro-funk/disco/psych-pop act with vocal harmonies and groove, making them a two-sided bridge candidate rather than a pure fit on either side.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Glass Beams and Altin Gün rank above Parcels on the Khruangbin side: Glass Beams as instrumental global/psych groove, Altin Gün as Turkish psych/folk groove.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Men I Trust and Babe Rainbow rank above Parcels on the target side: Men I Trust for dream/bedroom pop, Babe Rainbow for psych pop/rock.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "No Qloo evidence is available in this version.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Only shortlisted acts may be selected.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "The written shortlist has eight acts, not ten; the missing two names and their two-sided fit are unknown.",
+          "No Qloo affinity data is available, so all fit statements are general-knowledge hypotheses.",
+          "Booking fees, dates, willingness, ticket demand, and new-audience growth are not checked here.",
+          "The relative weight of bedroom-pop vs psych-rock listeners within the target audience is unknown.",
+          "Whether Parcels' electro-funk/disco emphasis will land with Khruangbin's instrumental-groove audience at the specific venue/date is unknown.",
+          "Whether Altin Gün's Turkish psych-folk vocals or Babe Rainbow's psych-pop set would land with the target audience at the specific venue/date is unknown."
+        ]
+      },
+      "ms": 86862,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "D2",
+      "step": "edited_references",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Bahamas",
+        "Hermanos Gutiérrez",
+        "Parcels",
+        "Thee Sacred Souls",
+        "Glass Beams",
+        "Altin Gün",
+        "Crumb",
+        "Babe Rainbow"
+      ],
+      "vetoed": [
+        "Men I Trust"
+      ],
+      "brief": {
+        "priority": "Altin Gün",
+        "backups": [
+          "Glass Beams",
+          "Crumb"
+        ],
+        "headlinerSide": "On the Khruangbin/headliner side, Altin Gün is not the closest match: Glass Beams ranks higher for instrumental global-groove psychedelia, and Hermanos Gutiérrez ranks higher for instrumental texture (general_knowledge). Altin Gün still fits because it shares Turkish psych-folk, funk groove, and modal/global palette with Khruangbin's core (general_knowledge). It adds vocals, so it is a bridge rather than a like-for-like instrumental act (general_knowledge).",
+        "targetSide": "On the Tame Impala/Unknown Mortal Orchestra target side, Altin Gün is not the closest match: Crumb ranks higher for bedroom-pop/psych-pop texture (general_knowledge). Altin Gün still connects through psychedelic rock vocabulary, Anatolian psych, and groove-oriented psych (general_knowledge). It lacks pure bedroom-pop introspection, so it is a two-sided bridge, not a target-side leader (general_knowledge).",
+        "answer": "The team asks who among the ten is not disadvantaged on both sides. The provided shortlist names eight eligible acts after the vetoed act is excluded; I cannot evaluate ten from the provided names (product_rule). Among the eight, Altin Gün is the defensible priority for a balanced first evaluation: it does not top either side, but it has credible overlap on both (general_knowledge). If the team prioritizes Khruangbin-side safety, Glass Beams is the stronger headliner-side option; if it prioritizes Tame Impala/UMO-side safety, Crumb is the stronger target-side option (general_knowledge). The three reference groups can explain audience differences as taste segments: Khruangbin as instrumental global groove/psych-soul; Tame Impala as psych-pop/rock with synth songcraft; Unknown Mortal Orchestra as psych-rock/bedroom-pop with lo-fi funk and melodic eccentricity (general_knowledge). That explains differences in taste, but it does not prove ticket demand or new audience growth (product_rule). No Qloo data is available in this version, so no Qloo affinity claim is made (product_rule).",
+        "evidence": [
+          {
+            "claim": "No Qloo data is available in this version; no Qloo affinity or overlap can be cited.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The shortlist must be chosen only from the provided names, and vetoed Men I Trust must not be discussed for fit.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked outside this tool and are not claimed here.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Khruangbin's core is instrumental groove, psychedelic soul/funk, dub, and global/Middle Eastern/Southeast Asian textures.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Tame Impala is psych-pop/rock with synth-heavy songcraft.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Unknown Mortal Orchestra is psych-rock/bedroom-pop with lo-fi funk and melodic eccentricity.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Altin Gün blends Turkish/Anatolian psych-folk with funk and psych groove, with vocals.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Glass Beams is an instrumental psychedelic/world-groove act and is closer to Khruangbin's instrumental side than Altin Gün is.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Crumb is psych-pop/bedroom-pop/dreamy indie and is closer to the Tame Impala/Unknown Mortal Orchestra target side than Altin Gün is.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Hermanos Gutiérrez is an instrumental guitar act with desert/Latin-tinged textures, stronger on the headliner side than the target side.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Parcels is disco/funk/electro-pop groove, stronger on the Khruangbin groove side than the psych-rock/bedroom-pop target side.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Thee Sacred Souls is retro soul, stronger on the Khruangbin soul side than the psych-rock/bedroom-pop target side.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Babe Rainbow is psych-pop/surf/boogie with groove, but it is less directly tied to Khruangbin's global/instrumental identity than Glass Beams and less directly bedroom-pop than Crumb.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Bahamas is indie folk/soft rock and is not a strong two-sided bridge for this brief.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "No Qloo evidence is available, so algorithmic affinity and audience-overlap claims cannot be made.",
+          "Fees, dates, and willingness are outside this tool and are not verified.",
+          "No ticket demand, venue, market, or new-audience-growth data is provided.",
+          "The provided shortlist names eight eligible acts; the 'ten' count cannot be resolved without the missing names.",
+          "The target reference set has only Tame Impala and Unknown Mortal Orchestra; 'psych rock' and 'bedroom pop' are broad labels.",
+          "Actual audience overlap between Khruangbin, the target references, and each shortlisted act is unverified."
+        ]
+      },
+      "ms": 50793,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    }
+  ],
+  "qlooToolCalls": {
+    "qloo_describe": 39,
+    "qloo_rank": 6,
+    "qloo_compare_audiences": 6
+  },
+  "ms": 282261
+}

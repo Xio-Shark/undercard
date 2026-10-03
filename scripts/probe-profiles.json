@@ -1,0 +1,21 @@
+{
+  "_note": "Fictional development profiles for T04 only. Not demo cases; T05 picks those from evidence.",
+  "profiles": [
+    {
+      "id": "dev-a",
+      "birthYear": 1942,
+      "seeds": [
+        { "name": "Patsy Cline", "type": "urn:entity:artist" },
+        { "name": "Roman Holiday", "type": "urn:entity:movie" }
+      ]
+    },
+    {
+      "id": "dev-b",
+      "birthYear": 1948,
+      "seeds": [
+        { "name": "Celia Cruz", "type": "urn:entity:artist" },
+        { "name": "West Side Story", "type": "urn:entity:movie" }
+      ]
+    }
+  ]
+}

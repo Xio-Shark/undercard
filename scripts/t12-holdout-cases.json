@@ -1,0 +1,78 @@
+{
+  "_note": "Mirror of H1-H3 in Task/evidence/T04-cases.md (frozen 2026-10-03 before the first API call; held out until T12). Hypothetical scenarios with public artists. Feedback: veto each version's own first priority with the frozen reason; edit references as frozen. Fields copied verbatim; no edits after seeing results. v3 (2026-10-03, T12 first run): H2 'Wyatt Flores' returned needs_input and none of the 5 candidates (Robert Wyatt, KeKe Wyatt, Antonio Flores, two Delafé entries) is the intended country singer; 'Wyatt Flores country singer' and 'Wyatt Flores Oklahoma' also failed. Marked unresolvable: removed from BOTH versions' effective shortlist (as the product's 'none of these' does). See T04-cases.md v3. Same v3 pre-check of all H2/H3 names before any H2/H3 ranking: H2 'Briscoe' only matched 'Pat Briscoe' (Australian singer-songwriter), not the intended Texas band -> unresolvable too (H2 effective list 6). H3 'Nilüfer Yanya' was ambiguous; confirmed as Qloo 'Nilufer Yanya' (E433873C-3912-4069-95C9-5078F42C783F, British singer-songwriter), the intended artist (ü/u spelling).",
+  "cases": [
+    {
+      "id": "H1",
+      "headliner": "Mitski",
+      "references": [
+        "Lorde"
+      ],
+      "shortlist": [
+        "Japanese Breakfast",
+        "Weyes Blood",
+        "Faye Webster",
+        "Snail Mail",
+        "beabadoobee",
+        "Arlo Parks"
+      ],
+      "veto": "toured_together",
+      "modifiedReferences": [
+        "Lorde",
+        "Lana Del Rey"
+      ],
+      "question": "谁最可能同时被 Mitski 的核心听众和 Lorde 的听众接受？"
+    },
+    {
+      "id": "H2",
+      "headliner": "Zach Bryan",
+      "references": [
+        "Noah Kahan",
+        "Hozier"
+      ],
+      "shortlist": [
+        "Charles Wesley Godwin",
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "Wyatt Flores",
+        "The Red Clay Strays",
+        "Briscoe"
+      ],
+      "veto": "dates",
+      "modifiedReferences": [
+        "Noah Kahan"
+      ],
+      "question": "想从红土乡村听众扩到民谣流行听众，谁是两边都不差的暖场？",
+      "unresolvable": [
+        "Wyatt Flores",
+        "Briscoe"
+      ]
+    },
+    {
+      "id": "H3",
+      "headliner": "The National",
+      "references": [
+        "boygenius"
+      ],
+      "shortlist": [
+        "Lucius",
+        "Bartees Strange",
+        "Courtney Barnett",
+        "Sharon Van Etten",
+        "Cassandra Jenkins",
+        "Nilüfer Yanya",
+        "Wednesday"
+      ],
+      "veto": "other",
+      "modifiedReferences": [
+        "boygenius",
+        "Big Thief"
+      ],
+      "question": "想接触更年轻的独立摇滚听众，谁最平衡？",
+      "confirmed": {
+        "Nilüfer Yanya": "E433873C-3912-4069-95C9-5078F42C783F"
+      }
+    }
+  ]
+}

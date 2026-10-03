@@ -1,0 +1,1209 @@
+{
+  "case": "H3",
+  "model": "deepseek-flash",
+  "runsPerVersion": 2,
+  "qloo": {
+    "initial": {
+      "notRankable": [
+        "Nilufer Yanya"
+      ],
+      "table": [
+        {
+          "name": "Sharon Van Etten",
+          "headlinerRank": 1,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Bartees Strange",
+          "headlinerRank": 4,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Wednesday",
+          "headlinerRank": 5,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Courtney Barnett",
+          "headlinerRank": 2,
+          "targetRank": 5,
+          "tied": true
+        },
+        {
+          "name": "Cassandra Jenkins",
+          "headlinerRank": 6,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "Lucius",
+          "headlinerRank": 3,
+          "targetRank": 6,
+          "tied": false
+        }
+      ],
+      "priority": "Sharon Van Etten"
+    },
+    "afterVeto": {
+      "vetoed": "Sharon Van Etten",
+      "table": [
+        {
+          "name": "Bartees Strange",
+          "headlinerRank": 4,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Wednesday",
+          "headlinerRank": 5,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Courtney Barnett",
+          "headlinerRank": 2,
+          "targetRank": 5,
+          "tied": true
+        },
+        {
+          "name": "Cassandra Jenkins",
+          "headlinerRank": 6,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "Lucius",
+          "headlinerRank": 3,
+          "targetRank": 6,
+          "tied": false
+        }
+      ],
+      "priority": "Bartees Strange",
+      "explanationRefetched": true
+    },
+    "editedReferences": {
+      "references": [
+        "Boygenius",
+        "Big Thief"
+      ],
+      "notRankable": [],
+      "table": [
+        {
+          "name": "Bartees Strange",
+          "headlinerRank": 3,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Courtney Barnett",
+          "headlinerRank": 1,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Wednesday",
+          "headlinerRank": 4,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Cassandra Jenkins",
+          "headlinerRank": 5,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "Lucius",
+          "headlinerRank": 2,
+          "targetRank": 5,
+          "tied": false
+        }
+      ],
+      "priority": "Bartees Strange",
+      "change": {
+        "kind": "new_query",
+        "trigger": "Target references: boygenius → boygenius, Big Thief",
+        "priorityBefore": "Bartees Strange",
+        "priorityAfter": "Bartees Strange",
+        "at": "2026-10-03T08:30:06.340Z"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "case": "H3",
+      "step": "initial",
+      "version": "qloo",
+      "inPlay": [
+        "Lucius",
+        "Bartees Strange",
+        "Courtney Barnett",
+        "Sharon Van Etten",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [],
+      "rulePriority": "Sharon Van Etten",
+      "run": 1,
+      "brief": {
+        "priority": "Sharon Van Etten",
+        "backups": [
+          "Bartees Strange",
+          "Wednesday"
+        ],
+        "headlinerSide": "Sharon Van Etten is headlinerRank 1 in this pool (qloo), so she is the top-ranked candidate on The National's side; no candidate ranks higher there. Qloo shared tags with The National include United States, Alternative Rock, Folk, Rock, Rockabilly, Post Punk, Punk Rock, Love, Loyal, and Guitar (qloo). That is affinity evidence only; it does not prove ticket demand or new audience growth (product_rule).",
+        "targetSide": "Sharon Van Etten is targetRank 4 on the Boygenius-reference side (qloo), so she is not the top target-side fit. Cassandra Jenkins is targetRank 1 (qloo), Wednesday is targetRank 2 (qloo), and Bartees Strange is targetRank 3 (qloo), all ahead of her on this side. Qloo shared tags with Boygenius include Straightforward, Simple Chord Progressions, United States, Melodic, Folk, Post Punk, Brooklyn, Alternative Rock, Storytelling, and Punk Rock (qloo). The target side is measured as affinity to Boygenius (qloo), not directly as age or ticket demand (product_rule).",
+        "answer": "Evaluate Sharon Van Etten first as the balanced priority under the product rule: she has headlinerRank 1 and targetRank 4, giving worstRank 4 and rank sum 5; Bartees Strange also has worstRank 4 but a higher rank sum 7 (qloo/product_rule). For the specific goal of reaching younger indie-rock listeners, however, the target-side ranks point to Cassandra Jenkins as targetRank 1 and Wednesday as targetRank 2; Sharon is targetRank 4 there (qloo). So Sharon is the first balanced look, while Cassandra Jenkins and Wednesday are the stronger target-side names to inspect if that side is weighted more heavily; Bartees Strange and Wednesday are the backups set by the product rule. This is taste affinity and pool-rank evidence only, not ticket demand or proven new audience growth (product_rule).",
+        "evidence": [
+          {
+            "claim": "Sharon Van Etten: headlinerRank 1, targetRank 4, worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Bartees Strange: headlinerRank 4, targetRank 3, worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Wednesday: headlinerRank 5, targetRank 2, worstRank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Courtney Barnett: headlinerRank 2, targetRank 5, worstRank 5, tiedWithPrevious true.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Cassandra Jenkins: headlinerRank 6, targetRank 1, worstRank 6.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Lucius: headlinerRank 3, targetRank 6, worstRank 6.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Product rule selected priority Sharon Van Etten and backups Bartees Strange and Wednesday by worst side rank, then rank sum.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Ranks are positions within this pool of 6 only, not a market-wide ranking.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Headliner-vs-priority shared Qloo tags include United States, Alternative Rock, Folk, Rock, Rockabilly, Post Punk, Punk Rock, Love, Loyal, and Guitar.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Target-vs-priority shared Qloo tags include Straightforward, Simple Chord Progressions, United States, Melodic, Folk, Post Punk, Brooklyn, Alternative Rock, Storytelling, and Punk Rock.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Shared tags are similarity hints, not causes.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked by the team outside this tool and are not assessed here.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Booking fees, date availability, and artist willingness are outside this tool and unresolved.",
+          "Whether Qloo affinity translates into actual younger indie-rock ticket demand or new audience growth is unknown.",
+          "The actual age and demographic composition of The National's and Boygenius's audiences is not provided.",
+          "The target side is represented by one reference artist, Boygenius; other target references could change the target-side ranks.",
+          "Qloo ranks are only within this 6-act shortlist and not a market-wide ranking.",
+          "The provided tags do not explain why Sharon Van Etten ranks 4 on the target side while Cassandra Jenkins ranks 1."
+        ]
+      },
+      "ms": 31684,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "initial",
+      "version": "qloo",
+      "inPlay": [
+        "Lucius",
+        "Bartees Strange",
+        "Courtney Barnett",
+        "Sharon Van Etten",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [],
+      "rulePriority": "Sharon Van Etten",
+      "run": 2,
+      "brief": {
+        "priority": "Sharon Van Etten",
+        "backups": [
+          "Bartees Strange",
+          "Wednesday"
+        ],
+        "headlinerSide": "qloo: Sharon Van Etten is rank 1 of 6 on the headliner side in this pool, so she is the top-ranked shortlist act on The National side. qloo shared tags with The National include United States, Alternative Rock, Folk, Rock, Rockabilly, Post Punk, Punk Rock, Love, Loyal, and Guitar; these are similarity hints, not causes. product_rule: this supports headliner-side fit, but taste affinity alone does not prove ticket demand or new audience growth.",
+        "targetSide": "qloo: Sharon Van Etten is rank 4 of 6 on the target side, so she is not the target-side leader. Cassandra Jenkins is rank 1, Wednesday rank 2, and Bartees Strange rank 3 on the target side; name those acts for stronger target-side affinity. qloo shared tags with Boygenius include Straightforward, Simple Chord Progressions, United States, Melodic, Folk, Post Punk, Brooklyn, Alternative Rock, Storytelling, and Punk Rock; these are similarity hints, not causes. product_rule: this makes Sharon Van Etten a balance tradeoff, not proof of reaching younger indie-rock listeners.",
+        "answer": "product_rule: evaluate Sharon Van Etten first. She is the product-rule balance pick: rank 1 on the headliner side and rank 4 on the target side. qloo: her worst-side rank is 4, tied with Bartees Strange, and the product rule then uses lower rank sum to select her; her rank sum is 5 versus Bartees Strange rank sum 7. backups: Bartees Strange and Wednesday. qloo: if the goal is strictly target-side affinity, Cassandra Jenkins ranks 1 on the target side but 6 on the headliner side; Wednesday ranks 2 on the target side but 5 on the headliner side; Bartees Strange ranks 3 on the target side and 4 on the headliner side. product_rule: this is taste affinity only, not ticket demand, and it does not prove new audience growth. Booking fees, dates, and willingness are checked outside this tool and are not claimed here.",
+        "evidence": [
+          {
+            "claim": "Sharon Van Etten ranks 1 of 6 on the headliner side and 4 of 6 on the target side in the Qloo pool.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Bartees Strange ranks 4 on the headliner side and 3 on the target side; Wednesday ranks 5 and 2; Cassandra Jenkins ranks 6 and 1; Courtney Barnett ranks 2 and 5; Lucius ranks 3 and 6.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The product rule selected Sharon Van Etten as priority, with Bartees Strange and Wednesday as backups.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The product rule orders by worst side rank, then rank sum; Sharon Van Etten and Bartees Strange both have worst rank 4, and Sharon Van Etten has the lower rank sum.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo shared tags between The National and Sharon Van Etten include United States, Alternative Rock, Folk, Rock, Rockabilly, Post Punk, Punk Rock, Love, Loyal, and Guitar; these are similarity hints, not causes.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between Boygenius and Sharon Van Etten include Straightforward, Simple Chord Progressions, United States, Melodic, Folk, Post Punk, Brooklyn, Alternative Rock, Storytelling, and Punk Rock; these are similarity hints, not causes.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Boygenius is a contemporary indie-rock reference commonly associated with younger indie listeners; this does not by itself prove ticket demand or audience growth.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked by the team outside this tool and are not claimed here.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Qloo ranks are positions within this 6-act pool only and do not measure ticket demand, ticket sales, or new audience growth.",
+          "Shared tags are similarity hints, not causal drivers of audience behavior.",
+          "No booking fee, date, willingness, routing, or availability data is included in this tool.",
+          "Whether Boygenius-referenced affinity translates into younger indie-rock attendance is not established by the Qloo evidence.",
+          "Whether Sharon Van Etten's target-side rank 4 is sufficient for the younger-listener goal is unknown; Cassandra Jenkins and Wednesday rank higher on the target side.",
+          "No live-show compatibility, venue fit, local market response, or current The National audience-age data is provided."
+        ]
+      },
+      "ms": 39058,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "initial",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Lucius",
+        "Bartees Strange",
+        "Courtney Barnett",
+        "Sharon Van Etten",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [],
+      "brief": {
+        "priority": "Bartees Strange",
+        "backups": [
+          "Courtney Barnett",
+          "Wednesday"
+        ],
+        "headlinerSide": "On the headliner side, Sharon Van Etten ranks first for fit with The National's current audience (general_knowledge: she has collaborated with The National and shares their melancholic indie rock/folk lane). Lucius ranks second (general_knowledge: indie pop/rock harmonies that suit The National's established audience). Bartees Strange ranks third: he has opened for The National, giving some direct audience familiarity (general_knowledge), though he is more experimental than the core fit. Courtney Barnett ranks fourth (general_knowledge: respected indie rock, but more upbeat/witty than The National's brooding tone). Bartees Strange is not the strongest headliner-side fit; Sharon Van Etten is.",
+        "targetSide": "On the target side, Wednesday ranks first for younger indie-rock adjacency (general_knowledge: younger, female-fronted, raw indie rock/country-gaze). Bartees Strange ranks second: he is a younger queer indie rock artist who has opened for Boygenius, giving direct audience familiarity (general_knowledge). Courtney Barnett ranks third (general_knowledge: queer indie rock icon, widely liked by younger indie audiences, but no direct Boygenius touring tie). Bartees Strange fits the target side well but is not the strongest target-side fit; Wednesday is.",
+        "answer": "Priority to evaluate first for balance: Bartees Strange. He is the most balanced candidate on the shortlist because he is the only act with direct touring adjacency to both The National and Boygenius (general_knowledge). He is not the strongest on either side alone: Sharon Van Etten ranks first on headliner-side fit, and Wednesday ranks first on target-side younger indie-rock adjacency. Backups: Courtney Barnett (next most balanced) and Wednesday (target-leaning alternative).",
+        "evidence": [
+          {
+            "claim": "No Qloo data is available in this version; only general_knowledge and product_rule are used.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The National's current audience generally skews toward older indie rock fans who favor melancholic, atmospheric, brooding music.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Boygenius is a younger indie rock supergroup with a large queer and Gen Z/younger millennial following.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Bartees Strange has opened for The National.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Bartees Strange has opened for Boygenius.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sharon Van Etten has collaborated with The National and shares their melancholic indie rock/folk lane.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lucius is an indie pop/rock act with harmonies that fit The National's established audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Courtney Barnett is a queer indie rock artist with guitar-driven, witty songs and broad indie appeal.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Wednesday is a younger, female-fronted indie rock/country-gaze band with raw, buzzy appeal among younger indie listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked outside this tool and are not claimed here.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The priority is a balance between sides; it must not be called best/closest/strongest on a side where another act ranks higher.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo affinity scores or audience-overlap data.",
+          "No ticket-demand or new-audience-growth data.",
+          "No local market or venue-specific audience composition data.",
+          "No current touring availability, fee, or date information (checked outside this tool).",
+          "No precise demographic breakdown of The National or Boygenius audiences.",
+          "No guarantee that touring adjacency translates to ticket sales or audience conversion."
+        ]
+      },
+      "ms": 96435,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "initial",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Lucius",
+        "Bartees Strange",
+        "Courtney Barnett",
+        "Sharon Van Etten",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [],
+      "brief": {
+        "priority": "Bartees Strange",
+        "backups": [
+          "Wednesday",
+          "Sharon Van Etten"
+        ],
+        "headlinerSide": "On the headliner side, Sharon Van Etten ranks higher than Bartees Strange for fit with The National's current audience; Lucius also has direct The National collaboration credits. Bartees Strange is not the strongest fit on that side. He still fits because general knowledge places him in the same indie-rock world and he has support history with The National, so he is unlikely to be a pure target-side play. No Qloo data is available to validate this.",
+        "targetSide": "On the target side, Wednesday ranks higher than Bartees Strange for direct younger indie-rock/Boygenius-adjacent audience fit. Bartees Strange is not the strongest fit on that side. He still fits because general knowledge places him in contemporary genre-fluid indie rock and he has support history with Boygenius, making him a plausible bridge to younger indie-rock listeners. No Qloo data is available to validate this.",
+        "answer": "The most balanced shortlist candidate is Bartees Strange. He is not the top headliner-side fit (Sharon Van Etten and Lucius rank higher there) and not the top target-side fit (Wednesday ranks higher there), but general knowledge links him credibly to both The National and Boygenius through support slots and contemporary indie-rock positioning. Backups: Wednesday for the target side, Sharon Van Etten for the headliner side. This is taste affinity only; it is not ticket demand and does not prove new audience growth. Booking fees, dates, and willingness must be checked by the team outside this tool.",
+        "evidence": [
+          {
+            "claim": "No Qloo evidence was provided for this task, so no claim here can be sourced to qloo.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked outside this tool and are not assessed here.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The National's current audience is generally an established indie-rock/adult-alternative audience, so the headliner side favors acts with direct or adjacent ties to The National.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Boygenius's reference audience is younger indie rock, with overlap in contemporary indie-rock and singer-songwriter circles.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Bartees Strange has appeared as support for both The National and Boygenius.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sharon Van Etten ranks higher than Bartees Strange on fit with The National's current audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lucius also has direct The National collaboration credits.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Wednesday ranks higher than Bartees Strange on direct younger indie-rock/Boygenius-adjacent audience fit.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Only shortlist candidates were considered.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo data is available; no quantitative affinity, audience-growth, or ticket-demand evidence is provided.",
+          "The National's actual audience composition and the target audience's exact demographics are not provided.",
+          "Actual booking fees, availability, dates, and willingness are outside this tool and unverified.",
+          "Whether any support act would convert taste affinity into new audience growth is unknown.",
+          "Market-by-market differences in younger indie-rock demand are not known.",
+          "The strength of Boygenius audience overlap with each shortlist act is based on general knowledge, not measured data."
+        ]
+      },
+      "ms": 43687,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "after_veto",
+      "version": "qloo",
+      "inPlay": [
+        "Lucius",
+        "Bartees Strange",
+        "Courtney Barnett",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [
+        "Sharon Van Etten"
+      ],
+      "rulePriority": "Bartees Strange",
+      "run": 1,
+      "brief": {
+        "priority": "Bartees Strange",
+        "backups": [
+          "Wednesday",
+          "Courtney Barnett"
+        ],
+        "headlinerSide": "In the Qloo pool, Bartees Strange is headlinerRank 4 against The National's current audience (qloo). It shares Qloo tags with The National, including United States, Manchester, Diverse, United Kingdom, Rockabilly, Folk, Rock, Ireland, Guitar and Energetic (qloo). The provided Qloo evidence also lists headliner-side-only tags such as Existentialism, Atmospheric, Melancholy, Introspective, Melancholic, Thoughtful, Poetic and Indie, which are not shown as shared with Bartees Strange (qloo). On this side, Courtney Barnett ranks ahead at headlinerRank 2, and Lucius ranks ahead at headlinerRank 3, so Bartees Strange is not the highest-ranked headliner-side match in this pool; Courtney Barnett is the act to name instead (qloo). Its role here is as the product-rule balance priority, not as the headliner-side leader (product_rule).",
+        "targetSide": "Against the Boygenius target reference, Bartees Strange is targetRank 3 in the Qloo pool (qloo). It shares Qloo tags with the target reference, including United States, Folk, Straightforward, Melodic, Guitar, Drums, Bass, Raw, Expressive and Mental Health (qloo). The target-side-only Qloo tags include Harmonious, Melodic, Supportive, Heartbreak, Collaborative, Introspective, Indie and Friendship, which are not shown as shared with Bartees Strange (qloo). On this side, Cassandra Jenkins ranks ahead at targetRank 1, and Wednesday ranks ahead at targetRank 2, so Bartees Strange is not the highest-ranked target-side match; Cassandra Jenkins is the act to name instead (qloo). This is taste affinity to a reference artist, not proof of younger indie-rock audience growth or ticket demand (product_rule).",
+        "answer": "Start by evaluating Bartees Strange. Under the product rule, it is the balance priority because its worst side rank is headlinerRank 4, compared with the backups Wednesday and Courtney Barnett (product_rule). It is not the top on either side: Courtney Barnett ranks ahead on the headliner side at headlinerRank 2, and Cassandra Jenkins ranks ahead on the target side at targetRank 1, with Wednesday also ahead on the target side at targetRank 2 (qloo). Keep Wednesday as backup one and Courtney Barnett as backup two (product_rule). Treat this as a taste-affinity triage only; the provided Qloo evidence does not show ticket demand, booking willingness, fees, dates, or actual new audience growth (product_rule).",
+        "evidence": [
+          {
+            "claim": "In the provided Qloo pool, Bartees Strange has headlinerRank 4 and targetRank 3, with worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The product rule selected Bartees Strange as priority, with backups Wednesday and Courtney Barnett.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Wednesday has headlinerRank 5 and targetRank 2, with worstRank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Courtney Barnett has headlinerRank 2 and targetRank 5, with worstRank 5, and is marked tied with the previous candidate.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Cassandra Jenkins has headlinerRank 6 and targetRank 1, with worstRank 6.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Lucius has headlinerRank 3 and targetRank 6, with worstRank 6.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between The National and Bartees Strange include United States, Manchester, Diverse, United Kingdom, Rockabilly, Folk, Rock, Ireland, Guitar and Energetic.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between Boygenius and Bartees Strange include United States, Folk, Straightforward, Melodic, Guitar, Drums, Bass, Raw, Expressive and Mental Health.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo headliner-side-only tags for The National include Existentialism, Atmospheric, Melancholy, Introspective, Melancholic, Thoughtful, Poetic and Indie.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo target-side-only tags for Boygenius include Harmonious, Melodic, Supportive, Heartbreak, Collaborative, Introspective, Indie and Friendship.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Shared tags are similarity hints, not causes.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates and willingness are checked by the team outside this tool and are not claimed here.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Ranks are positions in the original pool of six; vetoed acts were removed without re-ranking or renumbering.",
+            "source": "qloo"
+          }
+        ],
+        "unknowns": [
+          "Whether Bartees Strange actually reaches younger indie-rock listeners is not established; the target is proxied only by Boygenius in the Qloo evidence.",
+          "The provided evidence does not include ticket sales, streaming growth, demographic age data, venue capacity, promoter demand or live-audience conversion.",
+          "Booking fee, availability, date routing and willingness to support are outside this tool and remain unverified.",
+          "Live-show compatibility, production needs, set length and billing fit are unknown.",
+          "Qloo shared tags are similarity hints and do not explain why any audience crossover would occur.",
+          "The original pool had six acts and vetoed acts were removed without re-ranking; missing rank positions are not interpreted in this brief."
+        ]
+      },
+      "ms": 46041,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "after_veto",
+      "version": "qloo",
+      "inPlay": [
+        "Lucius",
+        "Bartees Strange",
+        "Courtney Barnett",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [
+        "Sharon Van Etten"
+      ],
+      "rulePriority": "Bartees Strange",
+      "run": 2,
+      "brief": {
+        "priority": "Bartees Strange",
+        "backups": [
+          "Wednesday",
+          "Courtney Barnett"
+        ],
+        "headlinerSide": "For The National's current audience, Bartees Strange is rank 4 on the Qloo headliner-side ranking (qloo). It is not the top of this side: Courtney Barnett is rank 2 and Lucius is rank 3, both higher than Bartees Strange (qloo). Qloo shared tags between The National and Bartees Strange include United States, Manchester, Diverse, United Kingdom, Rockabilly, Folk, Rock, Ireland, Guitar, and Energetic (qloo). The National has qloo-only tags including Existentialism, Atmospheric, Melancholy, Introspective, Melancholic, Thoughtful, Poetic, and Indie; Bartees Strange has qloo-only tags including Relationships, Expressive, Open-minded, Singer & Songwriter, Raw, Engaging, Engaged, and Jazz (qloo). So the headliner-side fit is a mid-pool affinity signal, not the strongest on that side (qloo).",
+        "targetSide": "For the Boygenius target audience, Bartees Strange is rank 3 on the Qloo target-side ranking (qloo). It is not the top of this side: Cassandra Jenkins is rank 1 and Wednesday is rank 2, both higher than Bartees Strange (qloo). Qloo shared tags between Boygenius and Bartees Strange include United States, Folk, Straightforward, Melodic, Guitar, Drums, Bass, Raw, Expressive, and Mental Health (qloo). Boygenius has qloo-only tags including Harmonious, Melodic, Supportive, Heartbreak, Collaborative, Introspective, Indie, and Friendship; Bartees Strange has qloo-only tags including Relationships, Open-minded, Singer & Songwriter, Engaging, Engaged, Jazz, Race, and Eclectic (qloo). So the target-side fit is a mid-pool affinity signal, not the strongest on that side (qloo).",
+        "answer": "Evaluate Bartees Strange first as the balanced shortlist candidate for reaching younger indie rock listeners via Boygenius affinity (product_rule). The product rule chose it because its worst side rank is 4, while Wednesday and Courtney Barnett each have a worst side rank of 5 and Cassandra Jenkins and Lucius each have 6 (qloo; product_rule). Keep Wednesday and Courtney Barnett as backups (product_rule). This is a taste-affinity ranking only; it is not ticket demand and does not prove new audience growth (product_rule). Booking fees, dates, and willingness are checked by the team outside this tool and are not assessed here (product_rule).",
+        "evidence": [
+          {
+            "claim": "The product rule selected Bartees Strange as priority, with Wednesday and Courtney Barnett as backups.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo table: Bartees Strange has headlinerRank 4 and targetRank 3.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table: Wednesday has headlinerRank 5 and targetRank 2.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table: Courtney Barnett has headlinerRank 2, targetRank 5, and tiedWithPrevious true.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table: Cassandra Jenkins has headlinerRank 6 and targetRank 1.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table: Lucius has headlinerRank 3 and targetRank 6.",
+            "source": "qloo"
+          },
+          {
+            "claim": "On the headliner side, Courtney Barnett (rank 2) and Lucius (rank 3) rank higher than Bartees Strange (rank 4).",
+            "source": "qloo"
+          },
+          {
+            "claim": "On the target side, Cassandra Jenkins (rank 1) and Wednesday (rank 2) rank higher than Bartees Strange (rank 3).",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between The National and Bartees Strange include United States, Manchester, Diverse, United Kingdom, Rockabilly, Folk, Rock, Ireland, Guitar, and Energetic.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between Boygenius and Bartees Strange include United States, Folk, Straightforward, Melodic, Guitar, Drums, Bass, Raw, Expressive, and Mental Health.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo ranks are positions within the original pool of 6; vetoed acts were removed without re-ranking or renumbering.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked by the team outside this tool.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Boygenius is generally associated with indie rock and serves as a target-audience reference act in this scenario.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "Whether the product-rule balance actually reaches younger indie-rock listeners is not established by Qloo ranks alone (product_rule).",
+          "Qloo shared tags are similarity hints, not causes (qloo).",
+          "Ranks are positions in the original pool of 6; vetoed acts were removed without re-ranking or renumbering (qloo).",
+          "The vetoed act Sharon Van Etten is excluded from fit discussion (product_rule).",
+          "Booking fees, dates, and willingness are outside this tool (product_rule).",
+          "Any actual audience growth or ticket-demand impact remains unverified (product_rule)."
+        ]
+      },
+      "ms": 33991,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "after_veto",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Lucius",
+        "Courtney Barnett",
+        "Sharon Van Etten",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [
+        "Bartees Strange"
+      ],
+      "brief": {
+        "priority": "Sharon Van Etten",
+        "backups": [
+          "Courtney Barnett",
+          "Lucius"
+        ],
+        "headlinerSide": "Sharon Van Etten fits The National's current audience because her melancholic, atmospheric indie rock and female vocal presence sit close to the band's adult-alternative, brooding lane. On the headliner side, Lucius ranks higher than Sharon Van Etten because Lucius has a direct collaborative/touring association with The National. Sharon Van Etten is the second-ranked headliner-side fit on this shortlist.",
+        "targetSide": "Sharon Van Etten fits the Boygenius-referenced target audience through the confessional, female-fronted indie rock lineage and a touring connection with Julien Baker of Boygenius. On the target side, Wednesday ranks higher as a younger indie rock act, and Courtney Barnett also ranks higher for younger indie rock listeners. Sharon Van Etten is the third-ranked target-side fit on this shortlist.",
+        "answer": "Sharon Van Etten is the most balanced candidate to evaluate first for reaching younger indie rock listeners while staying credible with The National's current audience. She is not the top fit on either side: Lucius is stronger for The National's audience, and Wednesday is stronger for the younger indie rock target. Courtney Barnett and Lucius are the backups, covering target-leaning and headliner-leaning alternatives respectively.",
+        "evidence": [
+          {
+            "claim": "The National's audience is associated with brooding, adult-alternative indie rock, often featuring female guest vocals.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Boygenius is a younger indie rock supergroup consisting of Julien Baker, Phoebe Bridgers, and Lucy Dacus.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sharon Van Etten is a female-fronted indie rock artist known for melancholic, atmospheric songs.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sharon Van Etten has a touring connection with Julien Baker of Boygenius.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lucius has a direct collaborative/touring association with The National and fits their audience more directly.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Wednesday is a younger indie rock band with alt-country and shoegaze elements and recent critical buzz.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Courtney Barnett is a female-fronted indie rock artist with appeal to younger indie rock listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "No Qloo affinity data is available in this version, so no Qloo-sourced claims are used.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The priority must balance headliner-side and target-side fit, and must not be called best on a side where another act ranks higher.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Actual audience overlap between these acts and The National or Boygenius.",
+          "Ticket demand and whether any support act would grow new audience, not just match taste.",
+          "Booking fees, availability, dates, and willingness of any shortlisted act.",
+          "Qloo affinity scores and any Qloo evidence for these artists.",
+          "Local market response in specific cities or venues."
+        ]
+      },
+      "ms": 39998,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "after_veto",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Lucius",
+        "Courtney Barnett",
+        "Sharon Van Etten",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [
+        "Bartees Strange"
+      ],
+      "brief": {
+        "priority": "Courtney Barnett",
+        "backups": [
+          "Wednesday",
+          "Sharon Van Etten"
+        ],
+        "headlinerSide": "On the headliner side, the shortlist ranks: first, Sharon Van Etten; second, Courtney Barnett; third, Lucius; fourth, Cassandra Jenkins; fifth, Wednesday. Sharon Van Etten is the strongest fit for The National's current audience because of direct ties to The National's orbit. Courtney Barnett ranks second: she is an established indie-rock name with direct touring history with The National, so the current audience is likely to accept her, but she is not the closest direct aesthetic match to The National's brooding art-rock. Lucius ranks third, Cassandra Jenkins fourth, and Wednesday fifth.",
+        "targetSide": "On the target side, the shortlist ranks: first, Wednesday; second, Courtney Barnett; third, Lucius; fourth, Sharon Van Etten; fifth, Cassandra Jenkins. Wednesday is the strongest fit for the Boygenius-referenced younger indie-rock audience because the band is associated with the newer indie-rock scene and a younger-skewing profile. Courtney Barnett ranks second: she is legible to younger indie-rock listeners through guitar-based indie rock and festival presence, but she is not as directly tied to the Boygenius-adjacent scene as Wednesday. Lucius ranks third, Sharon Van Etten fourth, and Cassandra Jenkins fifth on this specific target.",
+        "answer": "Evaluate Courtney Barnett first as the balanced option. She ranks second on the headliner side behind Sharon Van Etten and second on the target side behind Wednesday. That makes her the two-sided compromise to evaluate first, not the top fit on either side. If the team wants more younger indie-rock reach, Wednesday is the target-leaning backup; if it wants more The National audience comfort, Sharon Van Etten is the headliner-leaning backup. This is a taste/fit judgment only; it does not prove ticket demand or new audience growth.",
+        "evidence": [
+          {
+            "claim": "The National's current audience is rooted in established indie/art-rock and adult-alternative listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Boygenius is a reference point for younger indie-rock and indie-folk listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sharon Van Etten has direct ties to The National's orbit, including work with Aaron Dessner and appearances/touring in that world, making her the headliner-side rank-one fit among the shortlist.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Courtney Barnett is an established indie-rock artist with direct touring history with The National, making her the headliner-side rank-two fit among the shortlist.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lucius has indie-pop/rock harmonies and live recognition that place them third on the headliner side in this brief.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Cassandra Jenkins is an indie-folk/art-pop singer-songwriter whose profile is less directly aligned with The National's core audience than Sharon Van Etten or Courtney Barnett.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Wednesday is associated with the newer indie-rock scene and a younger-skewing audience, making the band the target-side rank-one fit for the Boygenius reference.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Courtney Barnett is legible to younger indie-rock listeners through guitar-based indie rock and festival presence, making her the target-side rank-two fit behind Wednesday.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lucius ranks third on the target side because their indie-pop/rock profile is less directly tied to the Boygenius-adjacent indie-rock reference than Wednesday or Courtney Barnett.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sharon Van Etten ranks fourth on the target side because her profile is more established-indie than younger-indie-rock relative to the Boygenius reference.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Cassandra Jenkins ranks fifth on the target side because her indie-folk/art-pop profile is less directly aligned with the younger indie-rock reference.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "No Qloo evidence is available in this version; all artist-fit claims here are general_knowledge.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Selection must come from the shortlist; Bartees Strange is vetoed and excluded from fit discussion.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked outside this tool and are not claimed here.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo data is available to measure affinity or audience overlap.",
+          "Actual conversion of younger indie-rock listeners into new audience growth is unknown from taste affinity alone.",
+          "The current age composition of The National's audience and the Boygenius audience overlap are not quantified in this brief.",
+          "Booking fees, availability, dates, and willingness are not checked in this tool.",
+          "Local market and festival context may change which support act is most balanced."
+        ]
+      },
+      "ms": 100010,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "edited_references",
+      "version": "qloo",
+      "inPlay": [
+        "Lucius",
+        "Bartees Strange",
+        "Courtney Barnett",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [
+        "Sharon Van Etten"
+      ],
+      "rulePriority": "Bartees Strange",
+      "run": 1,
+      "brief": {
+        "priority": "Bartees Strange",
+        "backups": [
+          "Courtney Barnett",
+          "Wednesday"
+        ],
+        "headlinerSide": "Qloo: Bartees Strange is rank 3 of 5 on the headliner side. It is not the top on this side: Courtney Barnett is rank 1 and Lucius is rank 2. Qloo shared-tag hints with The National include United States, Manchester, Diverse, United Kingdom, Rockabilly, Folk, Rock, Ireland, Guitar, Energetic. The National-only tags include Existentialism, Atmospheric, Melancholy, Introspective, Melancholic, Thoughtful, Poetic, Indie; Bartees Strange-only tags include Relationships, Expressive, Open-minded, Singer & Songwriter, Raw, Engaging, Engaged, Jazz. So it has middle-rank overlap with the headliner side, not the leading match.",
+        "targetSide": "Qloo: Bartees Strange is rank 3 of 5 on the target side. It is not the top on this side: Cassandra Jenkins is rank 1 and Wednesday is rank 2. Qloo shared-tag hints with the target reference set include United States, Folk, Straightforward, Melodic, Guitar, Drums, Bass, Raw, Expressive, Relationships. Qloo target-side only tags include Introspective, Intimate, Loyal, Passionate, Indie - Folk, Emotive, Indie; Bartees Strange-only tags include Relationships, Open-minded, Singer & Songwriter, Engaging, Engaged, Jazz, Race, Eclectic. So it has middle-rank overlap with the target side, not the leading match.",
+        "answer": "Under the product rule (worst side rank, then rank sum), the balanced pick is Bartees Strange, with Courtney Barnett and Wednesday as backups. In literal Qloo rank terms, Bartees Strange is rank 3 on the headliner side and rank 3 on the target side, so it is the most even by that rule, but it is not the strongest on either side: Courtney Barnett is rank 1 on the headliner side, and Cassandra Jenkins is rank 1 on the target side. Qloo affinity does not establish ticket demand or new audience growth, and it does not measure whether listeners are younger; fees, dates, and willingness are outside this tool.",
+        "evidence": [
+          {
+            "claim": "Qloo ranks in this pool of 5: Bartees Strange headlinerRank 3 and targetRank 3; Courtney Barnett headlinerRank 1 and targetRank 4; Lucius headlinerRank 2 and targetRank 5; Wednesday headlinerRank 4 and targetRank 2; Cassandra Jenkins headlinerRank 5 and targetRank 1.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The product rule (worst side rank, then rank sum) selects Bartees Strange as priority, with Courtney Barnett and Wednesday as backups.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo shared-tag hints between The National and Bartees Strange include United States, Manchester, Diverse, United Kingdom, Rockabilly, Folk, Rock, Ireland, Guitar, Energetic.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared-tag hints between the target reference set and Bartees Strange include United States, Folk, Straightforward, Melodic, Guitar, Drums, Bass, Raw, Expressive, Relationships.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo ranks are positions within this 5-act pool only.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Shared tags are similarity hints, not causes.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked outside this tool.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Whether any shortlist act actually reaches younger independent-rock listeners or grows new audience is not established by the Qloo affinity evidence.",
+          "Qloo evidence does not include demographic age data.",
+          "Qloo ranks are only within this 5-act pool and do not measure overall market demand.",
+          "Fees, availability, dates, and willingness are not checked in this tool.",
+          "Bartees Strange is not top-ranked on either side; if the team prioritizes headliner-side fit, Courtney Barnett ranks higher there, and if it prioritizes target-side fit, Cassandra Jenkins ranks higher there.",
+          "Whether Boygenius and Big Thief fully represent the intended younger independent-rock target audience is not verified here."
+        ]
+      },
+      "ms": 42311,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "edited_references",
+      "version": "qloo",
+      "inPlay": [
+        "Lucius",
+        "Bartees Strange",
+        "Courtney Barnett",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [
+        "Sharon Van Etten"
+      ],
+      "rulePriority": "Bartees Strange",
+      "run": 2,
+      "brief": {
+        "priority": "Bartees Strange",
+        "backups": [
+          "Courtney Barnett",
+          "Wednesday"
+        ],
+        "headlinerSide": "qloo: Bartees Strange ranks 3 of 5 against The National's current audience. qloo: Courtney Barnett ranks 1 and Lucius ranks 2 on this side, so Bartees Strange is not the top headliner-side match. qloo: Shared tags include United States, Manchester, Diverse, United Kingdom, Rockabilly, Folk, Rock, Ireland, Guitar, and Energetic; headliner-only tags include Existentialism, Atmospheric, Melancholy, Introspective, Melancholic, Thoughtful, Poetic, and Indie; candidate-only tags include Relationships, Expressive, Open-minded, Singer & Songwriter, Raw, Engaging, Engaged, and Jazz. qloo: These are similarity hints, not causes.",
+        "targetSide": "product_rule: The target references are Boygenius and Big Thief. qloo: Bartees Strange ranks 3 of 5 against that target reference set. qloo: Cassandra Jenkins ranks 1 and Wednesday ranks 2 on this side, so Bartees Strange is not the top target-side match. qloo: Shared tags include United States, Folk, Straightforward, Melodic, Guitar, Drums, Bass, Raw, Expressive, and Relationships; target-only tags include Introspective, Intimate, Drums, Loyal, Passionate, Indie - Folk, Emotive, and Indie; candidate-only tags include Relationships, Open-minded, Singer & Songwriter, Engaging, Engaged, Jazz, Race, and Eclectic. qloo: These are similarity hints, not causes.",
+        "answer": "product_rule: The priority is Bartees Strange, with backups Courtney Barnett and Wednesday. It is the balance pick because it has the better worst-side rank than the backups, but it is not the top match on either side: qloo: Courtney Barnett ranks higher on the headliner side, and qloo: Cassandra Jenkins ranks higher on the target side. product_rule: This is a taste-affinity shortlist answer only; it is not ticket demand and does not prove new audience growth. product_rule: Booking fees, dates, and willingness are outside this tool.",
+        "evidence": [
+          {
+            "claim": "The product rule selected Bartees Strange as priority, with Courtney Barnett and Wednesday as backups.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "In the Qloo pool, Bartees Strange has headlinerRank 3, targetRank 3, and worstRank 3.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Courtney Barnett has headlinerRank 1, targetRank 4, and worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Wednesday has headlinerRank 4, targetRank 2, and worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Cassandra Jenkins has headlinerRank 5 and targetRank 1; Lucius has headlinerRank 2 and targetRank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo ranks are positions within this 5-act pool only.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags for The National and Bartees Strange include United States, Manchester, Diverse, United Kingdom, Rockabilly, Folk, Rock, Ireland, Guitar, and Energetic; headliner-only tags include Existentialism, Atmospheric, Melancholy, Introspective, Melancholic, Thoughtful, Poetic, and Indie; candidate-only tags include Relationships, Expressive, Open-minded, Singer & Songwriter, Raw, Engaging, Engaged, and Jazz.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags for the target reference set and Bartees Strange include United States, Folk, Straightforward, Melodic, Guitar, Drums, Bass, Raw, Expressive, and Relationships; target-only tags include Introspective, Intimate, Drums, Loyal, Passionate, Indie - Folk, Emotive, and Indie; candidate-only tags include Relationships, Open-minded, Singer & Songwriter, Engaging, Engaged, Jazz, Race, and Eclectic.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked by the team outside this tool.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "The provided Qloo evidence does not directly measure the age skew of the target audience; 'younger' is not established here.",
+          "The Qloo evidence does not show ticket demand, incremental audience growth, or conversion.",
+          "Booking fees, availability, and willingness are not confirmed in this tool.",
+          "Shared Qloo tags are similarity hints, not causes or booking recommendations."
+        ]
+      },
+      "ms": 35645,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "edited_references",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Lucius",
+        "Courtney Barnett",
+        "Sharon Van Etten",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [
+        "Bartees Strange"
+      ],
+      "brief": {
+        "priority": "Courtney Barnett",
+        "backups": [
+          "Wednesday",
+          "Sharon Van Etten"
+        ],
+        "headlinerSide": "Courtney Barnett is a moderate fit for The National's current audience. She is an established indie rock singer-songwriter, but her slacker/upbeat guitar style is less directly aligned with The National's melancholic, mature tone. On this side, Sharon Van Etten and Lucius rank higher: Sharon Van Etten shares a somber indie-rock/folk sensibility, and Lucius has closer ties to The National's orbit. Courtney Barnett is not the strongest fit here; she is a compromise.",
+        "targetSide": "Courtney Barnett is a strong fit for younger indie rock listeners. Her guitar-driven, indie-rock profile and younger following make her relevant to fans of boygenius and Big Thief. On this side, Wednesday ranks higher: Wednesday is a newer, younger indie rock act with a more current buzz among that audience. Courtney Barnett still reaches that space, but Wednesday is the stronger target-side pick.",
+        "answer": "For reaching younger indie rock listeners while keeping a bridge to The National's current audience, Courtney Barnett is the most balanced candidate to evaluate first. She is not the strongest on either side: Sharon Van Etten and Lucius rank higher on the headliner side, and Wednesday ranks higher on the target side. Courtney Barnett sits between those poles: established enough for The National's indie-rock base, yet younger-facing enough for boygenius/Big Thief listeners. Backups: Wednesday if the goal is maximum younger-indie reach; Sharon Van Etten if the goal is maximum headliner-audience fit. This is a taste-affinity judgment, not evidence of ticket demand or new audience growth.",
+        "evidence": [
+          {
+            "claim": "The National is an established indie rock band with a melancholic, mature-leaning audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Boygenius and Big Thief are younger-facing indie rock/folk reference acts for the target audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Courtney Barnett is an established indie rock singer-songwriter with a younger indie following.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sharon Van Etten and Lucius are generally closer to The National's mature indie-rock audience than Courtney Barnett.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Wednesday is a newer indie rock band with a younger buzz, ranking higher on the target side than Courtney Barnett.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Cassandra Jenkins is a newer indie folk/rock artist who has opened for The National, giving her headliner-side affinity.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity does not prove ticket demand or new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The priority is a balance between sides, not a claim of best on either side.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Only shortlisted acts are considered; Bartees Strange is vetoed and excluded.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo data was provided.",
+          "Booking fees, dates, and willingness are checked outside this tool.",
+          "Ticket demand and whether any candidate actually grows the audience are unknown.",
+          "Exact age demographics of The National's current audience and the target listeners are unknown.",
+          "Whether The National's current audience accepts a younger indie rock act is unknown.",
+          "Whether boygenius/Big Thief fans will respond to any shortlisted act is unknown."
+        ]
+      },
+      "ms": 44760,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    },
+    {
+      "case": "H3",
+      "step": "edited_references",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Lucius",
+        "Courtney Barnett",
+        "Sharon Van Etten",
+        "Cassandra Jenkins",
+        "Wednesday"
+      ],
+      "vetoed": [
+        "Bartees Strange"
+      ],
+      "brief": {
+        "priority": "Courtney Barnett",
+        "backups": [
+          "Wednesday",
+          "Sharon Van Etten"
+        ],
+        "headlinerSide": "On the headliner side, Sharon Van Etten ranks higher than Courtney Barnett for The National's current audience (general_knowledge); Lucius also ranks higher there (general_knowledge). Courtney Barnett still fits that side as an established guitar-driven indie-rock act with a literate, deadpan profile that shares adult indie-rock and festival circuits with The National (general_knowledge). She is not the top headliner-side match, but she is not a mismatch.",
+        "targetSide": "On the target side, Wednesday ranks higher than Courtney Barnett for younger indie-rock adjacency to Boygenius and Big Thief (general_knowledge). Courtney Barnett is not the top target-side match, but she is a recognized indie-rock name with younger-leaning guitar music and a more contemporary profile than Sharon Van Etten or Lucius (general_knowledge). This makes her a middle-rank bridge rather than the strongest target-side choice.",
+        "answer": "The most balanced shortlist candidate to approach first is Courtney Barnett. She is not the top headliner-side fit—Sharon Van Etten ranks higher there, with Lucius also higher—and she is not the top target-side fit for younger indie-rock listeners—Wednesday ranks higher there. Her value is as the middle option: she can plausibly connect The National's current indie-rock audience to younger indie-rock listeners without claiming ticket demand or audience growth (product_rule). Backups: Wednesday if the team wants to lean younger/target-side; Sharon Van Etten if the team wants to lean headliner-side.",
+        "evidence": [
+          {
+            "claim": "No Qloo evidence is available in this version, so no qloo-sourced affinity claims are made.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The National's current audience is generally adult alternative/indie-rock listeners who favor literate, brooding, guitar-and-keys music.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sharon Van Etten and Lucius have closer collaborative or touring adjacency to The National than Courtney Barnett, so they rank higher on the headliner side.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Boygenius and Big Thief are younger-leaning indie rock/folk reference points for the target audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Wednesday has a newer, younger-leaning indie-rock profile and ranks higher than Courtney Barnett on target-side adjacency to Boygenius and Big Thief.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Courtney Barnett is an established indie-rock singer-songwriter with guitar-based, deadpan songs, making her a middle-rank compromise rather than the top choice on either side.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity does not prove ticket demand or new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Booking fees, dates, and willingness are checked outside this tool and are not claimed here.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The shortlist is limited to Lucius, Courtney Barnett, Sharon Van Etten, Cassandra Jenkins, and Wednesday; Bartees Strange is vetoed and not discussed.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Qloo affinity data is unavailable in this version.",
+          "Actual ticket demand and new audience growth for any shortlist act are not known.",
+          "Booking fees, dates, and willingness are not verified here.",
+          "Audience age and demographic data for The National, Boygenius, Big Thief, and each shortlist act are not provided.",
+          "Local market and venue response for each candidate are not provided.",
+          "Whether any shortlist act has current touring availability or production fit is not provided."
+        ]
+      },
+      "ms": 34314,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0
+      }
+    }
+  ],
+  "qlooToolCalls": {
+    "qloo_describe": 26,
+    "qloo_rank": 6,
+    "qloo_compare_audiences": 6
+  },
+  "ms": 295055
+}

@@ -1,0 +1,1054 @@
+{
+  "case": "D1",
+  "model": "deepseek-flash",
+  "runsPerVersion": 2,
+  "qloo": {
+    "initial": {
+      "notRankable": [],
+      "table": [
+        {
+          "name": "Lucy Dacus",
+          "headlinerRank": 1,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Clairo",
+          "headlinerRank": 4,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Soccer Mommy",
+          "headlinerRank": 3,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Gracie Abrams",
+          "headlinerRank": 5,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "Julien Baker",
+          "headlinerRank": 2,
+          "targetRank": 5,
+          "tied": false
+        }
+      ],
+      "priority": "Lucy Dacus"
+    },
+    "afterVeto": {
+      "vetoed": "Lucy Dacus",
+      "table": [
+        {
+          "name": "Clairo",
+          "headlinerRank": 4,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Soccer Mommy",
+          "headlinerRank": 3,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Gracie Abrams",
+          "headlinerRank": 5,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "Julien Baker",
+          "headlinerRank": 2,
+          "targetRank": 5,
+          "tied": false
+        }
+      ],
+      "priority": "Clairo",
+      "explanationRefetched": true
+    },
+    "editedReferences": {
+      "references": [
+        "Olivia Rodrigo",
+        "Billie Eilish"
+      ],
+      "notRankable": [],
+      "table": [
+        {
+          "name": "Soccer Mommy",
+          "headlinerRank": 2,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Clairo",
+          "headlinerRank": 3,
+          "targetRank": 2,
+          "tied": true
+        },
+        {
+          "name": "Julien Baker",
+          "headlinerRank": 1,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Gracie Abrams",
+          "headlinerRank": 4,
+          "targetRank": 1,
+          "tied": true
+        }
+      ],
+      "priority": "Soccer Mommy",
+      "change": {
+        "kind": "new_query",
+        "trigger": "Target references: Olivia Rodrigo → Olivia Rodrigo, Billie Eilish",
+        "priorityBefore": "Clairo",
+        "priorityAfter": "Soccer Mommy",
+        "at": "2026-10-03T08:38:35.079Z"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "case": "D1",
+      "step": "initial",
+      "version": "qloo",
+      "inPlay": [
+        "Lucy Dacus",
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo",
+        "Gracie Abrams"
+      ],
+      "vetoed": [],
+      "rulePriority": "Lucy Dacus",
+      "run": 1,
+      "brief": {
+        "priority": "Lucy Dacus",
+        "backups": [
+          "Clairo",
+          "Soccer Mommy"
+        ],
+        "headlinerSide": "On the headliner side, Lucy Dacus is rank 1 of 5 in the Qloo pool (qloo); no other shortlisted act ranks higher against Phoebe Bridgers (qloo). Qloo shared tags with Phoebe include Folk, Melodic, Emotional, Indie, and Singer & Songwriter (qloo). This is the top-ranked headliner-side position in the pool, but it is taste affinity, not ticket demand or proof of audience retention (product_rule).",
+        "targetSide": "On the target side, Lucy Dacus is rank 3 of 5 (qloo). Gracie Abrams is rank 1 on the target side and Clairo is rank 2 (qloo), so Lucy is not the closest or strongest match to Olivia Rodrigo's audience in this pool; Gracie Abrams is the top-ranked target-side act, and Clairo is second (qloo). Lucy's Qloo shared tags with Olivia include Rock, United States, Folk, and Energetic (qloo). Qloo tags unique to Olivia versus Lucy include Heartbreak, Catchy, Self-discovery, Youthful, and Emotional, while tags unique to Lucy include Relationships, Atmospheric, Lyrical, Raw, and Growth (qloo). This makes Lucy a balanced pick rather than a target-side leader (product_rule).",
+        "answer": "The product rule's priority is Lucy Dacus, with Clairo and Soccer Mommy as backups (product_rule). Directly: if the team optimizes purely for proximity to Olivia Rodrigo's target audience, Gracie Abrams is rank 1 on the target side (qloo), but she is rank 5 on the headliner side (qloo), so she risks the headliner's current audience. If the team optimizes primarily for the headliner side, Lucy Dacus is rank 1 there (qloo), with Julien Baker rank 2 (qloo), but Julien is rank 5 on the target side (qloo). Lucy Dacus is the balanced product-rule pick: rank 1 on the headliner side and rank 3 on the target side (qloo). That is not a claim that she is closest to Olivia Rodrigo's audience; Gracie Abrams and Clairo rank above her on that side (qloo). It is the product rule's balance between preserving Phoebe Bridgers' current audience and moving toward the target audience (product_rule). Backups are Clairo, target rank 2 and headliner rank 4, and Soccer Mommy, headliner rank 3 and target rank 4 (qloo). Taste affinity is not ticket demand and does not prove new audience growth; fees, dates, and willingness are outside this tool (product_rule).",
+        "evidence": [
+          {
+            "claim": "Qloo pool ranks: Lucy Dacus headlinerRank 1, targetRank 3, worstRank 3.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Product rule selected Lucy Dacus as priority by worst-side rank then rank sum, with Clairo and Soccer Mommy as backups; priorityTiedWithNext is false.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo target side: Gracie Abrams rank 1, Clairo rank 2, Lucy Dacus rank 3, Soccer Mommy rank 4, Julien Baker rank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo headliner side: Lucy Dacus rank 1, Julien Baker rank 2, Soccer Mommy rank 3, Clairo rank 4, Gracie Abrams rank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between Phoebe Bridgers and Lucy Dacus include Folk, Melodic, Emotional, Indie, and Singer & Songwriter.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between Olivia Rodrigo and Lucy Dacus include Rock, United States, Folk, and Energetic.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo onlyGroup for Olivia Rodrigo vs Lucy Dacus includes Heartbreak, Catchy, Self-discovery, Youthful, Emotional; onlyCandidate for Lucy Dacus includes Relationships, Atmospheric, Lyrical, Raw, Growth.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo backup ranks: Clairo headlinerRank 4, targetRank 2, worstRank 4; Soccer Mommy headlinerRank 3, targetRank 4, worstRank 4.",
+            "source": "qloo"
+          }
+        ],
+        "unknowns": [
+          "Qloo ranks are positions within this shortlist pool only; they are not market-wide popularity, ticket-demand, or audience-growth measures.",
+          "qlooNotes is empty, so no degraded or partial Qloo results are flagged; the Qloo evidence is treated as complete for this pool but remains similarity evidence.",
+          "Ticket demand, fees, dates, routing, willingness, and actual conversion of Olivia Rodrigo-leaning listeners are outside this tool and are not claimed.",
+          "Shared tags are similarity hints, not causes of audience overlap.",
+          "No data is provided on Olivia Rodrigo's actual audience composition or on whether Phoebe Bridgers fans would accept the support act.",
+          "The product rule balances sides mechanically; it does not prove that any support act will grow the audience."
+        ]
+      },
+      "ms": 47026,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    },
+    {
+      "case": "D1",
+      "step": "initial",
+      "version": "qloo",
+      "inPlay": [
+        "Lucy Dacus",
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo",
+        "Gracie Abrams"
+      ],
+      "vetoed": [],
+      "rulePriority": "Lucy Dacus",
+      "run": 2,
+      "brief": {
+        "priority": "Lucy Dacus",
+        "backups": [
+          "Clairo",
+          "Soccer Mommy"
+        ],
+        "headlinerSide": "Literal headliner-side read: Qloo places Lucy Dacus at headlinerRank 1 of 5 in this shortlist, ahead of Julien Baker at 2 of 5, Soccer Mommy at 3 of 5, Clairo at 4 of 5 and Gracie Abrams at 5 of 5. So on the Phoebe Bridgers side she is the closest fit in this pool. Qloo shared tags such as Folk, Indie, Singer & Songwriter, Melodic, Emotional and United States are similarity hints only; they do not prove current fans will stay or that the support slot is safe.",
+        "targetSide": "Literal target-side read: Lucy Dacus is targetRank 3 of 5 against Olivia Rodrigo. She is not the closest to the Olivia Rodrigo audience: Gracie Abrams is targetRank 1 of 5 and Clairo is targetRank 2 of 5. Lucy Dacus shares some Qloo tags with the target reference, including Rock, Folk, Energetic and Drums, but her target-side evidence is mid-pack and weaker than Gracie Abrams and Clairo. So the priority is a balance: strong headliner side, not top target side.",
+        "answer": "Evaluate Lucy Dacus first. By Qloo, she is rank 1 of 5 on the headliner side, the strongest Phoebe Bridgers fit in the shortlist, while she is rank 3 of 5 on the Olivia Rodrigo target side. She is therefore not the closest to the target audience; Gracie Abrams is target rank 1 but headliner rank 5, and Clairo is target rank 2 but headliner rank 4, so each gives up more on the Phoebe Bridgers side. Julien Baker is headliner rank 2 but target rank 5. The product rule chose Lucy Dacus as priority and Clairo then Soccer Mommy as backups. This is a balance choice, not proof of ticket demand or new audience growth. Backups to test next: Clairo, Soccer Mommy.",
+        "evidence": [
+          {
+            "claim": "Qloo places Lucy Dacus at headlinerRank 1 of 5 and targetRank 3 of 5 in this shortlist.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The product rule selected Lucy Dacus as priority, with backups Clairo and Soccer Mommy; priorityTiedWithNext is false, so no tie disclaimer is needed.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo places Gracie Abrams at targetRank 1 of 5 and headlinerRank 5 of 5; she is the target-side leader in this pool but the weakest headliner-side fit.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo places Clairo at targetRank 2 of 5 and headlinerRank 4 of 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo places Julien Baker at headlinerRank 2 of 5 and targetRank 5 of 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo places Soccer Mommy at headlinerRank 3 of 5 and targetRank 4 of 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Phoebe Bridgers vs Lucy Dacus Qloo shared tags include Folk, Indie, Singer & Songwriter, Melodic, Emotional and United States; these are similarity hints, not causes.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Olivia Rodrigo vs Lucy Dacus Qloo shared tags include Rock, Folk, Energetic and Drums, with target-only tags such as Catchy, Youthful and Emotional.",
+            "source": "qloo"
+          }
+        ],
+        "unknowns": [
+          "Booking fees, dates and willingness were not checked here and must not be claimed.",
+          "Taste affinity is not ticket demand and does not prove new audience growth.",
+          "Qloo ranks are positions only within this pool of five, not a broader market ranking.",
+          "The target side uses Olivia Rodrigo as reference only; no direct evidence is provided about pop-leaning younger listeners.",
+          "Shared tags are similarity hints, not causes.",
+          "No degraded or partial Qloo results were reported; qlooNotes is empty.",
+          "Whether Phoebe Bridgers current fans would accept a support act cannot be proven by Qloo affinity.",
+          "The product rule is a selection rule, not an outcome forecast."
+        ]
+      },
+      "ms": 32237,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    },
+    {
+      "case": "D1",
+      "step": "initial",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Lucy Dacus",
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo",
+        "Gracie Abrams"
+      ],
+      "vetoed": [],
+      "brief": {
+        "priority": "Gracie Abrams",
+        "backups": [
+          "Clairo",
+          "Soccer Mommy"
+        ],
+        "headlinerSide": "No Qloo ranks are available, so this is a word-based general_knowledge comparison. On the headliner side, Gracie Abrams is not the closest fit to Phoebe Bridgers' current audience: Lucy Dacus and Julien Baker are more direct stylistic kin through boygenius and the indie-rock/indie-folk world (general_knowledge). Gracie is still adjacent as a young singer-songwriter with indie-pop and Aaron Dessner production associations, so she is a bridge rather than a core Phoebe-fan match (general_knowledge). If avoiding any risk to the existing audience is the priority, Lucy Dacus or Julien Baker would be the safer headliner-side names, but they are farther from Olivia Rodrigo's young pop audience (general_knowledge).",
+        "targetSide": "On the target side, Gracie Abrams is the priority because her general-known audience and positioning are the most directly tied to Olivia Rodrigo's young pop singer-songwriter audience among the shortlist (general_knowledge); she also has a general-known touring link as an opening act for Olivia Rodrigo (general_knowledge). Clairo is the next plausible bridge through bedroom-pop/indie-pop and young-listener overlap, though less directly Olivia-adjacent (general_knowledge). Soccer Mommy, Lucy Dacus and Julien Baker read more indie-rock/indie-folk and less young-pop, so they are weaker target-side bridges in general knowledge (general_knowledge). Taste affinity is not ticket demand and does not prove new audience growth (product_rule).",
+        "answer": "Start with Gracie Abrams. She is the most defensible general-knowledge balance between Phoebe Bridgers' current singer-songwriter/indie audience and Olivia Rodrigo's younger pop audience, even though Lucy Dacus and Julien Baker are stronger preservers of Phoebe's core fandom and Clairo is a secondary pop/indie bridge. Because no Qloo data is available, there are no numeric ranks or measured affinity scores; this is a word-based general_knowledge recommendation. Backups to evaluate next: Clairo, then Soccer Mommy.",
+        "evidence": [
+          {
+            "claim": "Gracie Abrams has a general-known link to Olivia Rodrigo's audience as an opening act and as a young pop singer-songwriter.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Phoebe Bridgers' current audience is centered on indie singer-songwriter/indie-rock and boygenius fandom.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lucy Dacus and Julien Baker are the shortlist acts most directly connected to Phoebe Bridgers' current audience through boygenius and shared indie-rock/indie-folk context.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Gracie Abrams is less directly tied to Phoebe Bridgers' boygenius/indie-rock core than Lucy Dacus or Julien Baker, so her headliner-side fit is a bridge rather than a core match.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Clairo shares bedroom-pop/indie-pop and young-listener overlap with Olivia Rodrigo's broader space, making her a plausible backup target-side bridge.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Soccer Mommy, Lucy Dacus and Julien Baker read more indie-rock/indie-folk than Olivia Rodrigo's young pop audience, making them weaker target-side bridges.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "No Qloo data was provided in this version, so no numeric ranks or measured affinity ordering can be used.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo evidence or qlooNotes are available; no numeric ranks, affinity scores, or measured audience overlap can be cited.",
+          "Booking fees, dates and willingness are outside this tool and were not checked.",
+          "Whether Gracie Abrams' audience would actually convert into new ticket buyers for Phoebe Bridgers is unknown; taste affinity is not demand.",
+          "Whether Phoebe Bridgers' current fans would accept a more pop-leaning support act is unknown and would need team verification."
+        ]
+      },
+      "ms": 31193,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    },
+    {
+      "case": "D1",
+      "step": "initial",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Lucy Dacus",
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo",
+        "Gracie Abrams"
+      ],
+      "vetoed": [],
+      "brief": {
+        "priority": "Gracie Abrams",
+        "backups": [
+          "Clairo",
+          "Soccer Mommy"
+        ],
+        "headlinerSide": "No Qloo rank is available, so this is a general_knowledge comparison. Gracie Abrams is not as organically tied to Phoebe Bridgers's existing audience as Lucy Dacus or Julien Baker are through boygenius. Her risk on the headliner side is that she reads more pop than Phoebe's indie-folk/indie-rock core. Still, she shares the emotional, singer-songwriter mode that Phoebe's audience already accepts, so she is not a pure pop mismatch. If protecting the core Phoebe fanbase is the priority, Lucy Dacus and Julien Baker are the safer names on that side.",
+        "targetSide": "No Qloo rank is available, so this is a general_knowledge comparison. Among the shortlist, Gracie Abrams is the most direct bridge to Olivia Rodrigo's young pop audience. She works in the pop-leaning singer-songwriter lane, has opened for Olivia Rodrigo, and her audience overlaps with listeners who want emotionally direct, young, pop-facing songwriting. Clairo is also pop-adjacent but more indie/bedroom-pop; Soccer Mommy is more indie-rock; Lucy Dacus and Julien Baker are less directly in Olivia Rodrigo's pop lane.",
+        "answer": "Use Gracie Abrams as the priority first look. Backups: Clairo, then Soccer Mommy. This is not a Qloo-measured ranking; no Qloo data was provided, so all comparisons are general_knowledge. Gracie Abrams is the most defensible balance because she moves toward Olivia Rodrigo's young pop audience while still sharing a singer-songwriter and emotional-diary DNA with Phoebe Bridgers. The trade-off is real: Lucy Dacus and Julien Baker are more obviously aligned with Phoebe's existing audience through boygenius, but they are less direct for Olivia Rodrigo's pop audience. Clairo is the softer indie-pop alternative if the team wants less pop risk; Soccer Mommy keeps more of the indie-rock center but moves less toward Olivia's audience. The backup order is a practical fallback order, not a measured affinity rank.",
+        "evidence": [
+          {
+            "claim": "Gracie Abrams is a pop-leaning singer-songwriter whose audience overlaps with Olivia Rodrigo's young pop audience; she has opened for Olivia Rodrigo.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Gracie Abrams shares emotional, diaristic songwriting with Phoebe Bridgers, but her sound is more pop than the indie-folk/indie-rock center of Phoebe's catalog.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Clairo works in indie-pop and bedroom-pop, giving her a younger pop-adjacent audience while remaining credible to indie listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Soccer Mommy is rooted in indie rock and singer-songwriter traditions, which makes her a safer fit for Phoebe's existing fans but less directly aligned with Olivia Rodrigo's pop audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lucy Dacus and Julien Baker are linked to Phoebe Bridgers through boygenius, so they are close to the headliner's existing audience, but their music is less directly in Olivia Rodrigo's pop lane.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "No Qloo evidence is available in this version, so no numeric ranks, positions, or measured affinities are used.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "The shortlist is fixed to Lucy Dacus, Julien Baker, Soccer Mommy, Clairo, and Gracie Abrams; no other acts are considered.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity does not prove ticket demand or new audience growth; booking fees, dates, and willingness are checked outside this tool.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo data was provided, so all fit judgements are general_knowledge and not measured affinity.",
+          "Ticket demand, new audience growth, booking fees, dates, and willingness are unverified and outside this tool.",
+          "Gracie Abrams's overlap with Olivia Rodrigo's audience is a general_knowledge judgement, not a Qloo-measured rank.",
+          "If Qloo data later arrives, it may change the ordering of Clairo, Soccer Mommy, Lucy Dacus, Julien Baker, or Gracie Abrams."
+        ]
+      },
+      "ms": 34249,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    },
+    {
+      "case": "D1",
+      "step": "after_veto",
+      "version": "qloo",
+      "inPlay": [
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo",
+        "Gracie Abrams"
+      ],
+      "vetoed": [
+        "Lucy Dacus"
+      ],
+      "rulePriority": "Clairo",
+      "run": 1,
+      "brief": {
+        "priority": "Clairo",
+        "backups": [
+          "Soccer Mommy",
+          "Gracie Abrams"
+        ],
+        "headlinerSide": "On the Qloo headliner side, Clairo is not the closest to Phoebe Bridgers' current audience: she has headlinerRank 4 in the Qloo table (qloo), while Julien Baker has headlinerRank 2 and Soccer Mommy has headlinerRank 3 (qloo). Clairo shares Qloo tags with Bridgers such as Folk, Introspective, Guitar, Passionate, United States, and Straightforward, so there is some headliner-side affinity (qloo), but Julien Baker is the act ranked closer to the headliner side, and Soccer Mommy also ranks higher than Clairo there.",
+        "targetSide": "On the Qloo target side, Clairo is closer to the Olivia Rodrigo reference audience but not the closest: she has targetRank 2 in the Qloo table (qloo), behind Gracie Abrams, who has targetRank 1 (qloo). Clairo shares Qloo tags with the target such as Melodic, Intimate, Self-discovery, Folk, Guitar, Vocals, and Passionate, and has candidate-only tags including Youth, Dreamy, Relationships, and Synthesizer (qloo). That supports a target-side pull, but Gracie Abrams is the act ranked closer to the target side.",
+        "answer": "Among the in-play shortlist, evaluate Clairo first (product_rule). Lucy Dacus is vetoed by the team and excluded from fit discussion. Backups are Soccer Mommy and Gracie Abrams (product_rule). This is a product-rule balance, not a claim that Clairo is closest on either side: Gracie Abrams is closer to Olivia Rodrigo's audience on the Qloo target side, with targetRank 1 versus Clairo's targetRank 2 (qloo), and Julien Baker is closer to Phoebe Bridgers' current audience on the Qloo headliner side, with headlinerRank 2 versus Clairo's headlinerRank 4 (qloo). Clairo's case is that she has targetRank 2 and headlinerRank 4, worstRank 4; Soccer Mommy also has worstRank 4 but targetRank 4, while Gracie Abrams has targetRank 1 but headlinerRank 5 and Julien Baker has headlinerRank 2 but targetRank 5 (qloo). priorityTiedWithNext is false, so the product rule separates Clairo from the next candidate (product_rule). Qloo affinity does not prove ticket demand or new audience growth; verify fees, dates, and willingness outside this tool (product_rule).",
+        "evidence": [
+          {
+            "claim": "Qloo table: Clairo has headlinerRank 4 and targetRank 2; her worst rank is 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo table: Soccer Mommy has headlinerRank 3, targetRank 4, worstRank 4; Gracie Abrams has headlinerRank 5, targetRank 1, worstRank 5; Julien Baker has headlinerRank 2, targetRank 5, worstRank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Product rule selected Clairo as priority and Soccer Mommy and Gracie Abrams as backups, using worst side rank then rank sum; priorityTiedWithNext is false.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "On the Qloo target side, Gracie Abrams has targetRank 1, ahead of Clairo at targetRank 2.",
+            "source": "qloo"
+          },
+          {
+            "claim": "On the Qloo headliner side, Julien Baker has headlinerRank 2, ahead of Clairo at headlinerRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between Phoebe Bridgers and Clairo include Folk, Introspective, Guitar, Passionate, United States, and Straightforward.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo shared tags between Olivia Rodrigo and Clairo include Melodic, Intimate, Self-discovery, Folk, Guitar, Vocals, and Passionate; Clairo-only tags include Youth, Dreamy, Synthesizer, Relationships, Supportive, Casual, and Mental Health.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo affinity is a taste-similarity signal only; it does not establish ticket demand or new audience growth.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Qloo ranks are positions in the original pool of 5; the vetoed act was removed without re-ranking or renumbering, so these are not a fresh ranking of the four in-play acts (qloo rankNote).",
+          "qlooNotes is empty; no degraded or partial Qloo results were flagged.",
+          "Qloo provides taste-affinity ranks and shared tags only; it does not establish ticket demand, new audience growth, booking fees, date availability, or willingness.",
+          "Shared tags are similarity hints, not causes, and the Qloo evidence does not explain why an act would attract the target audience.",
+          "The target-side evidence uses Olivia Rodrigo as a reference artist, not actual measured audience data for the tour.",
+          "Lucy Dacus is vetoed by the team and was not evaluated for fit; the shortlist effectively considered here is four acts, despite the team question referring to 5 people."
+        ]
+      },
+      "ms": 47673,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    },
+    {
+      "case": "D1",
+      "step": "after_veto",
+      "version": "qloo",
+      "inPlay": [
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo",
+        "Gracie Abrams"
+      ],
+      "vetoed": [
+        "Lucy Dacus"
+      ],
+      "rulePriority": "Clairo",
+      "run": 2,
+      "brief": {
+        "priority": "Clairo",
+        "backups": [
+          "Soccer Mommy",
+          "Gracie Abrams"
+        ],
+        "headlinerSide": "Qloo: On the headliner side, Clairo is headlinerRank 4 in this pool, so Clairo is not the closest match to Phoebe Bridgers' current audience. Julien Baker (headlinerRank 2) and Soccer Mommy (headlinerRank 3) rank higher on that side. The Qloo shared tags with Phoebe Bridgers include Folk, Introspective, Guitar, and Passionate, but these are similarity hints only. This headliner-side rank is the main risk against 'not obviously sacrificing existing fans.'",
+        "targetSide": "Qloo: On the target side, Clairo is targetRank 2 for the Olivia Rodrigo reference, so Clairo is not the closest on that side; Gracie Abrams is targetRank 1. The Qloo shared tags with the target reference include Jazz, Blues, Folk, Guitar, Vocals, Intimate, Melodic, Self-discovery, and Passionate, but these are similarity hints only. Clairo has a target-side fit at rank 2, but Gracie Abrams is the higher-ranked target-side act.",
+        "answer": "Product rule: Clairo is the first act to evaluate, with Soccer Mommy and Gracie Abrams as backups. This is a balance across sides, not a side-best: on the headliner side Clairo is rank 4, behind Julien Baker (rank 2) and Soccer Mommy (rank 3); on the target side Clairo is rank 2, behind Gracie Abrams (rank 1). The rule keeps Clairo first because its worst-side rank is 4, tied with Soccer Mommy, and Clairo has the lower rank sum. General knowledge: this is taste affinity only; it does not prove ticket demand, booking terms, or new audience growth.",
+        "evidence": [
+          {
+            "claim": "Priority is Clairo and backups are Soccer Mommy then Gracie Abrams, selected by the product rule using worst-side rank, then rank sum; this selection must not be changed.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Clairo: headlinerRank 4, targetRank 2, worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Soccer Mommy: headlinerRank 3, targetRank 4, worstRank 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Gracie Abrams: headlinerRank 5, targetRank 1, worstRank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Julien Baker: headlinerRank 2, targetRank 5, worstRank 5.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Clairo and Phoebe Bridgers share Qloo tags including Folk, Introspective, Guitar, and Passionate; these are similarity hints, not causes.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Clairo and the Olivia Rodrigo target reference share Qloo tags including Jazz, Blues, Folk, Guitar, Vocals, Intimate, Melodic, Self-discovery, and Passionate; these are similarity hints, not causes.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Olivia Rodrigo is associated with pop-leaning younger listeners, so Clairo's pop/indie crossover may be relevant for target reach, but taste affinity alone does not establish new audience growth or ticket demand.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "Qloo ranks are positions in the original pool of 5; vetoed acts were removed without re-ranking or renumbering, so these ranks are not re-normalized.",
+          "No Qloo evidence on ticket demand, draw, fees, dates, or willingness; those are outside this tool.",
+          "Qloo provides taste affinity only; it does not prove new audience growth or that Phoebe Bridgers' existing fans would be retained.",
+          "The team question mentions 5 people, but the Qloo table and in-play shortlist list 4 candidates; the vetoed act is excluded from fit discussion.",
+          "qlooNotes is empty, so no degraded or partial Qloo results were reported.",
+          "Shared tags are similarity hints, not causes."
+        ]
+      },
+      "ms": 37840,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    },
+    {
+      "case": "D1",
+      "step": "after_veto",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Lucy Dacus",
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo"
+      ],
+      "vetoed": [
+        "Gracie Abrams"
+      ],
+      "brief": {
+        "priority": "Clairo",
+        "backups": [
+          "Soccer Mommy",
+          "Lucy Dacus"
+        ],
+        "headlinerSide": "On general knowledge, Clairo sits inside the same indie/Gen-Z alternative world Phoebe Bridgers' fans already live in: bedroom-pop origins, a soft-rock turn, and a shared festival and indie-press circuit, so the booking does not read as a hard genre break to the existing crowd. She is not the act closest to Phoebe's core audience — Lucy Dacus and Julien Baker are, as boygenius collaborators whose audiences overlap Phoebe's most directly, and they carry the least risk of alienating current fans. Clairo is chosen for the balance, not as the safest headliner-side option.",
+        "targetSide": "Clairo's lane runs from bedroom pop into soft rock, which reads nearer Olivia Rodrigo's young, pop-facing audience than the folk-leaning end of this shortlist — a general_knowledge judgement, not a measured affinity. She is not a pop act on Olivia Rodrigo's scale, and the movement toward that audience is incremental. Soccer Mommy offers a second, more guitar-driven route to the same young listeners via the alt-rock/pop-punk edge of Olivia Rodrigo's catalogue.",
+        "answer": "Among the four acts still in play, start with Clairo: she is the most defensible balance between Phoebe Bridgers' current indie audience and a more pop-leaning young audience, because her bedroom-pop-to-soft-rock lane is adjacent to both without abandoning either. Hold Soccer Mommy as the first backup for a rockier, guitar-forward bridge, and Lucy Dacus as the second for minimal disruption to the existing fanbase. Lucy Dacus and Julien Baker are the closest fits to Phoebe's current audience — name them for that side, not Clairo — and all four acts are indie/alternative-adjacent, so any reach into Olivia Rodrigo's audience here is incremental rather than a genre jump. No Qloo data is available in this version, so nothing here is ranked, and taste affinity does not establish ticket demand or new audience growth. The team's question referred to five names, but Gracie Abrams was vetoed (dates) and her fit is not assessed.",
+        "evidence": [
+          {
+            "claim": "Without Qloo evidence there are no numeric ranks or ordered positions; all comparisons are verbal and general_knowledge, and no candidate may be presented as measured-best on a side.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Phoebe Bridgers' audience clusters around indie/alternative singer-songwriter and boygenius-adjacent listeners; Lucy Dacus and Julien Baker share that audience most directly of the shortlist.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Clairo's catalogue spans bedroom pop and soft rock, giving her a pop-facing surface that sits nearer a young pop audience than the folk-leaning acts in play.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Soccer Mommy's guitar-driven indie rock is adjacent to the alt-rock/pop-punk edge of Olivia Rodrigo's catalogue, while her core audience skews older indie-rock.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Julien Baker's solo material is sparser and more austere, aligning closely with Phoebe Bridgers' core fans but with the least pop-facing surface in the shortlist.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "The priority must balance headliner-side and target-side fit, so it is picked for that balance rather than as the closest match to either side alone.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity does not demonstrate ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "All four acts in play are indie/alternative-adjacent, so any movement toward Olivia Rodrigo's audience is incremental, not a genre jump.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "No Qloo data in this version: no affinity scores, audience-overlap measures, or ranks exist, so every comparison above is verbal general_knowledge.",
+          "No ticket-demand, streaming, or new-audience-growth data; taste affinity cannot show growth.",
+          "Booking fees, routing/dates and artist willingness are verified by the team outside this tool and are not asserted here.",
+          "Gracie Abrams was vetoed on dates, so her fit was not assessed and the team's 'five names' reduces to four acts in play.",
+          "Whether Clairo's or Soccer Mommy's positioning actually converts Olivia Rodrigo listeners into Phoebe Bridgers' audience is unmeasured."
+        ]
+      },
+      "ms": 26544,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    },
+    {
+      "case": "D1",
+      "step": "after_veto",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Lucy Dacus",
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo"
+      ],
+      "vetoed": [
+        "Gracie Abrams"
+      ],
+      "brief": {
+        "priority": "Clairo",
+        "backups": [
+          "Lucy Dacus",
+          "Soccer Mommy"
+        ],
+        "headlinerSide": "No Qloo ranks are available. As general_knowledge, Lucy Dacus and Julien Baker are more directly aligned with Phoebe Bridgers' current audience than Clairo, given the boygenius connection and the shared indie folk/rock scene. Clairo remains plausible for that audience because she is an established indie/alternative artist, but she is a less direct fit than Lucy Dacus or Julien Baker. Soccer Mommy sits in adjacent indie rock. This is not a measured rank.",
+        "targetSide": "No Qloo ranks are available. As general_knowledge, Clairo is the most plausible bridge among the shortlist to Olivia Rodrigo's younger pop-leaning audience, because her bedroom-pop/indie-pop profile and Gen Z-facing fanbase are closer to that reference than the other shortlisted acts. Soccer Mommy is an alternative/indie-rock adjacent option with some younger alternative appeal, but less directly pop-facing. Lucy Dacus and Julien Baker are further from the Olivia Rodrigo reference on this side. This is not a measured rank and not proof of audience overlap or growth.",
+        "answer": "Evaluate Clairo first. No Qloo data means no measured ranks or affinity scores; this is a general_knowledge judgement. Clairo is the most defensible bridge to Olivia Rodrigo's younger pop-leaning audience among the shortlist, but she is not the strongest fit to Phoebe Bridgers' current audience: Lucy Dacus and Julien Baker are more direct fits there through boygenius and the shared indie folk/rock scene. The recommendation is therefore a balance, not a claim that Clairo wins both sides. If Clairo is unavailable, evaluate Lucy Dacus and Soccer Mommy next. Lucy Dacus is the safer headliner-audience fit but less target-leaning; Soccer Mommy is a partial target bridge but less direct than Clairo. The backup order is arbitrary, not alphabetical and not a preference. Verify fees, dates, and willingness outside this tool; taste affinity does not prove ticket demand or new audience growth.",
+        "evidence": [
+          {
+            "claim": "Clairo has a bedroom-pop/indie-pop profile and a younger, Gen Z-facing audience that is more plausibly adjacent to Olivia Rodrigo's pop-leaning audience than the other shortlisted acts.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Clairo retains indie/alternative credibility, so she is less likely than a mainstream pop act to obviously alienate Phoebe Bridgers' existing indie audience, though she is not the most direct fit to that audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lucy Dacus and Julien Baker are more directly tied to Phoebe Bridgers' current audience through boygenius and the shared indie folk/rock scene.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Soccer Mommy operates in indie rock/indie pop and may reach some younger alternative listeners, but her profile is less directly pop-facing than Clairo's.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "No Qloo data is available, so no numeric ranks, measured affinity, or Qloo-sourced comparisons can be used.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Only shortlisted acts were considered; Gracie Abrams is vetoed by the team and excluded from fit discussion.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo evidence was provided; all comparisons are general_knowledge, not measured ranks or affinity scores.",
+          "Booking fees, dates, and willingness were not checked by this tool.",
+          "Actual overlap between Clairo's audience and Olivia Rodrigo's audience is not verified; taste affinity does not prove ticket demand or new audience growth.",
+          "Current availability and routing for Clairo, Lucy Dacus, Julien Baker, and Soccer Mommy are unknown here.",
+          "Gracie Abrams is vetoed by the team due to dates and was not evaluated for fit.",
+          "There are no degraded or partial Qloo notes to report because no Qloo data was provided."
+        ]
+      },
+      "ms": 33508,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 7
+      }
+    },
+    {
+      "case": "D1",
+      "step": "edited_references",
+      "version": "qloo",
+      "inPlay": [
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo",
+        "Gracie Abrams"
+      ],
+      "vetoed": [
+        "Lucy Dacus"
+      ],
+      "rulePriority": "Soccer Mommy",
+      "run": 1,
+      "brief": {
+        "priority": "Soccer Mommy",
+        "backups": [
+          "Clairo",
+          "Julien Baker"
+        ],
+        "headlinerSide": "Qloo: Soccer Mommy ranks 2 of 4 on the headliner side (headlinerRank 2); it is not the top headliner-side match, because Julien Baker ranks 1 on that side. Product rule: Soccer Mommy is the priority, but priorityTiedWithNext is true, so the rule cannot separate Soccer Mommy and Clairo; the order shown is arbitrary by internal id, not alphabetical and not a preference. Qloo similarity hints with Phoebe Bridgers include Folk, Indie, Singer & Songwriter, Emotional, Piano, and United States. Product rule: taste affinity is not ticket demand and does not prove new audience growth.",
+        "targetSide": "Qloo: Soccer Mommy ranks 3 of 4 on the target side (targetRank 3); it is not the closest to the Olivia Rodrigo reference audience, because Gracie Abrams ranks 1 and Clairo ranks 2 on that side. Qloo similarity hints with the target reference group include Rock, Alternative Rock, Folk, Energetic, and United States. General_knowledge: the team describes the desired audience as more pop-leaning and younger, but Qloo does not directly measure age or pop preference. Product rule: because priorityTiedWithNext is true, Clairo is tied with Soccer Mommy and the displayed order is arbitrary by internal id, not alphabetical and not a preference.",
+        "answer": "Qloo: among the eligible shortlist, Soccer Mommy is the product rule's first candidate, but the rule cannot separate it from Clairo because priorityTiedWithNext is true; the shown order is arbitrary by internal id, not alphabetical and not a preference. Qloo: neither Soccer Mommy nor Clairo is the closest to the Olivia Rodrigo audience; Gracie Abrams ranks 1 on the target side but 4 on the headliner side, making it the strongest target-side option and the largest headliner-side tradeoff. Qloo: Soccer Mommy is the balanced evaluation at headlinerRank 2 and targetRank 3; Clairo mirrors it at headlinerRank 3 and targetRank 2; Julien Baker is headlinerRank 1 but targetRank 4. Product rule: evaluate Soccer Mommy and Clairo first if the goal is to limit headliner-side risk while moving toward the target; evaluate Gracie Abrams first only if maximum target-side proximity is the priority and the team accepts the headliner-side rank-4 risk. Product rule backups: Clairo, then Julien Baker. Product rule: Qloo affinity is not ticket demand and does not prove new audience growth.",
+        "evidence": [
+          {
+            "claim": "Qloo ranks in this pool of 4: Soccer Mommy headlinerRank 2 / targetRank 3; Clairo headlinerRank 3 / targetRank 2; Julien Baker headlinerRank 1 / targetRank 4; Gracie Abrams headlinerRank 4 / targetRank 1.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Product rule selected Soccer Mommy as priority; priorityTiedWithNext is true, so the rule cannot separate Soccer Mommy and Clairo, and the order shown is arbitrary by internal id, not alphabetical and not a preference.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "On the headliner side, Julien Baker ranks 1 and Soccer Mommy ranks 2; Soccer Mommy is not the top headliner-side match.",
+            "source": "qloo"
+          },
+          {
+            "claim": "On the target side, Gracie Abrams ranks 1 and Clairo ranks 2; Soccer Mommy ranks 3 and is not the closest to the Olivia Rodrigo reference audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo headliner-vs-priority similarity hints include Folk, Indie, Singer & Songwriter, Emotional, Piano, and United States.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo target-vs-priority similarity hints include Rock, Alternative Rock, Folk, Energetic, and United States.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Gracie Abrams is targetRank 1 but headlinerRank 4; Clairo is targetRank 2 and headlinerRank 3.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Qloo affinity is not ticket demand, fee, or attendance data; no actual new-audience growth can be confirmed.",
+          "The team question refers to 5 people, but one shortlisted candidate is vetoed by the team and excluded from this fit discussion; only the 4 eligible Qloo-ranked candidates are evaluated.",
+          "The target is described as more pop-leaning and younger; Qloo does not directly measure age, pop preference, or ticket demand.",
+          "priorityTiedWithNext is true; Soccer Mommy and Clairo cannot be separated by the product rule, and the displayed order is arbitrary by internal id.",
+          "Shared tags are similarity hints, not causes.",
+          "qlooNotes is empty; no degraded or partial Qloo results were flagged.",
+          "No live willingness, routing, fees, or date availability are checked here."
+        ]
+      },
+      "ms": 48666,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    },
+    {
+      "case": "D1",
+      "step": "edited_references",
+      "version": "qloo",
+      "inPlay": [
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo",
+        "Gracie Abrams"
+      ],
+      "vetoed": [
+        "Lucy Dacus"
+      ],
+      "rulePriority": "Soccer Mommy",
+      "run": 2,
+      "brief": {
+        "priority": "Soccer Mommy",
+        "backups": [
+          "Clairo",
+          "Julien Baker"
+        ],
+        "headlinerSide": "qloo: Soccer Mommy has headlinerRank 2 in this Qloo pool, behind Julien Baker at rank 1, so Soccer Mommy is not the closest act to Phoebe Bridgers' current audience on this side. product_rule: its worst side rank is 3, tied with Clairo, and it avoids the rank-4 headliner-side risk seen for Gracie Abrams. qloo: shared tags with Phoebe Bridgers include Folk, Indie, Singer & Songwriter, Emotional, Melodic, and Piano, but these are similarity hints, not proof of existing-fan retention. general_knowledge: Phoebe Bridgers' audience is often associated with indie folk/singer-songwriter and boygenius, so Julien Baker has the stronger headliner-side general fit, though that does not by itself serve the more pop-leaning target.",
+        "targetSide": "qloo: Soccer Mommy has targetRank 3 in this Qloo pool, behind Gracie Abrams at rank 1 and Clairo at rank 2, so Soccer Mommy is not the closest act to the Olivia Rodrigo reference on this side. product_rule: its target side is still not rank 4, unlike Julien Baker, which is why the rule treats it as a balance candidate. qloo: target-vs-priority shared tags include Rock, Alternative Rock, Folk, and Energetic; these are broad similarity hints and do not establish a pop-leaning younger audience. general_knowledge: Olivia Rodrigo and Billie Eilish reference a more pop-leaning younger singer-songwriter audience, and Gracie Abrams is generally the more pop-adjacent name in this shortlist, which is consistent with her targetRank 1 but not with her headlinerRank 4.",
+        "answer": "The product rule says evaluate Soccer Mommy first, with Clairo and Julien Baker as backups. However, priorityTiedWithNext is true: the rule cannot separate Soccer Mommy and Clairo, so the order shown is arbitrary internal id, not alphabetical and not a preference. On the headliner side, qloo ranks Julien Baker 1, Soccer Mommy 2, Clairo 3, and Gracie Abrams 4; so Julien Baker is the strongest headliner-side name, not Soccer Mommy. On the target side, qloo ranks Gracie Abrams 1, Clairo 2, Soccer Mommy 3, and Julien Baker 4; so Gracie Abrams is the closest to the Olivia Rodrigo reference, not Soccer Mommy. Soccer Mommy's two-sided basis is that it has no rank-4 side: headlinerRank 2 and targetRank 3, with a worst side rank of 3 tied with Clairo. If the team's priority is protecting Phoebe Bridgers' existing fans, Julien Baker has the stronger headliner-side evidence but the weaker target-side evidence. If the team's priority is moving toward Olivia Rodrigo's audience, Gracie Abrams has the stronger target-side evidence but the weaker headliner-side evidence. Under the given product rule, Soccer Mommy is the priority and Clairo is a co-tied next candidate, not a settled preference. Qloo affinity is not ticket demand and does not prove new audience growth; fees, dates, and willingness are outside this tool.",
+        "evidence": [
+          {
+            "claim": "Product rule selected Soccer Mommy as priority, with Clairo and Julien Baker as backups; this is a rule output, not a ticket-demand or willingness judgement.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "In the Qloo pool, Soccer Mommy has headlinerRank 2 and targetRank 3, so its worst side rank is 3; it is not the top rank on either side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "In the Qloo pool, Clairo has headlinerRank 3 and targetRank 2, so its worst side rank is 3 and it is tied with Soccer Mommy on the product-rule metrics; priorityTiedWithNext is true.",
+            "source": "qloo"
+          },
+          {
+            "claim": "In the Qloo pool, Julien Baker has headlinerRank 1 but targetRank 4; it is the closest to Phoebe Bridgers on the headliner side, but its worst side rank is 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "In the Qloo pool, Gracie Abrams has targetRank 1 but headlinerRank 4; it is the closest to the target reference on the target side, but its worst side rank is 4.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo headliner-vs-priority shared tags for Soccer Mommy and Phoebe Bridgers include Folk, Indie, Singer & Songwriter, Emotional, Melodic, and Piano; these are similarity hints, not causes or proof of audience overlap.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo target-vs-priority shared tags for the Olivia Rodrigo/Billie Eilish reference and Soccer Mommy include Rock, Alternative Rock, Folk, and Energetic; they are broad similarity hints and do not establish pop-leaning audience growth.",
+            "source": "qloo"
+          },
+          {
+            "claim": "General knowledge: Julien Baker and Phoebe Bridgers are associated through boygenius and a shared indie folk/singer-songwriter context, which supports headliner-side familiarity but does not by itself establish fit with a more pop-leaning younger target audience.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "Booking fees, dates, and willingness are not known in this tool and must not be assumed.",
+          "Qloo affinity is not ticket demand and does not prove new audience growth.",
+          "Qloo ranks are positions within this four-act shortlist pool only; they do not generalize beyond this pool.",
+          "priorityTiedWithNext is true: the product rule cannot separate Soccer Mommy and Clairo, so the displayed order between them is arbitrary internal id, not alphabetical and not a preference.",
+          "The Qloo shared tags are similarity hints, not causes; the target-side shared tags are broad and do not establish a pop-leaning younger audience.",
+          "The Qloo table marks Gracie Abrams as tied with the previous act, while the provided product-rule backups list Julien Baker; the tie handling between those two is not explained in the evidence.",
+          "qlooNotes is empty; no degraded or partial Qloo results are flagged."
+        ]
+      },
+      "ms": 50269,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    },
+    {
+      "case": "D1",
+      "step": "edited_references",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Lucy Dacus",
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo"
+      ],
+      "vetoed": [
+        "Gracie Abrams"
+      ],
+      "brief": {
+        "priority": "Clairo",
+        "backups": [
+          "Lucy Dacus",
+          "Soccer Mommy"
+        ],
+        "headlinerSide": "General knowledge: Clairo sits in the indie/alternative singer-songwriter and bedroom-pop world, so she is not a sharp break from Phoebe Bridgers' current audience. General knowledge: on this side, however, she is not stronger than Lucy Dacus or Julien Baker; those two are safer headliner-side fits because of the boygenius and shared indie/emo singer-songwriter context. Product rule: no Qloo ranks exist here, so I am not assigning a measured position on this side.",
+        "targetSide": "General knowledge: Clairo is the most plausible shortlist act for the Olivia Rodrigo/Billie Eilish-leaning target because her general profile is younger, streaming-era, indie-pop/bedroom-pop, and more pop-adjacent than Lucy Dacus, Julien Baker, or Soccer Mommy. General knowledge: this is not a Qloo-measured 'closest' claim and does not prove new audience growth. Product rule: no Qloo ranks exist, so I cannot say she outranks any other act on measured affinity.",
+        "answer": "General knowledge: evaluate Clairo first. She is the most defensible balance in words: more pop-leaning and younger-facing than the other in-play shortlist acts for the Olivia Rodrigo side, while still close enough to the indie/alternative world of Phoebe Bridgers' current fans not to be an obvious sacrifice. General knowledge: on the headliner side, Lucy Dacus and Julien Baker are safer fits than Clairo, so Clairo is not stronger there. General knowledge: on the target side, Clairo is the most plausible bridge among the in-play acts, but this is not a Qloo rank or a measured 'closest' claim. Product rule: no Qloo data means no measured affinity, no numeric ranks, and no proof of ticket demand or new audience growth. Product rule: backups are operational only and not ranked; Gracie Abrams is vetoed and I do not assess her fit.",
+        "evidence": [
+          {
+            "claim": "No Qloo evidence is available in this version, so there are no Qloo ranks, numeric positions, or measured affinity scores; all fit comparisons here are general_knowledge or product_rule.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Clairo's general profile is indie-pop/bedroom-pop with a young, streaming-era audience, making her the most plausible shortlist bridge toward Olivia Rodrigo/Billie Eilish listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Phoebe Bridgers' current audience is centered in indie/alternative singer-songwriter and boygenius-adjacent fandom; Lucy Dacus and Julien Baker are safer fits on that headliner side than Clairo.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Clairo remains close enough to the indie/alternative world to be acceptable to Phoebe Bridgers' core fans, though this is a judgment, not a measured overlap.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Lucy Dacus is a strong headliner-side bridge via boygenius and shared indie audience, but her general profile is less pop-leaning than Clairo's for an Olivia Rodrigo-oriented target.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Soccer Mommy is indie rock/alternative with a younger indie audience, but general knowledge does not place her as close to Olivia Rodrigo's pop-leaning audience as Clairo.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Julien Baker is the least pop-leaning option in the in-play shortlist by general knowledge; she is stronger as a headliner-side or indie-faithful act than as a pop-audience bridge.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Taste affinity is not ticket demand and does not prove new audience growth; this brief addresses positioning only, not booking, fees, dates, willingness, or conversion.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo data: no measured affinity, ranks, or numeric ordering exists for these acts in this version.",
+          "The team says 'these 5' but the in-play shortlist names four acts; Gracie Abrams is vetoed and I did not evaluate her fit.",
+          "Booking fees, dates, willingness, and actual ticket demand/new audience growth are outside this tool and unverified.",
+          "Clairo's fit on the target side and her acceptability to Phoebe Bridgers' core fans are general_knowledge judgments, not measured evidence.",
+          "The backups order is operational for the team, not a Qloo rank or preference."
+        ]
+      },
+      "ms": 43102,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    },
+    {
+      "case": "D1",
+      "step": "edited_references",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Lucy Dacus",
+        "Julien Baker",
+        "Soccer Mommy",
+        "Clairo"
+      ],
+      "vetoed": [
+        "Gracie Abrams"
+      ],
+      "brief": {
+        "priority": "Clairo",
+        "backups": [
+          "Lucy Dacus",
+          "Soccer Mommy"
+        ],
+        "headlinerSide": "No Qloo ranks exist here, so this is a general_knowledge judgement in words. Clairo is not the closest fit to Phoebe Bridgers's existing audience on the shortlist: Lucy Dacus and Julien Baker are more directly adjacent through boygenius and shared indie-rock/indie-folk circles. Clairo still belongs to the broad indie/alternative world, so she is not an obvious break from the headliner's base, but she is a compromise rather than the headliner-side anchor.",
+        "targetSide": "No Qloo ranks exist here. On general knowledge, Clairo leans more toward bedroom-pop/indie-pop and a younger, more pop-leaning audience than Lucy Dacus, Julien Baker, and Soccer Mommy, making her the most plausible shortlist bridge toward Olivia Rodrigo's audience. She is still not a mainstream pop peer of Olivia Rodrigo or Billie Eilish, so this is a positioning bet, not proof of new audience growth.",
+        "answer": "Select Clairo as the priority to evaluate first if the team wants the best balance between Phoebe Bridgers's existing indie base and a more pop-leaning young audience. She is not the closest to Phoebe's current audience; Lucy Dacus and Julien Baker are more directly adjacent there. But Clairo is more pop-leaning than the other shortlisted acts, so she is the strongest shortlist bridge toward Olivia Rodrigo's audience while remaining plausible for Phoebe's fans. Backups: Lucy Dacus for headliner safety with a target-side stretch, and Soccer Mommy for an indie-rock bridge with less direct pop crossover. This is a taste/positioning judgement only; it is not ticket demand and does not prove audience growth. Gracie Abrams is vetoed on dates and is not assessed.",
+        "evidence": [
+          {
+            "claim": "No Qloo evidence is available in this version, so there are no Qloo-sourced ranks, affinity scores, or measured audience overlaps; comparisons below are general_knowledge.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "On general knowledge, Lucy Dacus and Julien Baker are more directly adjacent to Phoebe Bridgers's existing audience through boygenius and shared indie-rock/indie-folk circles.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Clairo is generally known as a bedroom-pop/indie-pop artist who later moved toward indie folk/pop; her audience skews younger and more pop-leaning than Lucy Dacus, Julien Baker, and Soccer Mommy.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Soccer Mommy is generally known for indie rock/alternative singer-songwriter material, with less direct mainstream pop crossover than Clairo.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Olivia Rodrigo's audience is associated with mainstream Gen Z pop, pop-punk/alt-pop, and narrative singer-songwriter appeal; Billie Eilish's with alt-pop/electronic minimalism.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Clairo is a bridge, not a mainstream pop peer of Olivia Rodrigo or Billie Eilish; she may reach some pop-leaning young listeners but does not prove new audience growth.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Priority selection must balance headliner-side and target-side fit; it should not be described as the closest to Phoebe Bridgers's existing audience when Lucy Dacus and Julien Baker are more directly adjacent on that side.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Gracie Abrams is vetoed by the team on dates and is therefore excluded from fit evaluation.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo data is available; there are no numeric ranks, measured affinity scores, or audience-overlap metrics to cite.",
+          "Booking fees, dates, and willingness are outside this tool and unverified here.",
+          "Taste affinity is not ticket demand and does not prove new audience growth.",
+          "The shortlist in play contains four acts; Gracie Abrams is vetoed on dates and her fit is out of scope.",
+          "All affinity comparisons are general_knowledge and may change with market, lineup context, and current artist positioning."
+        ]
+      },
+      "ms": 42380,
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8
+      }
+    }
+  ],
+  "qlooToolCalls": {
+    "qloo_describe": 15,
+    "qloo_rank": 4,
+    "qloo_compare_audiences": 6
+  },
+  "ms": 179386
+}

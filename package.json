@@ -1,0 +1,42 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "probe": "tsx --env-file=.env.local scripts/qloo-probe.ts",
+    "probe:t04": "tsx --env-file=.env.local scripts/t04-harness-probe.ts",
+    "smoke:llm": "tsx --env-file=.env.local scripts/llm-mcp-smoke.ts",
+    "t05": "tsx --env-file=.env.local scripts/t05-ablation.ts",
+    "t10": "tsx --env-file=.env.local scripts/t10-compare.ts",
+    "e2e": "tsx scripts/e2e-prod.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/mcp": "^2.0.66",
+    "@ai-sdk/openai-compatible": "^3.0.62",
+    "ai": "^7.0.127",
+    "next": "16.3.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@qloo/qloo-harness": "0.1.26",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.3"
+  },
+  "packageManager": "pnpm@10.32.1"
+}
