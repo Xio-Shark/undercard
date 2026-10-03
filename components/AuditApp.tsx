@@ -8,6 +8,7 @@ import type { RunContext } from "@/lib/replan";
 import { AuditHttpError, createShareLink, streamJob, type AuditRequestBody, type Decision, type VetoRequestBody } from "@/lib/client/stream";
 import { AuditForm, splitNames, type FormValues } from "./AuditForm";
 import { loadRun, saveRun } from "@/lib/client/tab-memory";
+import { AskPanel } from "./AskPanel";
 import { ConfirmMatches } from "./ConfirmMatches";
 import { ChangeSummary, ResultView } from "./ResultView";
 import { DecisionBar, EditReferences, VetoControl } from "./RunControls";
@@ -203,6 +204,7 @@ export function AuditApp() {
           {decision && <p className="text-sm">Decision recorded: {decision.kind === "accepted" ? `evaluate ${state.result.priority.name} first` : `no selection${decision.reason ? ` — ${decision.reason}` : ""}`}. The team keeps the final booking decision.</p>}
           {share.url && <p className="break-all text-sm">Read-only link (copied): <a className="underline" href={share.url}>{share.url}</a></p>}
           {share.error && <p className="text-sm text-red-600">{share.error}</p>}
+          <AskPanel key={state.token} source={{ kind: "state", token: state.token }} result={state.result} />
         </div>
       )}
     </div>

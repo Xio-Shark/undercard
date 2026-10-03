@@ -1,0 +1,21 @@
+# Uptime and key check for the public demo during judging (until 2026-11-16).
+# /api/health?deep=1 fails (HTTP 503) when the app, the qloo mcp process, the Qloo key or the model key is
+# broken. The deep part is cached server-side for 6 h, so this schedule costs at most 4 Qloo requests a day.
+# A failed scheduled run makes GitHub email the repository owner.
+name: uptime
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+permissions: {}
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check https://undercard.wangbohan.biz/api/health?deep=1
+        run: |
+          body=$(curl -sS --max-time 90 -w '\n%{http_code}' 'https://undercard.wangbohan.biz/api/health?deep=1')
+          code=$(printf '%s' "$body" | tail -n1)
+          printf '%s\n' "$body" | sed '$d'
+          test "$code" = "200"

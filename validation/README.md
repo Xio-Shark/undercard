@@ -17,7 +17,8 @@ This is validation material, not an in-app feature. Everything below can be re-r
   - the Qloo version kept the rule's pick;
   - the model-only version never cites Qloo;
   - there are no percentages;
-  - the model-only version writes no numeric ranks without data.
+  - the model-only version writes no numeric ranks without data;
+  - (from round 3) the prose has no internal source labels or field names, such as "(product_rule)" or "headlinerRank".
 - **Whether Qloo helped is the author's judgement**, written separately below. It is not user research, and Qloo's ranks are never used to score the model-only version.
 
 ## Rounds
@@ -25,9 +26,10 @@ This is validation material, not an in-app feature. Everything below can be re-r
 | Round | Instructions | Outputs | Automated checks |
 |---|---|---|---|
 | [round1-D1-D2](runs/round1-D1-D2/), [round1-H1-H3](runs/round1-H1-H3/) | first version | 60 | 60/60 pass. Re-checked later with the added rank check: 3 model-only briefs wrote numeric ranks without data |
-| [round2-final-instructions](runs/round2-final-instructions/) | final, as deployed: ≤ 8 evidence items, no ranks without data, tie wording | 60 | 56 pass, 3 malformed model outputs (before the single retry was added), 1 skipped because its first step failed. No rule or source violations, and 0 ranks without data |
+| [round2-final-instructions](runs/round2-final-instructions/) | ≤ 8 evidence items, no ranks without data, tie wording | 60 | 56 pass, 3 malformed model outputs (before the single retry was added), 1 skipped because its first step failed. No rule or source violations, and 0 ranks without data |
+| [round3-t19-brief](runs/round3-t19-brief/) | current, as deployed: round 2 plus shorter prose (answer ≤ 80 words), no internal labels, no repeated disclaimer, case-specific unknowns | 60 | 60/60 pass, including the new label check. The Qloo version's picks are identical to rounds 1 and 2 in every step |
 
-## Results (round 2; the Qloo version's picks were identical in both rounds)
+## Results (round 2; the Qloo version's picks were identical in all three rounds)
 
 | Case | Step | With Qloo (2 runs) | Without Qloo (2 runs) |
 |---|---|---|---|

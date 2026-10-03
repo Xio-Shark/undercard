@@ -1,5 +1,5 @@
 // T14 end-to-end check against a deployed Undercard (default: production). Uses only public HTTP endpoints.
-// Run: pnpm e2e [baseUrl]. Spends Qloo quota: 2 audits + 1 priority veto (about 60-80 Qloo requests).
+// Run: pnpm e2e [baseUrl]. Spends Qloo quota: 2 audits + 1 priority veto + 1 follow-up question (about 70-100 Qloo requests).
 // Each step prints PASS/FAIL with the observed value; the process exits 1 if any step fails.
 const BASE = (process.argv[2] ?? "https://undercard.wangbohan.biz").replace(/\/$/, "");
 const CASE = { headliner: "Phoebe Bridgers", references: ["Olivia Rodrigo"], shortlist: ["Clairo", "Soccer Mommy", "Julien Baker"] };
@@ -61,6 +61,11 @@ async function staticAndValidation(): Promise<void> {
   check("invalid audit input -> 400", bad.status === 400, bad.status);
   const forged = await post("api/veto", { state: "s1.AAAA.BBBB", veto: { id: "x", reason: "fee" } });
   check("forged run state -> 400 invalid_state", forged.status === 400 && ((await forged.json()) as Json).error === "invalid_state", forged.status);
+  const forgedAsk = await post("api/ask", { source: { kind: "share", token: "v1.AAAA.BBBB" }, question: "Why this act?" });
+  check("ask with forged token -> 400 invalid_state", forgedAsk.status === 400 && ((await forgedAsk.json()) as Json).error === "invalid_state", forgedAsk.status);
+  // Cached for 6 h on the server, so this usually costs nothing.
+  const deep = (await (await fetch(`${BASE}/api/health?deep=1`)).json()) as Json;
+  check("deep health: Qloo and model keys work", (deep.deep as Json)?.ok === true, deep.deep);
 }
 
 async function busyAndCancel(): Promise<void> {
@@ -110,6 +115,14 @@ async function fullFlow(): Promise<void> {
   const tampered = String(share.token).slice(0, -3) + (String(share.token).endsWith("AAA") ? "BBB" : "AAA");
   const bad = await (await fetch(`${BASE}/b?t=${tampered}`)).text();
   check("tampered share link rejected", bad.includes("invalid or was modified"), "");
+  check("share page shows the trade-off map and Ask Undercard", page.includes("Trade-off map") && page.includes("Ask Undercard"), "");
+
+  // T19 follow-up agent on the shared brief: a question that needs new Qloo data (lookup + exploratory rank).
+  const t1 = Date.now();
+  const ask = await readJob(await post("api/ask", { source: { kind: "share", token: share.token }, question: "How would this shortlist rank for fans of Billie Eilish?" }));
+  const answer = ask.find((e) => e.type === "answer") as Json | undefined;
+  const tools = ((answer?.trace as Json[]) ?? []).map((t) => t.tool);
+  check("ask: agent answers using Qloo tools", !!answer && String(answer.answer).length > 20 && tools.includes("rank_for_audience"), { s: Math.round((Date.now() - t1) / 1000), tools, error: ask.find((e) => e.type === "error")?.message });
 }
 
 async function main(): Promise<void> {

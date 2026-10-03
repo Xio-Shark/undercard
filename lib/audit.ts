@@ -141,7 +141,7 @@ async function rankSide(mcp: QlooCaller, pool: string[], signals: string[], sign
 }
 
 /** Trims compare_audiences (~49 KB raw) to citable tags; duplicates by name are merged. */
-async function compare(mcp: QlooCaller, group: string[], candidate: string, signal?: AbortSignal): Promise<SideComparison> {
+export async function compare(mcp: QlooCaller, group: string[], candidate: string, signal?: AbortSignal): Promise<SideComparison> {
   const out = await tool(mcp, "qloo_compare_audiences", { group_a: group, group_b: [candidate], target_type: "artist" }, signal);
   const r = (out.results ?? {}) as { tags?: Envelope[]; a?: Envelope[]; b?: Envelope[] };
   const kind = (t: Envelope) => String(t.subtype ?? "").split(":")[2] ?? "tag";

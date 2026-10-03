@@ -48,3 +48,17 @@ describe("name matching", () => {
     expect(c).toMatchObject({ priorityInPlay: true, backupsInPlay: true, keptRule: true });
   });
 });
+
+describe("jargon leaks (T19)", () => {
+  it("flags parenthesised source labels and evidence field names in the prose", () => {
+    const b = brief({ answer: "Evaluate Clairo first (product_rule). Her headlinerRank is 4.", unknowns: ["qlooNotes is empty"] });
+    const c = checkBrief({ version: "qloo", brief: b, inPlay, vetoed: [], rulePriority: "Clairo" });
+    expect(c.jargonLeaks).toBe(3);
+    expect(allPass(c)).toBe(false);
+  });
+
+  it("does not flag plain words such as Qloo or rule", () => {
+    const b = brief({ answer: "Qloo ranks Clairo second for the target audience; the rule picks her as the balance." });
+    expect(checkBrief({ version: "qloo", brief: b, inPlay, vetoed: [], rulePriority: "Clairo" }).jargonLeaks).toBe(0);
+  });
+});

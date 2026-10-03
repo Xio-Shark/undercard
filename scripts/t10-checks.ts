@@ -28,10 +28,15 @@ export interface Checks {
   numericRanksWithoutData: number;
   /** Instructions ask for at most 8; reported, not failed (a soft target). */
   evidenceCount: number;
+  /** T19: internal source labels or field names leaking into the text, e.g. "(product_rule)", "headlinerRank", "qlooNotes". */
+  jargonLeaks: number;
 }
 
 // "rank 2", "ranked 3rd", "#1", "rank ... : 1 Lucy Dacus, 2 Julien Baker" (a number within a short span after "rank").
 const RANK_LIKE = /#\d+|\brank(?:ed|s|ing)?\b[^.;\n]{0,40}?\b\d+(?:st|nd|rd|th)?\b/gi;
+
+// Field names from the evidence JSON and parenthesised source labels; the page shows sources as chips instead.
+const JARGON = /\((?:qloo|product_rule|general_knowledge)\)|\b(?:headlinerRank|targetRank|worstRank|qlooNotes|priorityTiedWithNext|audienceComparison|product_rule|general_knowledge)\b/g;
 
 const texts = (b: Brief) => [b.answer, b.headlinerSide, b.targetSide, ...b.evidence.map((e) => e.claim), ...b.unknowns];
 
@@ -51,10 +56,11 @@ export function checkBrief({ version, brief, inPlay, vetoed, rulePriority }: Che
     percentFigures: texts(brief).join("\n").match(/\d+(\.\d+)?\s*%/g)?.length ?? 0,
     numericRanksWithoutData: version === "llm_only" ? texts(brief).join("\n").match(RANK_LIKE)?.length ?? 0 : 0,
     evidenceCount: brief.evidence.length,
+    jargonLeaks: texts(brief).join("\n").match(JARGON)?.length ?? 0,
   };
 }
 
 /** True when every check passes. */
 export function allPass(c: Checks): boolean {
-  return c.priorityInPlay && c.respectsVetoes && c.backupsInPlay && c.keptRule !== false && c.qlooCitationsWithoutData === 0 && c.percentFigures === 0 && c.numericRanksWithoutData === 0;
+  return c.priorityInPlay && c.respectsVetoes && c.backupsInPlay && c.keptRule !== false && c.qlooCitationsWithoutData === 0 && c.percentFigures === 0 && c.numericRanksWithoutData === 0 && c.jargonLeaks === 0;
 }

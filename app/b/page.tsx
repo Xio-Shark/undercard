@@ -1,5 +1,6 @@
 // Read-only view of a saved brief. The link carries the brief, signed server-side (lib/share.ts).
 import Link from "next/link";
+import { AskPanel } from "@/components/AskPanel";
 import { ResultView } from "@/components/ResultView";
 import type { SavedBrief } from "@/lib/client/stream";
 import { decodeShare } from "@/lib/share";
@@ -33,6 +34,7 @@ export default async function SharedBrief({ searchParams }: { searchParams: Prom
             </p>
           )}
           <ResultView result={saved.result} brief={saved.brief} savedAt={saved.savedAt} context={saved.context} />
+          {typeof t === "string" && <AskPanel source={{ kind: "share", token: t }} result={saved.result} />}
         </div>
       )}
       <p className="mt-10 text-sm"><Link className="underline" href="/">Run your own audit</Link></p>

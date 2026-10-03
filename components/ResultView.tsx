@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import type { AuditResult, RankRow, SideComparison } from "@/lib/audit";
 import type { Brief } from "@/lib/llm";
 import { VETO_LABEL, type RunContext } from "@/lib/replan";
+import { TradeoffChart } from "./TradeoffChart";
 
 type Complete = Extract<AuditResult, { status: "complete" }>;
 
@@ -124,6 +125,16 @@ export function ResultView({ result, brief, savedAt, context, rowAction }: { res
         </div>
       ) : null}
 
+      <div className="grid items-start gap-6 md:grid-cols-[minmax(0,22rem)_minmax(0,1fr)]">
+      <TradeoffChart
+        rows={result.table}
+        vetoed={context?.vetoed.filter((v) => !v.beforeQuery) ?? []}
+        poolSize={n}
+        priorityId={p.id}
+        backupIds={result.backups.map((b) => b.id)}
+        headliner={result.headliner.name}
+        target={result.references.map((r) => r.name).join(" + ")}
+      />
       <div className="overflow-x-auto">
         <table className="w-full min-w-[28rem] text-left text-sm">
           <caption className="mb-2 text-left text-sm font-semibold">Shortlist ranks (same pool, two Qloo rank calls)</caption>
@@ -152,6 +163,7 @@ export function ResultView({ result, brief, savedAt, context, rowAction }: { res
             {context && <VetoedRows context={context} colSpan={3} />}
           </tbody>
         </table>
+      </div>
       </div>
 
       <div className="space-y-3">

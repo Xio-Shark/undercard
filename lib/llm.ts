@@ -44,6 +44,12 @@ export const BRIEF_INSTRUCTIONS = [
   "Ranks exist only in the Qloo evidence. Without it, do not write numeric ranks, numbered orderings or positions as if measured; compare acts in words and label those judgements general_knowledge.",
   "If qlooNotes lists degraded or partial Qloo results, name them in unknowns and treat the affected evidence as weaker.",
   "Keep evidence to at most 8 items, the ones that matter most for the decision first.",
+  // T19: judges read the prose; source labels belong to the evidence list, which the page renders as chips.
+  "Write prose for a busy artist manager. In answer, headlinerSide, targetSide and unknowns, never write source labels in parentheses " +
+    "(such as (qloo) or (product_rule)), field names (such as headlinerRank or qlooNotes) or JSON terms; say \"the headliner's fans\" and \"the target audience\".",
+  "answer: at most 80 words, lead with the act to evaluate first and the one trade-off that decides it. headlinerSide and targetSide: at most 50 words each.",
+  "The page already states once that affinity is not ticket demand, fees, dates or willingness: do not repeat that disclaimer anywhere. " +
+    "unknowns: at most 4 items specific to this case (for example an act far behind on one side, a weak or generic tag match, a tie); omit generic caveats and never mention an empty qlooNotes.",
   // DeepSeek's json_object mode needs the word JSON and does not enforce field names, so the schema is spelled out.
   "Return a single JSON object with exactly these fields (JSON Schema): " + JSON.stringify(z.toJSONSchema(Brief)),
 ].join(" ");

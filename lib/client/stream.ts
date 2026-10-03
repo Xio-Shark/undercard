@@ -19,6 +19,19 @@ export interface VetoRequestBody {
   veto: { id: string; reason: VetoReason; note?: string };
 }
 
+/** Follow-up question about a finished run: `source` is its signed live state (s1) or a shared brief (v1). */
+export interface AskRequestBody {
+  source: { kind: "state" | "share"; token: string };
+  question: string;
+  history?: { question: string; answer: string }[];
+}
+
+export type AskEvent =
+  | { type: "tool"; tool: string; input: string; output: string; ok: boolean }
+  | { type: "heartbeat"; ms: number }
+  | { type: "answer"; answer: string; trace: { tool: string; input: string; output: string; ok: boolean }[]; notes: string[]; ms: number }
+  | { type: "error"; message: string };
+
 export type AuditEvent =
   | { type: "progress"; step: string; detail?: string; ms: number }
   | { type: "heartbeat"; ms: number }
@@ -40,7 +53,7 @@ export class AuditHttpError extends Error {
 }
 
 /** Streams job events to `onEvent`; resolves when the server closes the stream. */
-export async function streamJob(path: "api/audit" | "api/veto", body: AuditRequestBody | VetoRequestBody, onEvent: (e: AuditEvent) => void, signal?: AbortSignal): Promise<void> {
+export async function streamJob<E = AuditEvent>(path: "api/audit" | "api/veto" | "api/ask", body: AuditRequestBody | VetoRequestBody | AskRequestBody, onEvent: (e: E) => void, signal?: AbortSignal): Promise<void> {
   const res = await fetch(path, {
     method: "POST",
     headers: { "content-type": "application/json" },
@@ -61,7 +74,7 @@ export async function streamJob(path: "api/audit" | "api/veto", body: AuditReque
     while ((nl = buffer.indexOf("\n")) >= 0) {
       const line = buffer.slice(0, nl).trim();
       buffer = buffer.slice(nl + 1);
-      if (line) onEvent(JSON.parse(line) as AuditEvent);
+      if (line) onEvent(JSON.parse(line) as E);
     }
   }
 }

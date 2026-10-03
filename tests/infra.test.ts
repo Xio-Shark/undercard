@@ -82,3 +82,15 @@ describe("gate: jobs without Qloo calls", () => {
     expect(gate.tryAcquire(now)).toEqual({ ok: false, reason: "daily_limit" });
   });
 });
+
+describe("deep health check (T19)", () => {
+  it("reports each key separately and fails when either is broken", async () => {
+    const { checkDeep } = await import("../lib/deep-health");
+    const okQloo = { call: async () => ({ status: "ok" }) };
+    const badQloo = { call: async () => ({ status: "error", error: { code: "QLOO_AUTH" } }) };
+    expect(await checkDeep(okQloo, async () => "OK")).toMatchObject({ ok: true, qloo: { ok: true }, llm: { ok: true } });
+    const broken = await checkDeep(badQloo, async () => { throw new Error("401 key expired"); });
+    expect(broken).toMatchObject({ ok: false, qloo: { ok: false }, llm: { ok: false, error: "401 key expired" } });
+    expect(broken.qloo.error).toContain("QLOO_AUTH");
+  });
+});

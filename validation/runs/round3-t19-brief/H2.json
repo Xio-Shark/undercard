@@ -1,0 +1,1073 @@
+{
+  "case": "H2",
+  "model": "deepseek-flash",
+  "runsPerVersion": 2,
+  "qloo": {
+    "initial": {
+      "notRankable": [],
+      "table": [
+        {
+          "name": "Charles Wesley Godwin",
+          "headlinerRank": 2,
+          "targetRank": 3,
+          "tied": false
+        },
+        {
+          "name": "Caamp",
+          "headlinerRank": 4,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "The Red Clay Strays",
+          "headlinerRank": 1,
+          "targetRank": 5,
+          "tied": false
+        },
+        {
+          "name": "Gregory Alan Isakov",
+          "headlinerRank": 5,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Sierra Ferrell",
+          "headlinerRank": 3,
+          "targetRank": 6,
+          "tied": false
+        },
+        {
+          "name": "Medium Build",
+          "headlinerRank": 6,
+          "targetRank": 4,
+          "tied": false
+        }
+      ],
+      "priority": "Charles Wesley Godwin"
+    },
+    "afterVeto": {
+      "vetoed": "Charles Wesley Godwin",
+      "table": [
+        {
+          "name": "Caamp",
+          "headlinerRank": 4,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "The Red Clay Strays",
+          "headlinerRank": 1,
+          "targetRank": 5,
+          "tied": false
+        },
+        {
+          "name": "Gregory Alan Isakov",
+          "headlinerRank": 5,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Sierra Ferrell",
+          "headlinerRank": 3,
+          "targetRank": 6,
+          "tied": false
+        },
+        {
+          "name": "Medium Build",
+          "headlinerRank": 6,
+          "targetRank": 4,
+          "tied": false
+        }
+      ],
+      "priority": "Caamp",
+      "explanationRefetched": true
+    },
+    "editedReferences": {
+      "references": [
+        "Noah Kahan"
+      ],
+      "notRankable": [],
+      "table": [
+        {
+          "name": "Caamp",
+          "headlinerRank": 3,
+          "targetRank": 1,
+          "tied": false
+        },
+        {
+          "name": "The Red Clay Strays",
+          "headlinerRank": 1,
+          "targetRank": 4,
+          "tied": false
+        },
+        {
+          "name": "Gregory Alan Isakov",
+          "headlinerRank": 4,
+          "targetRank": 2,
+          "tied": false
+        },
+        {
+          "name": "Sierra Ferrell",
+          "headlinerRank": 2,
+          "targetRank": 5,
+          "tied": false
+        },
+        {
+          "name": "Medium Build",
+          "headlinerRank": 5,
+          "targetRank": 3,
+          "tied": false
+        }
+      ],
+      "priority": "Caamp",
+      "change": {
+        "kind": "new_query",
+        "trigger": "Target references: Noah Kahan, Hozier → Noah Kahan",
+        "priorityBefore": "Caamp",
+        "priorityAfter": "Caamp",
+        "at": "2026-10-03T11:55:59.953Z"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "case": "H2",
+      "step": "initial",
+      "version": "qloo",
+      "inPlay": [
+        "Charles Wesley Godwin",
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [],
+      "rulePriority": "Charles Wesley Godwin",
+      "run": 1,
+      "brief": {
+        "priority": "Charles Wesley Godwin",
+        "backups": [
+          "Caamp",
+          "The Red Clay Strays"
+        ],
+        "headlinerSide": "The affinity evidence places Charles Wesley Godwin second for the headliner's fans, behind The Red Clay Strays. Shared red dirt, folk and alt-country tags support that fit. He ranks ahead of Caamp, Gregory Alan Isakov, Sierra Ferrell and Medium Build on this side.",
+        "targetSide": "On the target audience, Charles Wesley Godwin ranks third, behind Caamp first and Gregory Alan Isakov second. Shared folk, acoustic guitar, emotional and melodic tags are moderate. He ranks ahead of The Red Clay Strays, Sierra Ferrell and Medium Build on this side.",
+        "answer": "Evaluate Charles Wesley Godwin first. The deciding trade-off is balance: the affinity evidence places him second for the headliner's fans and third for the target audience. The Red Clay Strays leads the headliner side but is fifth on target; Caamp leads target but is fourth on headliner. Godwin's weaker side is third, better than every other shortlisted act's weaker side. Caamp and The Red Clay Strays are the backups.",
+        "evidence": [
+          {
+            "claim": "The product rule selected Charles Wesley Godwin as priority, with Caamp and The Red Clay Strays as backups, using worst side rank then rank sum.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Charles Wesley Godwin ranks second on the headliner side and third on the target side; his worst rank is third.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The Red Clay Strays ranks first on the headliner side but fifth on the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Caamp ranks first on the target side but fourth on the headliner side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Gregory Alan Isakov ranks second on the target side but fifth on the headliner side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Sierra Ferrell ranks third on the headliner side but sixth on the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Medium Build ranks sixth on the headliner side and fourth on the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Charles Wesley Godwin shares red dirt, folk, American folk, alt country and emotional/introspective tags with the headliner's fans, and folk, acoustic guitar, emotional, melodic and blues tags with the target audience.",
+            "source": "qloo"
+          }
+        ],
+        "unknowns": [
+          "Charles Wesley Godwin is not first on either side, so this is a balance pick: The Red Clay Strays leads the headliner side and Caamp leads the target side.",
+          "The target-side fit is third, behind Caamp and Gregory Alan Isakov; the folk-pop crossover may be less direct than theirs.",
+          "Shared tags include broad or odd labels such as Hawaiian and New Mexico, which may be weak or generic signals.",
+          "The Red Clay Strays is far behind on the target side, while Sierra Ferrell and Medium Build are far behind on the headliner side."
+        ]
+      },
+      "ms": 32211,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "initial",
+      "version": "qloo",
+      "inPlay": [
+        "Charles Wesley Godwin",
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [],
+      "rulePriority": "Charles Wesley Godwin",
+      "run": 2,
+      "brief": {
+        "priority": "Charles Wesley Godwin",
+        "backups": [
+          "Caamp",
+          "The Red Clay Strays"
+        ],
+        "headlinerSide": "Qloo places Godwin second for the headliner's fans, behind The Red Clay Strays, who leads this side. His shared red dirt, folk, country and emotional singer-songwriter hints fit that crowd without being its top Qloo match.",
+        "targetSide": "Qloo places Godwin third for the target audience, behind Caamp and Gregory Alan Isakov. Shared folk, acoustic guitar, melodic and emotional hints give a plausible bridge, but he is not the target side's top match.",
+        "answer": "Evaluate Charles Wesley Godwin first. Qloo ranks him second for the headliner's fans and third for the target audience, so his worst side is third; The Red Clay Strays leads the headliner side and Caamp leads the target side, but each ranks fifth or fourth on the other side. Godwin is the compromise, not the leader on either side.",
+        "evidence": [
+          {
+            "claim": "Qloo places Charles Wesley Godwin second for the headliner's fans and third for the target audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The product rule selects Charles Wesley Godwin through worst-side rank and then rank sum, because his worst side is third.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Qloo places The Red Clay Strays first for the headliner's fans but fifth for the target audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo places Caamp first for the target audience but fourth for the headliner's fans.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo places Gregory Alan Isakov second for the target audience but fifth for the headliner's fans.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo similarity hints link Godwin to the headliner's fans through red dirt, folk, American folk and emotional singer-songwriter tags.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Qloo similarity hints link Godwin to the target audience through folk, acoustic guitar, melodic and emotional tags.",
+            "source": "qloo"
+          },
+          {
+            "claim": "General knowledge: Godwin works in country, folk and Americana, making him a plausible stylistic bridge between red dirt country and folk-pop.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "The Red Clay Strays leads the headliner side but sits fifth for the target audience, so it does not bridge both.",
+          "Caamp leads the target side but sits fourth for the headliner's fans, so it risks losing the red dirt crowd.",
+          "Godwin has no first-place ranking on either side; The Red Clay Strays leads the headliner side and Caamp leads the target side.",
+          "Some shared tags are broad, including United States and Drums, so they are weak evidence of audience overlap."
+        ]
+      },
+      "ms": 26601,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "initial",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Charles Wesley Godwin",
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [],
+      "brief": {
+        "priority": "Caamp",
+        "backups": [
+          "Charles Wesley Godwin",
+          "Gregory Alan Isakov"
+        ],
+        "headlinerSide": "Caamp's acoustic, Americana-leaning folk rock is close enough to Zach Bryan's roots audience to avoid a hard left turn, though it is less Red Dirt country than Charles Wesley Godwin or The Red Clay Strays.",
+        "targetSide": "Caamp sits squarely in the indie-folk lane Noah Kahan and Hozier listeners know; Gregory Alan Isakov may reach that audience more directly, while Caamp offers the better two-sided balance.",
+        "answer": "Evaluate Caamp first. The trade-off: it leans indie folk for the Noah Kahan/Hozier side while staying acoustic and Americana enough for Zach Bryan's roots crowd. If the folk reach must be maximal, Gregory Alan Isakov is stronger there but further from Red Dirt; if Red Dirt credibility matters more, Charles Wesley Godwin is stronger there but less direct for the folk target.",
+        "evidence": [
+          {
+            "claim": "Caamp are an indie folk/Americana group with acoustic, harmony-led songs; that fits the Noah Kahan/Hozier lane and remains familiar to Zach Bryan's roots-leaning audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Charles Wesley Godwin is Appalachian country/folk and closely associated with Zach Bryan's world; he is a strong headliner-side anchor but a less direct match for Noah Kahan/Hozier.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Gregory Alan Isakov is an indie folk singer-songwriter with strong appeal to the target folk audience, but he is further from Red Dirt country.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sierra Ferrell is Americana/old-time/folk and can bridge roots and folk, but not as close to Noah Kahan/Hozier's indie folk.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Medium Build leans indie folk/pop, stronger for the target than for Red Dirt.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "The Red Clay Strays are Southern rock/country/soul, strong for Zach Bryan/Red Dirt but not the folk target.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Only shortlist acts can be chosen.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Without Qloo evidence, no numeric ranks or affinity scores can be used; the decision rests on general knowledge.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Caamp's pull with Red Dirt country purists is uncertain.",
+          "Charles Wesley Godwin's fit with Noah Kahan/Hozier's indie-folk audience is unverified.",
+          "Gregory Alan Isakov's traction with Zach Bryan's core country crowd is unverified.",
+          "No Qloo evidence separates the shortlist, so any order is a general-knowledge judgement."
+        ]
+      },
+      "ms": 33550,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "initial",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Charles Wesley Godwin",
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [],
+      "brief": {
+        "priority": "Charles Wesley Godwin",
+        "backups": [
+          "Caamp",
+          "Sierra Ferrell"
+        ],
+        "headlinerSide": "Charles Wesley Godwin is a credible roots-country and Appalachian folk act with a known Zach Bryan connection, so the headliner's fans are likely to accept him. The Red Clay Strays are more purely red-dirt, but less useful for the target.",
+        "targetSide": "He is less directly folk-pop than Noah Kahan or Hozier. Caamp and Gregory Alan Isakov are more natural target-side fits, so choosing Godwin means accepting a weaker folk-pop bridge. Sierra Ferrell splits the difference through Americana but still is not pop.",
+        "answer": "Evaluate Charles Wesley Godwin first. He is a natural fit for Zach Bryan's roots-country and Americana crowd, but the trade-off is target-side: he is not a folk-pop act like Noah Kahan or Hozier. If the team wants a warmer folk-pop bridge, Caamp is the stronger target-side test, though weaker for the headliner's core. No Qloo evidence is available, so this is a general-knowledge judgement.",
+        "evidence": [
+          {
+            "claim": "No Qloo evidence is available, so no measured audience overlap or rank can be cited.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Charles Wesley Godwin is closely associated with Zach Bryan and roots-country/Appalachian folk.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Charles Wesley Godwin is less directly folk-pop than Noah Kahan or Hozier, making target-side fit the trade-off.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Caamp is indie folk/folk-pop with acoustic appeal that can reach Noah Kahan or Hozier listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Caamp has less red-dirt country credibility than Charles Wesley Godwin or The Red Clay Strays.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Gregory Alan Isakov is indie folk with atmospheric textures that fit Hozier and Noah Kahan, but not red-dirt country.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sierra Ferrell bridges old-time country, folk, and Americana, but not pop.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "The Red Clay Strays are Southern rock/red-dirt country but not folk-pop.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "No Qloo evidence is available, so no measured affinity or rank exists for any shortlist act.",
+          "Charles Wesley Godwin's target-side pull is inferred from folk/Americana, not folk-pop.",
+          "Caamp's headliner-side credibility with red-dirt country fans is the main unknown.",
+          "Sierra Ferrell is a roots bridge but not clearly folk-pop; Medium Build and The Red Clay Strays are less balanced."
+        ]
+      },
+      "ms": 33605,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "after_veto",
+      "version": "qloo",
+      "inPlay": [
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [
+        "Charles Wesley Godwin"
+      ],
+      "rulePriority": "Caamp",
+      "run": 1,
+      "brief": {
+        "priority": "Caamp",
+        "backups": [
+          "The Red Clay Strays",
+          "Gregory Alan Isakov"
+        ],
+        "headlinerSide": "For the headliner's fans, Caamp sits fourth; The Red Clay Strays ranks first, so Caamp is not the strongest country/Americana match. Caamp shares folk, storytelling, acoustic guitar, country and banjo hints, but its headliner-side fit is a compromise.",
+        "targetSide": "For the target audience, Caamp ranks first, sharing folk, indie, guitar, acoustic guitar and melodic hints. It is the strongest target-side option in this pool; Gregory Alan Isakov ranks second and The Red Clay Strays fifth, so Caamp carries the folk-pop bridge.",
+        "answer": "Evaluate Caamp first. The trade-off is its target-side rank is first while its headliner-side rank is fourth; The Red Clay Strays leads the headliner side but ranks fifth for the target audience. Caamp balances both sides better by worst rank, so it is the priority; use The Red Clay Strays and Gregory Alan Isakov as backups.",
+        "evidence": [
+          {
+            "claim": "Caamp ranks first for the target audience and fourth for the headliner's fans, the best worst-side position in this pool.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The Red Clay Strays ranks first for the headliner's fans and fifth for the target audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The product rule selected Caamp as priority, with The Red Clay Strays and Gregory Alan Isakov as backups, by worst side rank then rank sum.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Gregory Alan Isakov ranks second for the target audience and fifth for the headliner's fans.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Sierra Ferrell ranks third for the headliner's fans and sixth for the target audience; Medium Build ranks sixth for the headliner's fans and fourth for the target audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Caamp shares with the headliner's fans folk, storytelling, acoustic guitar, country and banjo hints.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Caamp shares with the target audience folk, indie, guitar, acoustic guitar and melodic hints.",
+            "source": "qloo"
+          },
+          {
+            "claim": "In general terms, The Red Clay Strays reads more country/Southern rock, while Noah Kahan and Hozier lean folk-pop, making Caamp's folk/Americana lane the more plausible bridge.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "Caamp is fourth on the headliner side, behind The Red Clay Strays, so it is not the strongest there.",
+          "The target-side shared tags are broad folk, guitar and indie hints; they do not directly name the target reference artists.",
+          "The Red Clay Strays is fifth on the target side, so its headliner-side lead does not solve the target-side gap.",
+          "Gregory Alan Isakov is fifth on the headliner side despite ranking second for the target audience."
+        ]
+      },
+      "ms": 27245,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "after_veto",
+      "version": "qloo",
+      "inPlay": [
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [
+        "Charles Wesley Godwin"
+      ],
+      "rulePriority": "Caamp",
+      "run": 2,
+      "brief": {
+        "priority": "Caamp",
+        "backups": [
+          "The Red Clay Strays",
+          "Gregory Alan Isakov"
+        ],
+        "headlinerSide": "Caamp shares folk, acoustic guitar, storytelling and country with Zach Bryan's fans, but it ranks fourth on the headliner side. The Red Clay Strays ranks first there, so Caamp is not the strongest headliner-side fit.",
+        "targetSide": "Caamp ranks first on the target side and shares folk, indie, acoustic guitar and melodic traits with the Noah Kahan/Hozier audience. It is the best target-side bridge among the shortlist, though the match leans on broad descriptors.",
+        "answer": "Evaluate Caamp first: it ranks first on the target side but fourth on the headliner side, where The Red Clay Strays leads. That trade-off decides the pick. If headliner-audience fit is the priority, The Red Clay Strays is stronger there but fifth on the target side; Gregory Alan Isakov is second on the target side but fifth for the headliner. No side is balanced.",
+        "evidence": [
+          {
+            "claim": "Caamp ranks first on the target side and fourth on the headliner side; The Red Clay Strays ranks first on the headliner side and fifth on the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The priority is Caamp because it has the best worst-side rank among the shortlist, with backups The Red Clay Strays and Gregory Alan Isakov.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Gregory Alan Isakov ranks second on the target side and fifth on the headliner side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Sierra Ferrell ranks third on the headliner side and sixth on the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Medium Build ranks sixth on the headliner side and fourth on the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Caamp shares folk, acoustic guitar, melodic, country and storytelling with Zach Bryan's audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Caamp shares folk, indie, acoustic guitar and melodic traits with the Noah Kahan/Hozier audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Caamp's indie-folk and americana style can plausibly bridge country-rooted and folk-pop audiences, though this is a taste judgement, not demand.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "Caamp sits behind The Red Clay Strays on the headliner side, so its headliner fit is weaker than the top option there.",
+          "The Red Clay Strays trails Caamp and Gregory Alan Isakov on the target side, so target expansion is less supported.",
+          "Gregory Alan Isakov is far behind on the headliner side, making the backup lopsided.",
+          "Caamp's target-side match relies partly on broad tags such as melodic and straightforward, so distinctiveness is uncertain."
+        ]
+      },
+      "ms": 27392,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "after_veto",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Charles Wesley Godwin",
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [
+        "Caamp"
+      ],
+      "brief": {
+        "priority": "Sierra Ferrell",
+        "backups": [
+          "Charles Wesley Godwin",
+          "Gregory Alan Isakov"
+        ],
+        "headlinerSide": "Her old-time, western-swing and roots-country grounding is recognisable to the headliner's red-dirt country fans, so she reads as one of that world rather than an outside booking. Charles Wesley Godwin sits nearer to that crowd than she does.",
+        "targetSide": "Her indie-folk and festival presence reaches folk-leaning listeners who overlap the target audience, though she is not a folk-pop act like the reference names. Gregory Alan Isakov sits nearer to that audience than she does.",
+        "answer": "Evaluate Sierra Ferrell first. She is the one act here who credibly touches both sides: roots-country grounding the headliner's red-dirt crowd accepts, plus indie-folk reach where the target audience's listeners gather. The trade-off that decides it is that she is not a folk-pop act, so the stretch toward that audience stays partial. With no measured affinity data available, this rests on general knowledge alone.",
+        "evidence": [
+          {
+            "claim": "No affinity measurements exist for this shortlist, so every fit statement below is a general-knowledge judgement, not a measured result, and no relative ordering can be asserted.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sierra Ferrell's old-time, western-swing and roots-country base sits close to the headliner's red-dirt country crowd.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sierra Ferrell also plays indie-folk and festival bills, which is where the target audience's folk-leaning listeners are found.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Charles Wesley Godwin is nearest to the headliner's fans but furthest from the target audience, so he advances the show without advancing the expansion goal.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Gregory Alan Isakov is nearest to the target audience but furthest from the headliner's fans.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "The Red Clay Strays lean Southern rock and country soul, close to the headliner side with limited folk-pop reach.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Medium Build sits on the indie singer-songwriter side and has little pull with the headliner's fans.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "The stated goal is audience expansion, so an act only helps if it registers with both sides rather than one.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "Whether any act here genuinely moves the target audience is unverified; Sierra Ferrell reads as indie folk, not folk-pop.",
+          "Gregory Alan Isakov addresses the target side only; his pull with the headliner's fans is unclear.",
+          "Medium Build and The Red Clay Strays each sit clearly on one side, so neither is a two-sided option.",
+          "No measured affinity data exists here, so no ordering of these acts can be defended."
+        ]
+      },
+      "ms": 23040,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "after_veto",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [
+        "Charles Wesley Godwin"
+      ],
+      "brief": {
+        "priority": "Caamp",
+        "backups": [
+          "Gregory Alan Isakov",
+          "Sierra Ferrell"
+        ],
+        "headlinerSide": "Caamp's warm folk-rock and singalong roots fit the headliner's fans, though Sierra Ferrell and The Red Clay Strays read more red-dirt country. Caamp is a bridge, not the hardest country on the list.",
+        "targetSide": "Caamp's indie-folk melody and group vocals reach Noah Kahan and Hozier listeners, while Gregory Alan Isakov reads more directly to that folk audience. Caamp is a credible bridge, not the most folk-pop-leaning act.",
+        "answer": "Evaluate Caamp first: it is the most defensible two-sided balance on the shortlist between Zach Bryan's roots audience and the Noah Kahan/Hozier folk-pop target. The deciding trade-off is that Caamp leans indie folk rather than hard red-dirt country; Sierra Ferrell or The Red Clay Strays would serve the headliner's fans more purely, and Gregory Alan Isakov would serve the target audience more purely. No Qloo evidence exists, so this is a general-knowledge call.",
+        "evidence": [
+          {
+            "claim": "Caamp blends indie folk, roots rock and singalong hooks, making it a plausible bridge from Zach Bryan's roots audience toward Noah Kahan and Hozier's folk-pop listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sierra Ferrell and The Red Clay Strays read more country, Americana and Southern rock, stronger for the red-dirt side but less folk-pop.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Gregory Alan Isakov reads more indie folk and atmospheric, stronger for the target side but less red-dirt country.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Medium Build is more indie pop/alternative and has a less clear two-sided fit than Caamp, Sierra Ferrell or Gregory Alan Isakov.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "No Qloo evidence is available, so no numeric rank or measured affinity comparison can be used.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Only shortlisted acts are considered, and the priority is a balance between the headliner's fans and the target audience.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo evidence is available, so no measured affinity ranking can separate the shortlist.",
+          "Caamp is a compromise: Sierra Ferrell and The Red Clay Strays lean more red-dirt country, while Gregory Alan Isakov leans more folk/indie for the target.",
+          "Medium Build's tag match is broad and generic, making its two-sided fit harder to defend.",
+          "The shortlist may lack an act equally strong on both sides; the call depends on which audience the team weights more."
+        ]
+      },
+      "ms": 36770,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 6,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "edited_references",
+      "version": "qloo",
+      "inPlay": [
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [
+        "Charles Wesley Godwin"
+      ],
+      "rulePriority": "Caamp",
+      "run": 1,
+      "brief": {
+        "priority": "Caamp",
+        "backups": [
+          "The Red Clay Strays",
+          "Gregory Alan Isakov"
+        ],
+        "headlinerSide": "Caamp fits the headliner's fans through shared folk, acoustic guitar, country, storytelling and melodic tags. It ranks third here, behind The Red Clay Strays, so it is not the closest match to Zach Bryan's core audience in this pool.",
+        "targetSide": "Caamp leads the target audience in this pool, sharing folk, melodic, acoustic guitar, simple chord progressions and emotional traits with Noah Kahan listeners. That target-side strength is why it is the priority despite ranking behind The Red Clay Strays on the headliner side.",
+        "answer": "Evaluate Caamp first. Its trade-off is balance: it ranks first for the target audience but third for the headliner's fans, where The Red Clay Strays ranks ahead. Caamp shares folk, acoustic guitar, country and storytelling with the headliner side, and folk, melodic, acoustic guitar and simple progressions with the target side. Backups are The Red Clay Strays and Gregory Alan Isakov.",
+        "evidence": [
+          {
+            "claim": "The product rule chose Caamp as priority by worst side rank, then rank sum.",
+            "source": "product_rule"
+          },
+          {
+            "claim": "Caamp ranks third for the headliner's fans and first for the target audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The Red Clay Strays ranks first for the headliner's fans and fourth for the target audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Gregory Alan Isakov ranks fourth for the headliner's fans and second for the target audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Sierra Ferrell ranks second for the headliner's fans and fifth for the target audience; Medium Build ranks fifth for the headliner's fans and third for the target audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Caamp shares folk, acoustic guitar, country, storytelling and melodic tags with Zach Bryan's audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Caamp shares folk, melodic, acoustic guitar, simple chord progressions and emotional traits with Noah Kahan's audience.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Ranks are positions within this five-act shortlist only.",
+            "source": "qloo"
+          }
+        ],
+        "unknowns": [
+          "The Red Clay Strays ranks first for the headliner's fans but fourth for the target audience, so it skews to the existing room.",
+          "Sierra Ferrell and Medium Build each rank fifth on one side, so their two-sided balance is weaker.",
+          "These ranks cover only this five-act shortlist, not the wider market.",
+          "Shared tags are similarity hints, not evidence that booking Caamp would grow the target audience."
+        ]
+      },
+      "ms": 33161,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 8,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "edited_references",
+      "version": "qloo",
+      "inPlay": [
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [
+        "Charles Wesley Godwin"
+      ],
+      "rulePriority": "Caamp",
+      "run": 2,
+      "brief": {
+        "priority": "Caamp",
+        "backups": [
+          "The Red Clay Strays",
+          "Gregory Alan Isakov"
+        ],
+        "headlinerSide": "Caamp ranks third on the headliner's side, behind The Red Clay Strays and Sierra Ferrell, so its country-leaning overlap is real but not the deepest here. Shared folk, storytelling and acoustic guitar tags keep it plausible for Zach Bryan's crowd.",
+        "targetSide": "Caamp ranks first on the target side, ahead of Gregory Alan Isakov and Medium Build. Its folk, melodic and acoustic-guitar overlap with the target audience is the widest in this pool, though several shared tags read as generic.",
+        "answer": "Evaluate Caamp first. It sits first on the target side and third on the headliner side, the smallest gap in this pool. The deciding trade-off is whether that third-place country and folk overlap does enough for Zach Bryan's red-dirt-leaning crowd, where The Red Clay Strays and Sierra Ferrell rank ahead of it.",
+        "evidence": [
+          {
+            "claim": "Caamp ranks third on the headliner's side and first on the target side, giving it the least lopsided profile in the pool.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The Red Clay Strays rank first on the headliner's side but only fourth on the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Gregory Alan Isakov ranks second on the target side but fourth on the headliner's side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Sierra Ferrell ranks second on the headliner's side but fifth on the target side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Medium Build ranks third on the target side but fifth on the headliner's side.",
+            "source": "qloo"
+          },
+          {
+            "claim": "Caamp shares folk, melodic, acoustic guitar and storytelling tags with both the headliner and the target reference.",
+            "source": "qloo"
+          },
+          {
+            "claim": "The selection rule ranks candidates by their weaker side first, then by combined rank, so balanced acts win.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "On the headliner's side Caamp trails The Red Clay Strays and Sierra Ferrell, so that fit is thinner than the target-side fit.",
+          "Several shared tags, including region and melodic descriptors, are broad and carry little weight.",
+          "Shared post punk and jazz tags look incidental rather than meaningful overlap."
+        ]
+      },
+      "ms": 10209,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": true,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 7,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "edited_references",
+      "version": "llm_only",
+      "run": 1,
+      "inPlay": [
+        "Charles Wesley Godwin",
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [
+        "Caamp"
+      ],
+      "brief": {
+        "priority": "Gregory Alan Isakov",
+        "backups": [
+          "Charles Wesley Godwin",
+          "Sierra Ferrell"
+        ],
+        "headlinerSide": "For the headliner's fans, Isakov is a credible indie-folk songwriting peer, though Charles Wesley Godwin is the more direct red-dirt/Appalachian country fit and would hold that crowd more naturally. Isakov is the bridge, not the safest headliner-side pick.",
+        "targetSide": "For the target audience, Isakov's literary, atmospheric indie folk sits closer to Noah Kahan's folk-pop/singer-songwriter lane than the country-leaning shortlist acts. He can open that door without abandoning roots credibility.",
+        "answer": "Evaluate Gregory Alan Isakov first. The deciding trade-off: he is a plausible bridge to Noah Kahan's folk-pop and indie-folk listeners, but he is less red-dirt than Charles Wesley Godwin, who better secures Zach Bryan's core. If the goal is folk-pop reach, Isakov is the balanced bet; if the room must stay country-first, Godwin is safer. Sierra Ferrell is a broad Americana backup.",
+        "evidence": [
+          {
+            "claim": "Zach Bryan's core audience is country, folk and Americana, with red-dirt-adjacent songwriting at the center.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Noah Kahan's reference lane is folk-pop and indie folk, driven by singer-songwriter intimacy and crossover appeal.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Gregory Alan Isakov works in literary, atmospheric indie folk, making him a plausible bridge from Zach Bryan's roots audience toward Noah Kahan's folk-pop listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Charles Wesley Godwin is a more direct Appalachian/red-dirt country fit for Zach Bryan's core than Isakov, but he does less to reach folk-pop listeners.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sierra Ferrell's Americana and old-time range can hold country and folk listeners while touching indie-folk curiosity, though she is not a folk-pop act.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Medium Build's indie pop and rock leans toward Noah Kahan's target side but has less red-dirt country grounding.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "The Red Clay Strays lean Southern rock, country and soul, strong for the headliner side and less connected to folk-pop.",
+            "source": "general_knowledge"
+          }
+        ],
+        "unknowns": [
+          "No Qloo evidence is available, so all affinity comparisons here are general knowledge and unmeasured.",
+          "Isakov may lean more target-side than headliner-side; Charles Wesley Godwin is the clearer headliner-side anchor.",
+          "Medium Build and The Red Clay Strays each lean toward one side, so neither is a proven two-sided bridge.",
+          "Sierra Ferrell is a broad Americana option but not a clear folk-pop crossover."
+        ]
+      },
+      "ms": 28555,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 7,
+        "jargonLeaks": 0
+      }
+    },
+    {
+      "case": "H2",
+      "step": "edited_references",
+      "version": "llm_only",
+      "run": 2,
+      "inPlay": [
+        "Gregory Alan Isakov",
+        "Sierra Ferrell",
+        "Medium Build",
+        "Caamp",
+        "The Red Clay Strays"
+      ],
+      "vetoed": [
+        "Charles Wesley Godwin"
+      ],
+      "brief": {
+        "priority": "Caamp",
+        "backups": [
+          "Sierra Ferrell",
+          "Gregory Alan Isakov"
+        ],
+        "headlinerSide": "General knowledge suggests Caamp's acoustic, banjo-led folk and singalong live show fit Zach Bryan's rootsy Americana crowd. It is less red-dirt country than Sierra Ferrell or The Red Clay Strays, so this side is a credible stretch rather than a native match.",
+        "targetSide": "General knowledge suggests Caamp's indie-folk hooks and warm harmonies sit near Noah Kahan's folk-pop lane, though Gregory Alan Isakov and Medium Build may lean more directly toward that audience. Caamp's roots keep the bridge two-way.",
+        "answer": "Evaluate Caamp first. The trade-off: it keeps enough acoustic, banjo-led roots for Zach Bryan's crowd while offering Noah Kahan-leaning listeners an indie-folk melody, but it is less red-dirt than Sierra Ferrell or The Red Clay Strays and less directly folk-pop than Gregory Alan Isakov. General knowledge only; no Qloo measurement.",
+        "evidence": [
+          {
+            "claim": "Caamp's acoustic, banjo-led indie folk sits between Zach Bryan's rootsy Americana and Noah Kahan's folk-pop.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Sierra Ferrell and The Red Clay Strays have more obvious red-dirt country grounding for Zach Bryan's current audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Gregory Alan Isakov and Medium Build lean more toward indie/folk-pop or indie-pop for Noah Kahan's audience.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "Caamp's festival-friendly singalongs can work for both crowds, but the fit is inferred without Qloo affinity data.",
+            "source": "general_knowledge"
+          },
+          {
+            "claim": "The priority is selected as a balance between sides, not as the strongest on either side.",
+            "source": "product_rule"
+          }
+        ],
+        "unknowns": [
+          "No Qloo evidence is available, so no measured affinity or rank exists.",
+          "Caamp is less red-dirt country than Sierra Ferrell or The Red Clay Strays.",
+          "Caamp is less directly folk-pop than Gregory Alan Isakov or Medium Build.",
+          "The target is defined by one reference artist, Noah Kahan, so it may not cover the full folk-pop audience."
+        ]
+      },
+      "ms": 38123,
+      "attempts": 1,
+      "malformed": [],
+      "checks": {
+        "priorityInPlay": true,
+        "respectsVetoes": true,
+        "backupsInPlay": true,
+        "keptRule": null,
+        "qlooCitationsWithoutData": 0,
+        "percentFigures": 0,
+        "numericRanksWithoutData": 0,
+        "evidenceCount": 5,
+        "jargonLeaks": 0
+      }
+    }
+  ],
+  "qlooToolCalls": {
+    "qloo_describe": 17,
+    "qloo_rank": 4,
+    "qloo_compare_audiences": 6
+  },
+  "ms": 145675
+}
